@@ -163,9 +163,15 @@ fahad/
 │   ├── profile/                           ← 8 social profile pictures
 │   ├── headers/                           ← 5 social media covers
 │   ├── watermarks/                        ← 5 watermark variants
-│   └── email/                             ← Email template + signature
-│       ├── email_template.html            ← Full HTML business email
-│       └── email_signature.html           ← Compact signature block
+│   ├── email/                             ← Email template + signature
+│   │   ├── email_template.html            ← Full HTML business email
+│   │   └── email_signature.html           ← Compact signature block
+│   └── official/                          ← Official papers & stamp
+│       ├── stamp-{red,blue,gold}.png      ← Round seal (3 variants)
+│       ├── letterhead-a4{,-light}.png     ← A4 letterhead (dark + light)
+│       ├── business-card-{front,back}{,-light}.png  ← Cards (dark + light)
+│       ├── invoice-template.png           ← A4 invoice / quotation
+│       └── envelope-dl.png               ← DL envelope
 │
 └── fahad-almansour.com/                   ← Website source
     └── README.md
@@ -350,6 +356,33 @@ A complete set of ready-to-use assets is in `brand_kit/`. All assets use the **G
 | `watermark-badge-gold-50.png` | 50% | Documents and presentations |
 | `watermark-text-dark-25.png` | 25% | Subtle text watermark |
 | `watermark-full-30.png` | 30% | Full logo watermark |
+
+### Official Papers (`brand_kit/official/`)
+
+All assets exist in **dark** (Gold Premium `#0D0800` background) and **light** (white/navy) editions.
+
+| File | Size | Description |
+|------|------|-------------|
+| `stamp-red-ink.png` | 900×900 | Official round seal — red ink, transparent bg |
+| `stamp-blue-ink.png` | 900×900 | Official round seal — blue ink, transparent bg |
+| `stamp-gold-preview.png` | 900×900 | Gold Premium stamp on white — preview |
+| `letterhead-a4.png` | 1240×1754 | A4 letterhead — **dark** header/footer |
+| `letterhead-a4-light.png` | 1240×1754 | A4 letterhead — **light** (navy header, white body) |
+| `business-card-front.png` | 1050×600 | Business card front — **dark** Gold Premium |
+| `business-card-back.png` | 1050×600 | Business card back — **dark** geometric pattern |
+| `business-card-front-light.png` | 1050×600 | Business card front — **light** white/navy |
+| `business-card-back-light.png` | 1050×600 | Business card back — **light** geometric pattern |
+| `invoice-template.png` | 1240×1754 | Full A4 invoice / quotation template |
+| `envelope-dl.png` | 2598×1299 | DL envelope (C5/6) — print-ready |
+
+**Stamp usage:**
+- `stamp-red-ink.png` / `stamp-blue-ink.png` — transparent PNG, overlay on any document
+- Scale to 80–120 mm for official documents
+
+**Print specifications:**
+- Letterhead / Invoice: 150 DPI → export to PDF for print at full A4
+- Business card: 300 DPI → 3.5 × 2 inch, trim to bleed line
+- Envelope: 300 DPI → DL (110 × 220 mm)
 
 ### Email Templates (`brand_kit/email/`)
 | File | Description |
