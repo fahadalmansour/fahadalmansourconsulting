@@ -224,7 +224,7 @@ def make_letterhead():
     ar_sub  = "للخدمات الإلكترونية"
     en_name = "Fahad Saad Fahad Almansour"
     en_sub  = "Office For Electronic Services"
-    en_web  = "fahadalmansour.site  ·  CR #7053130576"
+    en_web  = "fahadsaadalmansourforelectronicservices.com  ·  CR #7053130576"
 
     draw.text((x_text, 38),  ar_name, font=f_ar_lg, fill=PALE_GOLD)
     draw.text((x_text, 100), ar_sub,  font=f_ar_sm, fill=GOLD)
@@ -291,7 +291,7 @@ def make_letterhead():
     ftr_items = [
         ("مملكة العربية السعودية", PALE_GOLD),
         ("Kingdom of Saudi Arabia", GOLD),
-        ("fahadalmansour.site", ACCENT),
+        ("fahadsaadalmansourforelectronicservices.com", ACCENT),
         ("CR #7053130576", ACCENT),
     ]
     col_w = (W - 2 * MARG) // len(ftr_items)
@@ -352,7 +352,7 @@ def make_business_card():
     # Contact details
     f_contact = load_font(SANS_REG, 26)
     contacts = [
-        ("fahadalmansour.site",    360),
+        ("fahadsaadalmansourforelectronicservices.com",    360),
         ("+966 57 013 1122",        405),
         ("CR #7053130576",          450),
         ("Kingdom of Saudi Arabia", 495),
@@ -391,8 +391,8 @@ def make_business_card():
     # Centered domain name
     f_domain = load_font(SERIF_BOLD, 46)
     f_dom_sub = load_font(SANS_REG, 28)
-    dw = text_w(draw2, "fahadalmansour.site", f_domain)
-    draw2.text(((W - dw) // 2, H // 2 - 36), "fahadalmansour.site",
+    dw = text_w(draw2, "fahadsaadalmansourforelectronicservices.com", f_domain)
+    draw2.text(((W - dw) // 2, H // 2 - 36), "fahadsaadalmansourforelectronicservices.com",
                font=f_domain, fill=PALE_GOLD)
     sub_txt = "مكتب فهد سعد فهد المنصور للخدمات الإلكترونية"
     sw = text_w(draw2, sub_txt, f_dom_sub)
@@ -441,7 +441,7 @@ def make_invoice_header():
               font=f_sm, fill=GOLD)
     draw.text((x_t, 120), "Fahad Saad Fahad Almansour",       font=f_en, fill=PALE_GOLD)
     draw.text((x_t, 168), "Office For Electronic Services",    font=f_ws, fill=GOLD)
-    draw.text((x_t, 200), "fahadalmansour.site  |  CR #7053130576", font=f_ws, fill=ACCENT)
+    draw.text((x_t, 200), "fahadsaadalmansourforelectronicservices.com  |  CR #7053130576", font=f_ws, fill=ACCENT)
     draw.text((x_t, 228), "Kingdom of Saudi Arabia", font=f_ws, fill=(140, 120, 60))
 
     # Document type banner (right side)
@@ -567,7 +567,7 @@ def make_invoice_header():
     draw.rectangle([0, FTR_Y, W, FTR_Y + 4], fill=ACCENT)
     f_ftr = load_font(SANS_REG, 20)
     draw.text((MARG, FTR_Y + 20),
-              "fahadalmansour.site  |  CR #7053130576  |  Kingdom of Saudi Arabia",
+              "fahadsaadalmansourforelectronicservices.com  |  CR #7053130576  |  Kingdom of Saudi Arabia",
               font=f_ftr, fill=GOLD)
     ftr_ar = "مملكة العربية السعودية  |سجل تجاري 7053130576"
     draw.text((MARG, FTR_Y + 52), ftr_ar, font=f_ftr, fill=ACCENT)
@@ -606,7 +606,7 @@ def make_envelope():
     draw.text((360, 140),
               "مكتب فهد سعد فهد المنصور",
               font=f_ar, fill=DARK_BG)
-    draw.text((360, 188), "Kingdom of Saudi Arabia  |  fahadalmansour.site", font=f_sm, fill=(100, 80, 30))
+    draw.text((360, 188), "Kingdom of Saudi Arabia  |  fahadsaadalmansourforelectronicservices.com", font=f_sm, fill=(100, 80, 30))
 
     # "TO" address area (center)
     draw.rectangle([700, 380, 1700, 780], outline=ACCENT, width=3)
@@ -682,7 +682,7 @@ def make_business_card_light():
     draw.rectangle([x_r, 296, W - 50, 299], fill=(200, 160, 48))
 
     contacts = [
-        ("fahadalmansour.site",    322),
+        ("fahadsaadalmansourforelectronicservices.com",    322),
         ("+966 57 013 1122",        358),
         ("CR #7053130576",          394),
         ("Kingdom of Saudi Arabia", 430),
@@ -722,8 +722,8 @@ def make_business_card_light():
 
     f_domain  = load_font(SERIF_BOLD, 44)
     f_dom_sub = load_font(SANS_REG, 26)
-    dw = text_w(draw2, "fahadalmansour.site", f_domain)
-    draw2.text(((W - dw) // 2, H // 2 - 32), "fahadalmansour.site",
+    dw = text_w(draw2, "fahadsaadalmansourforelectronicservices.com", f_domain)
+    draw2.text(((W - dw) // 2, H // 2 - 32), "fahadsaadalmansourforelectronicservices.com",
                font=f_domain, fill=DARK_TEXT)
     sub_txt = "مكتب فهد سعد فهد المنصور للخدمات الإلكترونية"
     sw = text_w(draw2, sub_txt, f_dom_sub)
@@ -772,7 +772,7 @@ def make_letterhead_light():
     draw.text((x_text, 148), "Fahad Saad Fahad Almansour",    font=f_en_lg, fill=(255, 240, 160))
     draw.text((x_text, 202), "Office For Electronic Services", font=f_en_sm, fill=(200, 168, 72))
     draw.text((x_text, 240),
-              "fahadalmansour.site  ·  CR #7053130576  ·  +966 57 013 1122",
+              "fahadsaadalmansourforelectronicservices.com  ·  CR #7053130576  ·  +966 57 013 1122",
               font=f_en_sm, fill=(180, 150, 50))
 
     # Gold divider lines
@@ -822,7 +822,7 @@ def make_letterhead_light():
     ftr_items = [
         ("مملكة العربية السعودية", (255, 240, 160)),
         ("Kingdom of Saudi Arabia", (200, 168, 72)),
-        ("fahadalmansour.site",     (200, 160, 48)),
+        ("fahadsaadalmansourforelectronicservices.com",     (200, 160, 48)),
         ("+966 57 013 1122",         (200, 160, 48)),
     ]
     col_w = (W - 2 * MARG) // len(ftr_items)
