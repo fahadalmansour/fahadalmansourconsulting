@@ -158,6 +158,15 @@ fahad/
 ├── fahad_almansour_logo_interactive.html  ← Classic interactive SVG
 ├── fahad_logo_variants.html              ← All 6 variants showcase (574 KB)
 │
+├── brand_kit/                             ← Complete brand kit
+│   ├── favicon/                           ← 9 favicon sizes + .ico
+│   ├── profile/                           ← 8 social profile pictures
+│   ├── headers/                           ← 5 social media covers
+│   ├── watermarks/                        ← 5 watermark variants
+│   └── email/                             ← Email template + signature
+│       ├── email_template.html            ← Full HTML business email
+│       └── email_signature.html           ← Compact signature block
+│
 └── fahad-almansour.com/                   ← Website source
     └── README.md
 ```
@@ -341,6 +350,29 @@ A complete set of ready-to-use assets is in `brand_kit/`. All assets use the **G
 | `watermark-badge-gold-50.png` | 50% | Documents and presentations |
 | `watermark-text-dark-25.png` | 25% | Subtle text watermark |
 | `watermark-full-30.png` | 30% | Full logo watermark |
+
+### Email Templates (`brand_kit/email/`)
+| File | Description |
+|------|-------------|
+| `email_template.html` | Full HTML business email / newsletter — table-based, 600px, Gold Premium, badge embedded as base64 |
+| `email_signature.html` | Compact signature block — copy-paste into Gmail/Outlook HTML signature editor |
+
+**Email color scheme:**
+
+| Element | Color |
+|---------|-------|
+| Header / Footer background | `#0D0800` |
+| Company name & accent text | `#E8C860` |
+| Gold divider lines | `C8A030` |
+| Body background | `#FAFAF8` |
+| Body text | `#1A1A1A` |
+| CTA button | `#C8A030` bg · `#0D0800` text |
+
+Open to preview:
+```bash
+open brand_kit/email/email_template.html
+open brand_kit/email/email_signature.html
+```
 
 ---
 
