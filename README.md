@@ -295,6 +295,55 @@ Maintain a minimum clear space around the logo equal to the height of the **ف**
 
 ---
 
+## Brand Kit
+
+A complete set of ready-to-use assets is in `brand_kit/`. All assets use the **Gold Premium** colour scheme.
+
+### Favicons (`brand_kit/favicon/`)
+| File | Size | Use |
+|------|------|-----|
+| `favicon-16x16.png` | 16×16 | Browser tab |
+| `favicon-32x32.png` | 32×32 | Browser tab (HiDPI) |
+| `favicon-48x48.png` | 48×48 | Windows taskbar |
+| `favicon-64x64.png` | 64×64 | Browser bookmark |
+| `favicon-128x128.png` | 128×128 | Chrome web store |
+| `favicon-180x180.png` | 180×180 | Apple Touch Icon |
+| `favicon-192x192.png` | 192×192 | Android Chrome |
+| `favicon-512x512.png` | 512×512 | Android splash |
+| `favicon.ico` | 16/32/48 | Universal browser favicon |
+
+### Social Media Profile Pictures (`brand_kit/profile/`)
+| File | Size | Platform |
+|------|------|----------|
+| `profile-twitter-400x400.png` | 400×400 | Twitter / X |
+| `profile-instagram-320x320.png` | 320×320 | Instagram |
+| `profile-facebook-170x170.png` | 170×170 | Facebook |
+| `profile-linkedin-400x400.png` | 400×400 | LinkedIn |
+| `profile-youtube-800x800.png` | 800×800 | YouTube |
+| `profile-whatsapp-640x640.png` | 640×640 | WhatsApp Business |
+| `profile-snapchat-320x320.png` | 320×320 | Snapchat |
+| `profile-tiktok-200x200.png` | 200×200 | TikTok |
+
+### Social Media Headers (`brand_kit/headers/`)
+| File | Size | Platform |
+|------|------|----------|
+| `header-twitter-1500x500.png` | 1500×500 | Twitter / X cover |
+| `header-facebook-820x312.png` | 820×312 | Facebook cover |
+| `header-linkedin-1584x396.png` | 1584×396 | LinkedIn personal cover |
+| `header-linkedin-company-1128x191.png` | 1128×191 | LinkedIn company cover |
+| `header-youtube-2560x1440.png` | 2560×1440 | YouTube channel art |
+
+### Watermarks (`brand_kit/watermarks/`)
+| File | Opacity | Use |
+|------|---------|-----|
+| `watermark-badge-dark-30.png` | 30% | Overlay on light backgrounds |
+| `watermark-badge-light-30.png` | 30% | Overlay on dark backgrounds |
+| `watermark-badge-gold-50.png` | 50% | Documents and presentations |
+| `watermark-text-dark-25.png` | 25% | Subtle text watermark |
+| `watermark-full-30.png` | 30% | Full logo watermark |
+
+---
+
 ## Business Information
 
 | Field | Detail |
