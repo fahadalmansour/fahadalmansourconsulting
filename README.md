@@ -6,7 +6,7 @@
 <img src="logo_full.png" alt="Fahad Almansour Logo" width="560"/>
 
 **Saudi Establishment · Electronic Services & E-Commerce**  
-CR #7053130576 · [fahadsaadalmansourforelectronicservices.com](https://fahadsaadalmansourforelectronicservices.com)
+CR #7053130576 · [fahadalmansouroffice.com](https://fahadalmansouroffice.com)
 
 </div>
 
@@ -36,7 +36,7 @@ This repository is the **brand identity & logo system** for Fahad Saad Fahad Alm
 - **6 colour-theme variants** of the same vector artwork
 - Full-resolution **PNG exports** of the badge and complete logo
 - A **master SVG** file for use in design tools
-- Source for the **fahadsaadalmansourforelectronicservices.com** website
+- Source for the **fahadalmansouroffice.com** website
 
 ---
 
@@ -419,7 +419,7 @@ open brand_kit/email/email_signature.html
 | **Tagline (EN)** | Saudi Establishment Specializing in Electronic Services & E-Commerce |
 | **Type** | Saudi Establishment (مؤسسة سعودية) |
 | **CR** | #7053130576 |
-| **Domain** | fahadsaadalmansourforelectronicservices.com |
+| **Domain** | fahadalmansouroffice.com |
 | **SSL** | Active (certificate provisioned) |
 
 ---
