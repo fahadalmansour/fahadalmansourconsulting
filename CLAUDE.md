@@ -32,7 +32,7 @@ python3 generate_brand_kit.py
 python3 generate_official.py
 ```
 
-Both scripts use **absolute paths** hardcoded to `/Users/fahadalmansour/fahad/` — run them from any directory.
+Both scripts use **absolute paths** hardcoded to `/Users/fahadalmansour/fahad/` (the original working directory, not this clone location). Before running either script, patch `BASE_DIR` / `OUT` at the top of each file to point at the actual repo root (e.g. `/Users/fahadalmansour/sites/fahadalmansourconsulting`), otherwise all reads and writes will target the wrong path and fail silently.
 
 Source images they read from:
 - `badge_logo.png` — 568×624 RGBA, the primary badge source
@@ -106,4 +106,4 @@ After editing `generate_official.py`, run it to regenerate all PNG assets.
 - **Never reply in Arabic in the CLI** — RTL breaks the terminal. Arabic content goes inside files only.
 - `brand_kit/official/` light = primary name, dark = `-dark` suffix. Do not invert this.
 - The interactive SVG files (`fahad_almansour_logo_gold.html`, `fahad_logo_variants.html`) are self-contained — no server needed, open directly in a browser.
-- `fahad-almansour.com/` is a git submodule (has its own `.git`). Commit website changes inside that directory separately, then update the submodule pointer in the parent repo.
+- `fahad-almansour.com/` is a **plain directory** (was a submodule, converted to tracked files in commit `8d59043`). Commit website changes normally within this repo — no submodule pointer to update.
