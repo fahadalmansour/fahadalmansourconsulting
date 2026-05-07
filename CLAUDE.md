@@ -107,3 +107,17 @@ After editing `generate_official.py`, run it to regenerate all PNG assets.
 - `brand_kit/official/` light = primary name, dark = `-dark` suffix. Do not invert this.
 - The interactive SVG files (`fahad_almansour_logo_gold.html`, `fahad_logo_variants.html`) are self-contained — no server needed, open directly in a browser.
 - `fahad-almansour.com/` is a **plain directory** (was a submodule, converted to tracked files in commit `8d59043`). Commit website changes normally within this repo — no submodule pointer to update.
+
+## Operations
+
+Full operations contract: `~/sites/_docs/fahadalmansourconsulting/` (`README.md`, `STACK.md`, `HOSTING.md`, `DEPLOY.md`, `AGENT.md`, `AUTOMATION.md`, `RUNBOOK.md`).
+
+Owning Claude agents: **`general-purpose`** (Python generators) + **`frontend-developer`** (HTML mockups).
+
+This is a **brand-asset source** repo — paired with the runnable Next.js site at `fahad-consulting.git`.
+
+Forbidden: running the Python scripts without first patching `BASE_DIR` / `OUT` (silent path errors); manually editing the base64 badge data URI in `fahad-almansour.com/index.html` (re-run the generator instead).
+
+CI: `.github/workflows/claude-ops.yml` (generator compile-check + drift detection + secrets scan).
+
+The Notion mirror lives in the **NeoTech Sites & Repos** database.
