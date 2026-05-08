@@ -1,0 +1,64 @@
+name: claude-ops
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generators-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow + numpy
+        run: pip install Pillow numpy
+      - name: Compile-check generators
+        run: |
+          python -m py_compile generate_brand_kit.py
+          python -m py_compile generate_official.py
+
+  brand-kit-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow + numpy
+        run: pip install Pillow numpy
+      - name: Patch BASE_DIR / OUT and re-run generators
+        run: |
+          set -e
+          cp generate_brand_kit.py /tmp/_gen_brand.py
+          cp generate_official.py /tmp/_gen_official.py
+          sed -i "s|/Users/fahadalmansour/fahad|$GITHUB_WORKSPACE|g" /tmp/_gen_brand.py /tmp/_gen_official.py
+          # Run only if Pillow+numpy can locate badge_logo.png
+          if [ -f badge_logo.png ]; then
+            python /tmp/_gen_brand.py || echo "::warning::generate_brand_kit failed — fonts likely missing on Linux runner"
+            python /tmp/_gen_official.py || echo "::warning::generate_official failed — fonts likely missing"
+          fi
+        continue-on-error: true
+      - name: Drift check
+        run: |
+          if ! git diff --quiet -- brand_kit/ fahad-almansour.com/ 2>/dev/null; then
+            echo "::warning::Generated assets drift detected. Re-run generators locally and commit."
+            git diff --stat -- brand_kit/ fahad-almansour.com/ || true
+          fi
+        continue-on-error: true
+
+  secrets-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

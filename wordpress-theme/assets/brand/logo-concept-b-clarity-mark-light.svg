@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- Concept B: Clarity Mark - Light version for dark backgrounds -->
+
+  <!-- Left vertical stroke -->
+  <path d="M10 40 L10 8" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Diagonal connector (ascending) -->
+  <path d="M10 40 L38 8" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Right vertical stroke -->
+  <path d="M38 40 L38 8" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Subtle highlight on ascent -->
+  <circle cx="24" cy="24" r="2" fill="#34D399" opacity="0.8"/>
+</svg>

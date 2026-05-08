@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>مكتب فهد المنصور للاستشارات</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <style>
+        /* Reset */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        /* Base */
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #f8fafc;
+            font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            direction: rtl;
+        }
+
+        /* Header */
+        .email-header {
+            background-color: #0f172a;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        .email-header img {
+            max-height: 40px;
+            width: auto;
+        }
+        .email-header .company-name {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+        .email-header .company-name-ar {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 5px 0 0 0;
+        }
+        .email-header .tagline {
+            color: #94a3b8;
+            font-size: 13px;
+            margin: 5px 0 0 0;
+        }
+
+        /* Body */
+        .email-body {
+            background-color: #ffffff;
+            padding: 40px;
+            text-align: right;
+        }
+        .email-body h1 {
+            color: #0f172a;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            line-height: 1.5;
+        }
+        .email-body h2 {
+            color: #0f172a;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .email-body p {
+            color: #475569;
+            font-size: 15px;
+            line-height: 1.9;
+            margin: 0 0 15px 0;
+        }
+        .email-body ul, .email-body ol {
+            color: #475569;
+            font-size: 15px;
+            line-height: 1.9;
+            margin: 0 0 15px 0;
+            padding-right: 20px;
+            padding-left: 0;
+        }
+        .email-body li {
+            margin-bottom: 10px;
+        }
+        .email-body a {
+            color: #0f172a;
+            text-decoration: underline;
+        }
+
+        /* Greeting */
+        .greeting {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        /* Button */
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #0f172a;
+            color: #ffffff !important;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .btn-primary:hover {
+            background-color: #1e293b;
+        }
+
+        /* Info Box */
+        .info-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .info-box p {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+        }
+        .info-box strong {
+            color: #0f172a;
+        }
+
+        /* Signature */
+        .signature {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .signature p {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+        }
+        .signature .name {
+            color: #0f172a;
+            font-weight: 700;
+        }
+        .signature .title {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        .email-footer {
+            background-color: #f8fafc;
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            direction: ltr;
+        }
+        .email-footer .contact-info {
+            margin-bottom: 20px;
+            direction: ltr;
+        }
+        .email-footer .contact-info a {
+            color: #0f172a;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+        .email-footer .social-links {
+            margin-bottom: 20px;
+        }
+        .email-footer .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+        }
+        .email-footer .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+        .email-footer .legal {
+            color: #94a3b8;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .email-footer .legal a {
+            color: #64748b;
+            text-decoration: underline;
+        }
+        .email-footer .address {
+            color: #64748b;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            .email-header, .email-body, .email-footer {
+                padding: 25px 20px !important;
+            }
+            .email-body h1 {
+                font-size: 22px !important;
+            }
+        }
+    </style>
+    <!-- Google Fonts for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center style="width: 100%; background-color: #f8fafc; padding: 40px 0;">
+        <!--[if mso | IE]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center">
+        <tr>
+        <td>
+        <![endif]-->
+
+        <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;">
+
+            <!-- HEADER -->
+            <tr>
+                <td class="email-header">
+                    <p class="company-name">Fahad Almansour Consultant Office (FSC)</p>
+                    <p class="company-name-ar">مكتب فهد المنصور للاستشارات</p>
+                    <p class="tagline">استشارات تقنية المعلومات الاحترافية</p>
+                </td>
+            </tr>
+
+            <!-- BODY -->
+            <tr>
+                <td class="email-body">
+
+                    <p class="greeting">مرحباً [اسم العميل]،</p>
+
+                    <h1>شكراً لتواصلك معنا</h1>
+
+                    <p>
+                        شكراً لتواصلك مع مكتب فهد المنصور للاستشارات. استلمنا طلبك للمكالمة الاستكشافية
+                        ونتطلع لمعرفة المزيد عن تحدياتك وأهدافك في مجال تقنية المعلومات.
+                    </p>
+
+                    <h2>ماذا يحدث الآن؟</h2>
+
+                    <ol>
+                        <li><strong>المراجعة</strong> - نراجع طلبك (نفس يوم العمل)</li>
+                        <li><strong>التواصل</strong> - راح نتواصل معك عبر الإيميل أو الواتساب لتحديد موعد</li>
+                        <li><strong>المكالمة الاستكشافية</strong> - محادثة 15-30 دقيقة لفهم احتياجاتك</li>
+                        <li><strong>الخطوات القادمة</strong> - إذا توافقنا، نقترح جلسة استراتيجية</li>
+                    </ol>
+
+                    <div class="info-box">
+                        <p><strong>تفاصيل طلبك:</strong></p>
+                        <p>الخدمة المطلوبة: [الخدمات]</p>
+                        <p>الجدول الزمني: [الجدول]</p>
+                        <p>تاريخ الإرسال: [التاريخ/الوقت]</p>
+                    </div>
+
+                    <p>
+                        في هذه الأثناء، تقدر تستكشف موقعنا لتعرف أكثر عن منهجنا في الاستشارات
+                        وأنواع القرارات اللي نساعد الشركات فيها.
+                    </p>
+
+                    <center>
+                        <a href="https://fahadalmansourconsulting.com" class="btn-primary">
+                            زُر موقعنا
+                        </a>
+                    </center>
+
+                    <p>
+                        إذا عندك أي أسئلة عاجلة، لا تتردد في الرد على هذا الإيميل
+                        أو التواصل معنا مباشرة.
+                    </p>
+
+                    <div class="signature">
+                        <p class="name">فريق مكتب فهد المنصور للاستشارات</p>
+                        <p class="title">استشارات قرارات تقنية المعلومات</p>
+                        <p style="margin-top: 10px; direction: ltr; text-align: right;">
+                            <a href="mailto:info@fahadalmansourconsulting.com">info@fahadalmansourconsulting.com</a> |
+                            <a href="tel:+966570131122">+966 57 013 1122</a>
+                        </p>
+                    </div>
+
+                </td>
+            </tr>
+
+            <!-- FOOTER -->
+            <tr>
+                <td class="email-footer">
+
+                    <div class="contact-info">
+                        <a href="mailto:info@fahadalmansourconsulting.com">info@fahadalmansourconsulting.com</a>
+                        <span style="color: #cbd5e1;">|</span>
+                        <a href="tel:+966570131122">+966 57 013 1122</a>
+                        <span style="color: #cbd5e1;">|</span>
+                        <a href="https://fahadalmansourconsulting.com">fahadalmansourconsulting.com</a>
+                    </div>
+
+                    <div class="address">
+                        المملكة العربية السعودية
+                    </div>
+
+                    <p class="legal" style="margin-top: 20px;">
+                        &copy; 2026 مكتب فهد المنصور للاستشارات. جميع الحقوق محفوظة.<br>
+                        <a href="https://fahadalmansourconsulting.com/privacy/">سياسة الخصوصية</a> |
+                        <a href="https://fahadalmansourconsulting.com/terms/">شروط الخدمة</a>
+                    </p>
+
+                    <p class="legal" style="margin-top: 15px;">
+                        استلمت هذا الإيميل لأنك أرسلت استفسار عبر موقعنا.<br>
+                        إذا لم تقم بهذا الطلب، يرجى تجاهل هذا الإيميل.
+                    </p>
+
+                </td>
+            </tr>
+
+        </table>
+
+        <!--[if mso | IE]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </center>
+</body>
+</html>

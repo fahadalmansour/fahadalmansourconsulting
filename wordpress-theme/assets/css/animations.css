@@ -1,0 +1,301 @@
+/* ========================================
+   Creative Enhancements: Animations & Effects
+   ======================================== */
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-left {
+    animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered Animations */
+.grid>*:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.grid>*:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.grid>*:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.grid>*:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.grid>*:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.grid>*:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+/* ========================================
+   Premium Card Styles
+   ======================================== */
+.card,
+.card-alt,
+.bg-white.rounded-xl,
+.bg-white.rounded-2xl,
+.bg-slate-50.rounded-2xl {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover,
+.card-alt:hover,
+.bg-white.rounded-xl:hover,
+.bg-white.rounded-2xl:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.15),
+        0 8px 16px -8px rgba(15, 23, 42, 0.1);
+}
+
+/* Premium Button Styles */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(15, 23, 42, 0.4);
+}
+
+/* ========================================
+   Section Enhancements
+   ======================================== */
+
+/* Hero Section Polish - Clean solid color */
+section.py-20.bg-white h1 {
+    color: #0F172A;
+}
+
+/* Why Us Section - Dark Theme Enhancement */
+#why-us {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#why-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+/* Trust Badges Enhancement */
+#trust .bg-white {
+    position: relative;
+    overflow: hidden;
+}
+
+#trust .bg-white::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.8) 50%, transparent 60%);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#trust .bg-white:hover::before {
+    opacity: 0.3;
+    animation: shimmer 1.5s ease-in-out;
+}
+
+/* Insights Cards Enhancement */
+#latest-insights article {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#latest-insights article:hover {
+    transform: translateY(-8px);
+}
+
+#latest-insights .aspect-video {
+    position: relative;
+    overflow: hidden;
+}
+
+#latest-insights .aspect-video::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#latest-insights article:hover .aspect-video::after {
+    opacity: 1;
+}
+
+/* ========================================
+   Typography Refinements
+   ======================================== */
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: -0.02em;
+}
+
+.text-4xl {
+    line-height: 1.1;
+}
+
+/* Smooth Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   Footer Enhancement
+   ======================================== */
+.site-footer {
+    position: relative;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1000px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+}
+
+/* ========================================
+   Performance: Reduce Motion
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

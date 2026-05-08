@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSC Logo - Final Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-navy: #0F172A;
+      --brand-slate-dark: #334155;
+      --brand-slate-mid: #64748B;
+      --brand-slate-light: #94A3B8;
+      --brand-white: #F8FAFC;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+    }
+
+    /* Header */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #e2e8f0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+    }
+
+    .header-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .fsc-logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+    }
+
+    .fsc-logo:hover .logo-mark {
+      transform: scale(1.02);
+    }
+
+    .logo-mark {
+      transition: transform 0.2s ease;
+    }
+
+    .logo-text {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .logo-fsc {
+      font-weight: 700;
+      color: var(--brand-navy);
+    }
+
+    .logo-name {
+      font-weight: 500;
+      color: var(--brand-slate-mid);
+    }
+
+    .logo-text.light .logo-fsc {
+      color: #fff;
+    }
+
+    .logo-text.light .logo-name {
+      color: var(--brand-slate-light);
+    }
+
+    /* Nav */
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      color: #334155;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: var(--brand-navy);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    /* Hero */
+    main { padding-top: 80px; }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-navy), #1e293b);
+      padding: 100px 24px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--brand-slate-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Showcase */
+    .showcase {
+      padding: 60px 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .showcase h2 {
+      font-size: 1.25rem;
+      color: var(--brand-navy);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .logo-box {
+      padding: 40px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-box.light {
+      background: #f1f5f9;
+    }
+
+    .logo-box.dark {
+      background: var(--brand-navy);
+    }
+
+    .logo-box-label {
+      font-size: 11px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .logo-box.dark .logo-box-label {
+      color: var(--brand-slate-light);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 60px 24px;
+    }
+
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-text {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-top: 16px;
+    }
+
+    .footer-links h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--brand-navy);
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #64748b;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 40px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .btn-primary { display: none; }
+      .footer-content { grid-template-columns: 1fr; }
+      .logo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <a href="#" class="fsc-logo">
+        <svg class="logo-mark" width="36" height="36" viewBox="0 0 48 48" fill="none">
+          <line x1="28" y1="14" x2="21" y2="3" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="38" y2="6" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="42" y2="18" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="16" y2="28" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="5" y2="21" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="8" y2="40" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="28" y2="38" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="38" x2="38" y2="44" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="28" cy="14" r="4.5" fill="#4A90D9"/><circle cx="16" cy="28" r="4" fill="#4A90D9"/><circle cx="21" cy="3" r="2.5" fill="#4A90D9"/><circle cx="38" cy="6" r="2.5" fill="#4A90D9"/><circle cx="42" cy="18" r="2.5" fill="#4A90D9"/><circle cx="5" cy="21" r="2.5" fill="#4A90D9"/><circle cx="8" cy="40" r="2.5" fill="#4A90D9"/><circle cx="28" cy="38" r="2.5" fill="#4A90D9"/><circle cx="38" cy="44" r="2.5" fill="#4A90D9"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-fsc">FSC</span><span class="logo-name"> | Fahad Almansour</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#">How we work</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="btn-primary">Request Discussion</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Independent IT Decision Advisory</h1>
+      <p>Professional IT consulting services for cloud strategy, digital transformation, and cybersecurity.</p>
+    </section>
+
+    <!-- Logo Showcase -->
+    <div class="showcase">
+      <h2>Logo Variations</h2>
+      <div class="logo-grid">
+
+        <!-- Light Background -->
+        <div class="logo-box light">
+          <a href="#" class="fsc-logo">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <line x1="28" y1="14" x2="21" y2="3" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="38" y2="6" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="42" y2="18" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="16" y2="28" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="5" y2="21" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="8" y2="40" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="28" y2="38" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="38" x2="38" y2="44" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="28" cy="14" r="4.5" fill="#4A90D9"/><circle cx="16" cy="28" r="4" fill="#4A90D9"/><circle cx="21" cy="3" r="2.5" fill="#4A90D9"/><circle cx="38" cy="6" r="2.5" fill="#4A90D9"/><circle cx="42" cy="18" r="2.5" fill="#4A90D9"/><circle cx="5" cy="21" r="2.5" fill="#4A90D9"/><circle cx="8" cy="40" r="2.5" fill="#4A90D9"/><circle cx="28" cy="38" r="2.5" fill="#4A90D9"/><circle cx="38" cy="44" r="2.5" fill="#4A90D9"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-fsc">FSC</span><span class="logo-name"> | Fahad Almansour</span>
+            </span>
+          </a>
+          <span class="logo-box-label">Light Background</span>
+        </div>
+
+        <!-- Dark Background -->
+        <div class="logo-box dark">
+          <a href="#" class="fsc-logo">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <line x1="28" y1="14" x2="21" y2="3" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="38" y2="6" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="42" y2="18" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="16" y2="28" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="5" y2="21" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="8" y2="40" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="28" y2="38" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="38" x2="38" y2="44" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="28" cy="14" r="4.5" fill="#ffffff"/><circle cx="16" cy="28" r="4" fill="#ffffff"/><circle cx="21" cy="3" r="2.5" fill="#ffffff"/><circle cx="38" cy="6" r="2.5" fill="#ffffff"/><circle cx="42" cy="18" r="2.5" fill="#ffffff"/><circle cx="5" cy="21" r="2.5" fill="#ffffff"/><circle cx="8" cy="40" r="2.5" fill="#ffffff"/><circle cx="28" cy="38" r="2.5" fill="#ffffff"/><circle cx="38" cy="44" r="2.5" fill="#ffffff"/>
+            </svg>
+            <span class="logo-text light">
+              <span class="logo-fsc">FSC</span><span class="logo-name"> | Fahad Almansour</span>
+            </span>
+          </a>
+          <span class="logo-box-label">Dark Background</span>
+        </div>
+
+        <!-- Mark Only -->
+        <div class="logo-box light">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <line x1="28" y1="14" x2="21" y2="3" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="38" y2="6" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="42" y2="18" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="16" y2="28" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="5" y2="21" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="8" y2="40" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="28" y2="38" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="38" x2="38" y2="44" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="28" cy="14" r="4.5" fill="#4A90D9"/><circle cx="16" cy="28" r="4" fill="#4A90D9"/><circle cx="21" cy="3" r="2.5" fill="#4A90D9"/><circle cx="38" cy="6" r="2.5" fill="#4A90D9"/><circle cx="42" cy="18" r="2.5" fill="#4A90D9"/><circle cx="5" cy="21" r="2.5" fill="#4A90D9"/><circle cx="8" cy="40" r="2.5" fill="#4A90D9"/><circle cx="28" cy="38" r="2.5" fill="#4A90D9"/><circle cx="38" cy="44" r="2.5" fill="#4A90D9"/>
+          </svg>
+          <span class="logo-box-label">Mark Only</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <a href="#" class="fsc-logo">
+          <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
+            <line x1="28" y1="14" x2="21" y2="3" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="38" y2="6" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="42" y2="18" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="14" x2="16" y2="28" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="5" y2="21" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="8" y2="40" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="28" x2="28" y2="38" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="38" x2="38" y2="44" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="28" cy="14" r="4.5" fill="#4A90D9"/><circle cx="16" cy="28" r="4" fill="#4A90D9"/><circle cx="21" cy="3" r="2.5" fill="#4A90D9"/><circle cx="38" cy="6" r="2.5" fill="#4A90D9"/><circle cx="42" cy="18" r="2.5" fill="#4A90D9"/><circle cx="5" cy="21" r="2.5" fill="#4A90D9"/><circle cx="8" cy="40" r="2.5" fill="#4A90D9"/><circle cx="28" cy="38" r="2.5" fill="#4A90D9"/><circle cx="38" cy="44" r="2.5" fill="#4A90D9"/>
+          </svg>
+          <span class="logo-text" style="font-size: 1.2rem;">
+            <span class="logo-fsc">FSC</span><span class="logo-name"> | Fahad Almansour</span>
+          </span>
+        </a>
+        <p class="footer-text" style="margin-top: 4px; color: #94a3b8; font-size: 13px;">Consultant Office</p>
+        <p class="footer-text">Professional IT consulting services for businesses. Strategic technology guidance and digital transformation expertise.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Disclaimer</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="#">info@fahadalmansourconsulting.com</a>
+        <a href="#">+966 57 013 1122</a>
+        <a href="#">Riyadh, Saudi Arabia</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2024 Fahad Almansour Consultant Office. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
