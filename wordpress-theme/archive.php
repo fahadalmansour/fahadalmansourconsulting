@@ -180,7 +180,7 @@ $is_rtl = is_rtl();
             <!-- Pagination -->
             <nav class="navigation posts-navigation mt-12 pt-8 border-t border-slate-200">
                 <?php
-                the_posts_pagination(array(
+                the_posts_pagination([
                     'mid_size'  => 2,
                     'prev_text' => sprintf(
                         '<span class="flex items-center gap-2"><svg class="w-4 h-4 %s" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>%s</span>',
@@ -192,7 +192,7 @@ $is_rtl = is_rtl();
                         esc_html__('Next', 'fsc'),
                         $is_rtl ? 'rotate-180' : ''
                     ),
-                ));
+                ]);
                 ?>
             </nav>
 
@@ -226,11 +226,11 @@ $is_rtl = is_rtl();
                 </h2>
                 <div class="flex flex-wrap gap-3">
                     <?php
-                    $categories = get_categories(array(
+                    $categories = get_categories([
                         'orderby' => 'count',
-                        'order' => 'DESC',
-                        'number' => 10,
-                    ));
+                        'order'   => 'DESC',
+                        'number'  => 10,
+                    ]);
                     foreach ($categories as $cat) :
                     ?>
                         <a href="<?php echo esc_url(get_category_link($cat->term_id)); ?>"

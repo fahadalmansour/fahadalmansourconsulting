@@ -541,7 +541,7 @@ function fsc_seo_meta_tags() {
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
     <meta property="og:site_name" content="Fahad Almansour Consulting">
-    <meta property="og:locale" content="<?php echo $is_rtl ? 'ar_SA' : 'en_US'; ?>">
+    <meta property="og:locale" content="<?php echo esc_attr($is_rtl ? 'ar_SA' : 'en_US'); ?>">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -552,7 +552,7 @@ function fsc_seo_meta_tags() {
 
     <!-- Geo Tags - Riyadh, Saudi Arabia -->
     <meta name="geo.region" content="SA-01">
-    <meta name="geo.placename" content="<?php echo $is_rtl ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'; ?>">
+    <meta name="geo.placename" content="<?php echo esc_attr($is_rtl ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'); ?>">
     <meta name="geo.position" content="24.7136;46.6753">
     <meta name="ICBM" content="24.7136, 46.6753">
 
@@ -918,7 +918,7 @@ function fsc_skip_links() {
     $is_rtl = is_rtl();
     ?>
     <a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-slate-900 text-white px-4 py-2 rounded-lg z-[100]" href="#primary">
-        <?php echo $is_rtl ? 'تخطي إلى المحتوى الرئيسي' : 'Skip to main content'; ?>
+        <?php echo esc_html($is_rtl ? 'تخطي إلى المحتوى الرئيسي' : 'Skip to main content'); ?>
     </a>
     <?php
 }
