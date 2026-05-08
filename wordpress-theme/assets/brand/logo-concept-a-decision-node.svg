@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- Concept A: Decision Node -->
+  <!-- Multiple options converging to a single clear decision -->
+
+  <!-- Three input nodes (options) -->
+  <circle cx="8" cy="8" r="4" fill="#0F172A"/>
+  <circle cx="24" cy="8" r="4" fill="#0F172A"/>
+  <circle cx="40" cy="8" r="4" fill="#0F172A"/>
+
+  <!-- Connecting paths to central junction -->
+  <path d="M8 12 L24 24" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M24 12 L24 24" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 12 L24 24" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Central junction node -->
+  <circle cx="24" cy="24" r="5" fill="#0F172A"/>
+
+  <!-- Path to decision -->
+  <path d="M24 29 L24 38" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Decision output (emphasized square) -->
+  <rect x="18" y="38" width="12" height="6" rx="1" fill="#0F172A"/>
+</svg>

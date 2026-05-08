@@ -1,0 +1,2456 @@
+# Arabic Translation for FSC Theme
+# Copyright (C) 2026 Fahad Almansour Consultant Office
+# This file is distributed under the same license as the FSC theme.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FSC Theme 2.0.0\n"
+"Report-Msgid-Bugs-To: info@fahadalmansourconsulting.com\n"
+"POT-Creation-Date: 2026-01-27 00:00+0000\n"
+"PO-Revision-Date: 2026-01-27 00:00+0000\n"
+"Last-Translator: Fahad Almansour Consultant Office\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+# ============================================
+# Theme Name & Branding
+# ============================================
+msgid "Fahad Almansour Consulting"
+msgstr "مكتب فهد المنصور للاستشارات"
+
+msgid "Fahad Almansour Consultant Office"
+msgstr "مكتب فهد المنصور للاستشارات"
+
+# ============================================
+# Hero Section
+# ============================================
+msgid "Independent IT Decision Consulting"
+msgstr "استشارات مستقلة لقرارات تقنية المعلومات"
+
+msgid "We help organizations make informed technology decisions. Structured analysis. Documented options. Clear recommendations. Then we step aside."
+msgstr "نساعدك في اتخاذ قرارات تقنية مدروسة. تحليل منظم. خيارات واضحة. توصيات محددة. وبعدها القرار لك."
+
+msgid "Request a Decision Session"
+msgstr "احجز جلسة استشارية"
+
+msgid "See How We Work"
+msgstr "تعرف على أسلوبنا"
+
+# Trust Badges
+msgid "No product sales"
+msgstr "لا نبيع منتجات"
+
+msgid "We have no inventory, no licenses, no commissions"
+msgstr "ليس لدينا مخزون، لا تراخيص، لا عمولات"
+
+msgid "No implementation"
+msgstr "لا ننفذ مشاريع"
+
+msgid "We advise; your team or vendors implement"
+msgstr "نقدم الاستشارة؛ فريقكم أو المزودون ينفذون"
+
+msgid "You decide"
+msgstr "القرار النهائي لك"
+
+msgid "The final decision is always yours"
+msgstr "القرار النهائي دائماً لكم"
+
+# Hero Section - New Business Model
+msgid "Your Complete Technology Partner"
+msgstr "شريكك التقني المتكامل"
+
+msgid "We bridge the gap between your business needs and the complex IT market. Assessment, solution design, and certified hardware and software — delivered ready for your environment."
+msgstr "نسد الفجوة بين احتياجات عملك وسوق تقنية المعلومات المعقد. تقييم، تصميم حلول، وأجهزة وبرامج معتمدة — تُسلّم جاهزة لبيئتك."
+
+msgid "Request a Consultation"
+msgstr "طلب استشارة"
+
+msgid "End-to-End Solutions"
+msgstr "حلول متكاملة"
+
+msgid "From assessment to delivery, we handle every step of your technology journey"
+msgstr "من التقييم إلى التسليم، نتولى كل خطوة في رحلتك التقنية"
+
+msgid "Certified Products"
+msgstr "منتجات معتمدة"
+
+msgid "Direct access to certified hardware and software from leading manufacturers"
+msgstr "وصول مباشر لأجهزة وبرامج معتمدة من كبرى الشركات المصنعة"
+
+msgid "Single Accountability"
+msgstr "مسؤولية واحدة"
+
+msgid "One partner responsible for your entire project — no finger-pointing"
+msgstr "شريك واحد مسؤول عن مشروعك بالكامل — بلا تبادل اتهامات"
+
+# ============================================
+# How We Work Section
+# ============================================
+msgid "A Structured Approach to Technology Decisions"
+msgstr "منهجية منظمة لقرارات تقنية المعلومات"
+
+msgid "Our methodology ensures informed, documented decisions."
+msgstr "منهجيتنا تضمن قرارات مدروسة وموثقة."
+
+msgid "Context & Constraints"
+msgstr "فهم السياق والمتطلبات"
+
+msgid "We understand your business objectives, technical environment, regulatory requirements, and organizational constraints."
+msgstr "نفهم أهداف عملك، بيئتك التقنية، متطلبات الجهات الرقابية، وظروف منشأتك."
+
+msgid "Options Development"
+msgstr "تطوير البدائل"
+
+msgid "We develop 2-3 viable approaches, each with distinct trade-offs in cost, risk, timeline, and capability."
+msgstr "نطور ٢-٣ حلول قابلة للتطبيق، لكل منها مفاضلات مختلفة في التكلفة والمخاطر والمدة الزمنية والإمكانيات."
+
+msgid "Trade-off Analysis"
+msgstr "تحليل المفاضلات"
+
+msgid "We document the implications of each option clearly, enabling informed comparison without bias toward any vendor or approach."
+msgstr "نوثّق نتائج كل خيار بوضوح، مما يتيح المقارنة المدروسة دون انحياز لأي مزود أو حل."
+
+msgid "Decision Framework"
+msgstr "إطار اتخاذ القرار"
+
+msgid "We deliver a structured recommendation with rationale, risk considerations, and implementation guidance for your team."
+msgstr "نقدم توصية منظمة مع المسوغات، واعتبارات المخاطر، وإرشادات التنفيذ لفريقكم."
+
+# ============================================
+# Decision Areas Section
+# ============================================
+msgid "Where We Provide Guidance"
+msgstr "أين نقدم الاستشارة"
+
+msgid "Cloud & Infrastructure"
+msgstr "الحوسبة السحابية والبنية التحتية"
+
+msgid "Strategic guidance for cloud adoption, migration approaches, and hybrid architecture decisions. We help you evaluate providers, assess readiness, and plan transitions."
+msgstr "إرشاد استراتيجي لقرارات تبني السحابة، خطط الترحيل، وقرارات البنية الهجينة. نساعدكم في تقييم مزودي الخدمات السحابية، تقييم الجاهزية، والتخطيط للانتقال."
+
+msgid "Digital Transformation"
+msgstr "التحول الرقمي"
+
+msgid "Technology roadmap development for business modernization. We assess your current state, identify automation opportunities, and recommend platform approaches."
+msgstr "تطوير خارطة طريق تقنية لتحديث الأعمال. نقيّم وضعكم الحالي، نحدد فرص الأتمتة، ونوصي بالمنصات المناسبة."
+
+msgid "Cybersecurity & Compliance"
+msgstr "الأمن السيبراني والامتثال"
+
+msgid "Security posture assessment and compliance readiness guidance. We help you select frameworks, prioritize investments, and evaluate security vendors."
+msgstr "تقييم الوضع الأمني وجاهزية الامتثال. نساعدكم في اختيار الأطر المناسبة، ترتيب أولويات الاستثمارات، وتقييم مزودي الحلول الأمنية."
+
+# Solution Areas - New Business Model
+msgid "Our Solutions"
+msgstr "حلولنا"
+
+msgid "End-to-end technology solutions. We assess, design, procure, and deliver."
+msgstr "حلول تقنية متكاملة. نقيّم ونصمم ونوفر ونسلّم."
+
+msgid "We assess your infrastructure, design the right cloud or on-premise solution, and supply the hardware and software to make it happen."
+msgstr "نقيّم بنيتك التحتية، نصمم الحل السحابي أو المحلي الأمثل، ونوفر الأجهزة والبرامج اللازمة لتحقيقه."
+
+msgid "Security & Compliance"
+msgstr "الأمن والامتثال"
+
+msgid "Security assessments, ISO gap analysis, and certified security solutions — from evaluation through procurement."
+msgstr "تقييمات أمنية، تحليل فجوات ISO، وحلول أمنية معتمدة — من التقييم حتى التوريد."
+
+msgid "Digital Presence"
+msgstr "الحضور الرقمي"
+
+msgid "Domain, hosting, e-commerce platforms, and the tools your business needs — assessed, selected, and delivered."
+msgstr "النطاق، الاستضافة، منصات التجارة الإلكترونية، والأدوات التي يحتاجها عملك — مقيّمة ومختارة ومُسلّمة."
+
+msgid "Hardware & Software"
+msgstr "الأجهزة والبرامج"
+
+msgid "End-to-end procurement of certified technology products tailored to your exact requirements."
+msgstr "توريد شامل لمنتجات تقنية معتمدة مصممة وفق متطلباتك بدقة."
+
+msgid "Hardware procurement"
+msgstr "توريد الأجهزة"
+
+msgid "ISO compliance"
+msgstr "امتثال ISO"
+
+msgid "Security solutions"
+msgstr "حلول أمنية"
+
+msgid "E-commerce platforms"
+msgstr "منصات التجارة الإلكترونية"
+
+msgid "Website hosting"
+msgstr "استضافة المواقع"
+
+msgid "Digital tools"
+msgstr "الأدوات الرقمية"
+
+msgid "Servers & networking"
+msgstr "الخوادم والشبكات"
+
+msgid "Software licenses"
+msgstr "تراخيص البرامج"
+
+msgid "Workstations"
+msgstr "محطات العمل"
+
+# ============================================
+# What You Receive Section
+# ============================================
+msgid "Deliverables from Every Engagement"
+msgstr "المخرجات من كل مشروع استشاري"
+
+msgid "Decision Summary Document"
+msgstr "وثيقة ملخص القرار"
+
+msgid "A structured report outlining the recommended approach with clear rationale and risk considerations."
+msgstr "تقرير منظم يوضح الحل الموصى به مع المسوغات واعتبارات المخاطر."
+
+msgid "Options Comparison Matrix"
+msgstr "مصفوفة مقارنة البدائل"
+
+msgid "Side-by-side analysis of 2-3 approaches with trade-offs in cost, timeline, risk, and capability."
+msgstr "تحليل مفصّل لـ٢-٣ حلول مع مفاضلات التكلفة والمدة الزمنية والمخاطر والإمكانيات."
+
+msgid "Requirements & Scope Map"
+msgstr "وثيقة المتطلبات ونطاق العمل"
+
+msgid "Documented business and technical requirements to guide vendor conversations and implementation planning."
+msgstr "متطلبات الأعمال والمتطلبات التقنية الموثقة لتوجيه مفاوضات المزودين وتخطيط التنفيذ."
+
+msgid "Vendor Evaluation Framework"
+msgstr "إطار تقييم المزودين"
+
+msgid "Criteria and questions for evaluating vendors objectively, based on your specific requirements."
+msgstr "معايير وأسئلة لتقييم المزودين بموضوعية، مبنية على متطلباتكم المحددة."
+
+msgid "Implementation Considerations"
+msgstr "إرشادات التنفيذ"
+
+msgid "High-level guidance on sequencing, dependencies, and critical success factors for your implementation team."
+msgstr "توجيه عالي المستوى حول التسلسل والتبعيات وعوامل النجاح الحرجة لفريق التنفيذ لديكم."
+
+msgid "What you receive"
+msgstr "ما تحصل عليه"
+
+msgid "Structured deliverables designed to support your decision-making."
+msgstr "مخرجات منظمة مصممة لدعم اتخاذ قراراتك."
+
+# Deliverables - New Business Model
+msgid "What You Receive"
+msgstr "ما تحصل عليه"
+
+msgid "Structured deliverables from assessment through delivery."
+msgstr "مخرجات منظمة من التقييم حتى التسليم."
+
+msgid "Requirements Assessment Report"
+msgstr "تقرير تقييم المتطلبات"
+
+msgid "Detailed analysis of your business and technology needs with clear recommendations."
+msgstr "تحليل مفصل لاحتياجاتك التجارية والتقنية مع توصيات واضحة."
+
+msgid "Solution Design Document"
+msgstr "وثيقة تصميم الحل"
+
+msgid "Architecture and product specifications tailored to your environment."
+msgstr "المعمارية ومواصفات المنتجات المصممة لبيئتك."
+
+msgid "Side-by-side comparison of evaluated alternatives with pricing."
+msgstr "مقارنة جنباً إلى جنب للبدائل المقيّمة مع الأسعار."
+
+msgid "Certified Hardware & Software"
+msgstr "أجهزة وبرامج معتمدة"
+
+msgid "Procured and delivered directly, ready for deployment in your environment."
+msgstr "مُوردة ومُسلّمة مباشرة، جاهزة للنشر في بيئتك."
+
+msgid "Single Point of Accountability"
+msgstr "نقطة مسؤولية واحدة"
+
+msgid "One partner from assessment through delivery and beyond."
+msgstr "شريك واحد من التقييم حتى التسليم وما بعده."
+
+# ============================================
+# Advisory Models Section
+# ============================================
+msgid "Engagement Options"
+msgstr "خيارات المشاركة"
+
+msgid "Decision Session (90 Minutes)"
+msgstr "جلسة القرار (٩٠ دقيقة)"
+
+msgid "A focused session to address a specific technology decision. Includes preparation, structured discussion, and a summary of recommendations. Ideal for organizations with a defined question seeking external validation."
+msgstr "جلسة مركزة لمعالجة قرار تقني محدد. تشمل التحضير، نقاش منظم، وملخص التوصيات. مثالية للمؤسسات التي لديها سؤال محدد وتبحث عن تحقق خارجي."
+
+msgid "Decision Advisory (2-6 Weeks)"
+msgstr "استشارات القرار (٢-٦ أسابيع)"
+
+msgid "A comprehensive engagement for complex decisions requiring research, stakeholder interviews, and detailed analysis. Includes all deliverables and presentation to leadership."
+msgstr "مشاركة شاملة للقرارات المعقدة التي تتطلب بحثاً، مقابلات أصحاب المصلحة، وتحليلاً مفصلاً. تشمل جميع المخرجات وعرضاً للقيادة."
+
+# Engagement Models - New Business Model
+msgid "Engagement Models"
+msgstr "نماذج التعاقد"
+
+msgid "Flexible options from assessment-only to full solution delivery."
+msgstr "خيارات مرنة من التقييم فقط إلى تسليم الحل الكامل."
+
+msgid "Assessment Only"
+msgstr "تقييم فقط"
+
+msgid "We assess your requirements and deliver a detailed report with recommendations. You handle procurement and implementation independently."
+msgstr "نقيّم متطلباتك ونقدم تقريراً مفصلاً بالتوصيات. تتولى أنت التوريد والتنفيذ بشكل مستقل."
+
+msgid "Ideal when you have internal procurement capability."
+msgstr "مثالي عندما لديك قدرة توريد داخلية."
+
+msgid "Most Popular"
+msgstr "الأكثر طلباً"
+
+msgid "Assessment + Procurement"
+msgstr "تقييم + توريد"
+
+msgid "We assess your needs, design the solution, and procure certified hardware and software — delivered ready for your environment."
+msgstr "نقيّم احتياجاتك، نصمم الحل، ونوفر الأجهزة والبرامج المعتمدة — تُسلّم جاهزة لبيئتك."
+
+msgid "The complete solution for most businesses."
+msgstr "الحل الكامل لمعظم الشركات."
+
+msgid "Enterprise Solution"
+msgstr "حل المؤسسات"
+
+msgid "Comprehensive partnership for large-scale projects: assessment, design, procurement, delivery, and ongoing strategic guidance."
+msgstr "شراكة شاملة للمشاريع الكبرى: تقييم، تصميم، توريد، تسليم، وإرشاد استراتيجي مستمر."
+
+msgid "For organizations with complex, multi-phase requirements."
+msgstr "للمنظمات ذات المتطلبات المعقدة والمتعددة المراحل."
+
+# ============================================
+# Boundaries Section
+# ============================================
+msgid "What We Do Not Do"
+msgstr "ما لا نقدمه"
+
+msgid "We believe clarity about scope prevents misaligned expectations."
+msgstr "نؤمن أن الوضوح في تحديد النطاق يضمن توافق التوقعات."
+
+msgid "No Implementation"
+msgstr "لا تنفيذ"
+
+msgid "We do not execute projects, write code, or manage deployments. We advise; your team or vendors implement."
+msgstr "لا ننفذ المشاريع، لا نطور الأنظمة، لا ندير عمليات النشر. نقدم الاستشارة؛ فريقكم أو المزودون المختارون ينفذون."
+
+msgid "No Managed Services"
+msgstr "لا خدمات مُدارة"
+
+msgid "We do not provide ongoing IT support, monitoring, or operations. Our role ends with the delivery of advisory deliverables."
+msgstr "لا نقدم دعم IT مستمر، أو مراقبة، أو تشغيل. دورنا ينتهي بتسليم المخرجات الاستشارية."
+
+msgid "No Product Sales"
+msgstr "لا بيع منتجات"
+
+msgid "We do not sell, resell, or distribute technology products. We have no inventory, no licenses to move, no commissions to earn."
+msgstr "لا نبيع، لا نعيد بيع، لا نوزع منتجات أو حلول تقنية. ليس لدينا مخزون، لا تراخيص، لا عمولات."
+
+msgid "No Guaranteed Outcomes"
+msgstr "لا ضمانات للنتائج"
+
+msgid "Technology decisions involve inherent uncertainty. We provide informed guidance, not promises of specific business results."
+msgstr "قرارات التقنية تنطوي على مخاطر طبيعية. نقدم توجيهاً مدروساً، لا وعوداً بنتائج محددة."
+
+msgid "Our independence is our value. We succeed when you make an informed decision—regardless of which option you choose."
+msgstr "استقلاليتنا هي قيمتنا الحقيقية. ننجح عندما تتخذون قراراً مدروساً — بغض النظر عن الخيار الذي تختارونه."
+
+# ============================================
+# Why Us Section
+# ============================================
+msgid "Why Organizations Choose Us"
+msgstr "لماذا تختارنا المؤسسات"
+
+msgid "Independence"
+msgstr "الاستقلالية"
+
+msgid "We have no vendor affiliations, no product inventory, and no implementation revenue. Our only incentive is providing accurate guidance."
+msgstr "ليس لدينا انتماءات لموردين، لا مخزون منتجات، لا إيرادات تنفيذ. حافزنا الوحيد هو تقديم إرشاد دقيق."
+
+msgid "Structure"
+msgstr "المنهجية"
+
+msgid "We deliver documented frameworks, not verbal opinions. Every recommendation is traceable to requirements and supported by analysis."
+msgstr "نقدم أطراً موثقة، لا آراء شفهية. كل توصية قابلة للتتبع إلى المتطلبات ومدعومة بالتحليل."
+
+msgid "Clarity"
+msgstr "الوضوح"
+
+msgid "We make complex technology decisions understandable. Trade-offs are explained in business terms, not technical jargon."
+msgstr "نجعل قرارات التقنية المعقدة مفهومة. المفاضلات تُشرح بلغة الأعمال، لا بالمصطلحات التقنية."
+
+msgid "Transparency"
+msgstr "الشفافية"
+
+msgid "We state our limitations upfront. If a question falls outside our expertise, we say so. If we have any potential conflict, we disclose it."
+msgstr "نذكر حدودنا مقدماً. إذا كان السؤال خارج خبرتنا، نقول ذلك. إذا كان لدينا أي تعارض محتمل، نفصح عنه."
+
+msgid "We combine technical expertise with structured methodology to deliver clarity."
+msgstr "نجمع بين الخبرة التقنية والمنهجية المنظمة لتقديم الوضوح."
+
+msgid "Years Industry Experience"
+msgstr "سنوات من الخبرة في المجال"
+
+msgid "Certified IT Professionals"
+msgstr "متخصصون معتمدون في تقنية المعلومات"
+
+# Why Procure Through FSC - New Business Model
+msgid "Why Procure Through FSC"
+msgstr "لماذا التوريد عبر FSC"
+
+msgid "Eliminate the risk of incompatibility or incorrect specifications"
+msgstr "تخلص من مخاطر عدم التوافق أو المواصفات الخاطئة"
+
+msgid "We assess your exact requirements before recommending anything"
+msgstr "نقيّم متطلباتك بدقة قبل التوصية بأي شيء"
+
+msgid "We design solutions that fit your specific environment"
+msgstr "نصمم حلولاً تناسب بيئتك المحددة"
+
+msgid "We supply only certified, compatible hardware and software"
+msgstr "نوفر فقط أجهزة وبرامج معتمدة ومتوافقة"
+
+msgid "We eliminate the gap between consulting and procurement"
+msgstr "نسد الفجوة بين الاستشارات والتوريد"
+
+msgid "One partner, one invoice, one point of accountability"
+msgstr "شريك واحد، فاتورة واحدة، نقطة مسؤولية واحدة"
+
+msgid "Other firms sell you products. We solve your problems — then deliver the right technology to make it happen."
+msgstr "شركات أخرى تبيعك منتجات. نحن نحل مشاكلك — ثم نسلّم التقنية الصحيحة لتحقيقها."
+
+# Why Us Values - New Business Model
+msgid "End-to-End"
+msgstr "من البداية للنهاية"
+
+msgid "From initial assessment to hardware on your desk. No gaps, no handoffs to third parties, no finger-pointing between vendors."
+msgstr "من التقييم الأولي إلى الأجهزة على مكتبك. لا فجوات، لا تسليم لأطراف ثالثة، لا تبادل اتهامات بين الموردين."
+
+msgid "Right-Fit Solutions"
+msgstr "حلول مناسبة"
+
+msgid "We assess first, sell second. Every product we supply is matched to your specific requirements and environment."
+msgstr "نقيّم أولاً، نبيع ثانياً. كل منتج نوفره مطابق لمتطلباتك وبيئتك المحددة."
+
+msgid "We supply only certified, genuine hardware and software. No gray market, no compatibility surprises."
+msgstr "نوفر فقط أجهزة وبرامج معتمدة وأصلية. لا سوق رمادية، لا مفاجآت في التوافق."
+
+msgid "One partner, one invoice, one point of contact. If something isn't right, you call us — not five different vendors."
+msgstr "شريك واحد، فاتورة واحدة، نقطة اتصال واحدة. إذا حدث خطأ، تتصل بنا — لا بخمسة موردين مختلفين."
+
+# Technology Partnership Dark Section - New Business Model
+msgid "Assessment to delivery, single accountability"
+msgstr "من التقييم إلى التسليم، مسؤولية واحدة"
+
+msgid "FSC bridges the gap between your business needs and the complex IT market. We assess your requirements, design the optimal solution, and supply certified hardware and software directly to you."
+msgstr "FSC يسد الفجوة بين احتياجات عملك وسوق تقنية المعلومات المعقد. نقيّم متطلباتك، نصمم الحل الأمثل، ونوفر الأجهزة والبرامج المعتمدة مباشرة لك."
+
+msgid "All procurement pricing is transparent. You receive a detailed breakdown of products, quantities, and costs before any purchase is made."
+msgstr "جميع أسعار التوريد شفافة. تحصل على تفصيل كامل للمنتجات والكميات والتكاليف قبل أي عملية شراء."
+
+msgid "Read our Procurement Transparency Policy"
+msgstr "اقرأ سياسة الشفافية في التوريد"
+
+# Engagement Section Update - New Business Model
+msgid "We take responsibility from assessment through delivery. You get the right technology, on time, with a single point of accountability."
+msgstr "نتحمل المسؤولية من التقييم حتى التسليم. تحصل على التقنية الصحيحة، في الوقت المحدد، مع نقطة مسؤولية واحدة."
+
+# ============================================
+# Case Studies Page
+# ============================================
+msgid "Client Engagements"
+msgstr "مشاريع العملاء"
+
+msgid "Examples of how we've helped organizations make informed technology decisions. Details anonymized to protect client confidentiality."
+msgstr "أمثلة على كيفية مساعدتنا للمؤسسات في اتخاذ قرارات تقنية مدروسة. التفاصيل مجهولة الهوية لحماية سرية العملاء."
+
+# Case Study 1
+msgid "Financial Services"
+msgstr "الخدمات المالية"
+
+msgid "GCC Region"
+msgstr "منطقة الخليج"
+
+msgid "6 Weeks"
+msgstr "٦ أسابيع"
+
+msgid "Cloud Migration Strategy for Regional Bank"
+msgstr "استراتيجية الانتقال السحابي لبنك إقليمي"
+
+msgid "Situation"
+msgstr "الموقف"
+
+msgid "A regional bank with operations across three GCC countries needed to modernize its core infrastructure. The technology team favored a full cloud migration, while risk and compliance raised concerns about data sovereignty and regulatory requirements."
+msgstr "بنك إقليمي يعمل في ثلاث دول خليجية احتاج إلى تحديث بنيته التحتية الأساسية. فضّل فريق التقنية الانتقال الكامل إلى السحابة، بينما أثار فريق المخاطر والامتثال مخاوف حول سيادة البيانات والمتطلبات التنظيمية."
+
+msgid "Decision Required"
+msgstr "القرار المطلوب"
+
+msgid "Determine the appropriate infrastructure approach: full cloud migration, hybrid architecture, or modernized on-premise with cloud-native applications."
+msgstr "تحديد النهج المناسب للبنية التحتية: الانتقال الكامل للسحابة، أو البنية الهجينة، أو تحديث البنية المحلية مع تطبيقات سحابية."
+
+msgid "Our Approach"
+msgstr "منهجنا"
+
+msgid "Conducted stakeholder interviews across technology, risk, compliance, and business units"
+msgstr "أجرينا مقابلات مع أصحاب المصلحة في أقسام التقنية والمخاطر والامتثال والأعمال"
+
+msgid "Mapped regulatory requirements across all operating jurisdictions"
+msgstr "حددنا المتطلبات التنظيمية في جميع الولايات القضائية التشغيلية"
+
+msgid "Evaluated three cloud providers plus regional data center options"
+msgstr "قيّمنا ثلاثة مزودي خدمات سحابية بالإضافة إلى خيارات مراكز البيانات الإقليمية"
+
+msgid "Developed three architecture options with distinct trade-offs"
+msgstr "طورنا ثلاثة خيارات معمارية بمفاضلات مختلفة"
+
+msgid "Analyzed total cost of ownership over 5-year horizon"
+msgstr "حللنا التكلفة الإجمالية للملكية على مدى خمس سنوات"
+
+msgid "Options Presented"
+msgstr "الخيارات المقدمة"
+
+msgid "Option A: Full Public Cloud"
+msgstr "الخيار أ: السحابة العامة الكاملة"
+
+msgid "Lower capital expenditure, faster deployment, but required regulatory approvals and data residency solutions."
+msgstr "إنفاق رأسمالي أقل، نشر أسرع، لكن يتطلب موافقات تنظيمية وحلول إقامة البيانات."
+
+msgid "Option B: Hybrid Architecture"
+msgstr "الخيار ب: البنية الهجينة"
+
+msgid "Core banking on-premise, customer-facing applications in cloud. Balanced approach with moderate complexity."
+msgstr "الخدمات المصرفية الأساسية محلياً، والتطبيقات الموجهة للعملاء في السحابة. نهج متوازن بتعقيد معتدل."
+
+msgid "Option C: Modernized Private Cloud"
+msgstr "الخيار ج: السحابة الخاصة المحدثة"
+
+msgid "On-premise infrastructure with cloud-native technologies. Highest control, highest capital requirement."
+msgstr "بنية تحتية محلية بتقنيات سحابية. أعلى تحكم، أعلى متطلبات رأسمالية."
+
+msgid "Outcome"
+msgstr "النتيجة"
+
+msgid "The bank selected Option B (Hybrid Architecture) based on the trade-off analysis. Our recommendation aligned with this choice due to regulatory constraints and the bank's risk tolerance. The bank engaged a systems integrator for implementation using our requirements documentation and vendor evaluation framework."
+msgstr "اختار البنك الخيار ب (البنية الهجينة) بناءً على تحليل المفاضلات. توافقت توصيتنا مع هذا الاختيار بسبب القيود التنظيمية ومستوى تحمل المخاطر لدى البنك. تعاقد البنك مع شركة تكامل أنظمة للتنفيذ باستخدام وثائق المتطلبات وإطار تقييم المزودين الذي قدمناه."
+
+msgid "Deliverables Provided"
+msgstr "المخرجات المقدمة"
+
+msgid "Infrastructure options analysis (47 pages)"
+msgstr "تحليل خيارات البنية التحتية (٤٧ صفحة)"
+
+msgid "Regulatory requirements matrix"
+msgstr "مصفوفة المتطلبات التنظيمية"
+
+msgid "Vendor evaluation scorecard"
+msgstr "بطاقة تقييم المزودين"
+
+msgid "Implementation sequencing recommendations"
+msgstr "توصيات تسلسل التنفيذ"
+
+msgid "Risk register with mitigation strategies"
+msgstr "سجل المخاطر مع استراتيجيات التخفيف"
+
+# Case Study 2
+msgid "Manufacturing"
+msgstr "التصنيع"
+
+msgid "Saudi Arabia"
+msgstr "المملكة العربية السعودية"
+
+msgid "4 Weeks"
+msgstr "٤ أسابيع"
+
+msgid "ERP Platform Selection for Manufacturing Group"
+msgstr "اختيار منصة تخطيط موارد المؤسسة لمجموعة تصنيع"
+
+msgid "A manufacturing group operating five facilities was running disparate legacy systems across sites. Leadership approved an ERP consolidation initiative but faced conflicting vendor recommendations from different stakeholders."
+msgstr "مجموعة تصنيع تدير خمسة مرافق كانت تستخدم أنظمة قديمة متباينة. وافقت الإدارة على مبادرة توحيد نظام تخطيط الموارد لكنها واجهت توصيات متضاربة من أصحاب المصلحة المختلفين."
+
+msgid "Select an ERP platform and implementation approach from three shortlisted vendors, considering Saudi localization requirements and Vision 2030 compliance."
+msgstr "اختيار منصة تخطيط موارد المؤسسة ونهج التنفيذ من ثلاثة مزودين مختارين، مع مراعاة متطلبات التوطين السعودية والتوافق مع رؤية ٢٠٣٠."
+
+msgid "Documented business requirements across all five facilities"
+msgstr "وثّقنا متطلبات الأعمال في جميع المرافق الخمسة"
+
+msgid "Evaluated shortlisted vendors against 86 functional and technical criteria"
+msgstr "قيّمنا المزودين المختارين وفق ٨٦ معياراً وظيفياً وتقنياً"
+
+msgid "Assessed Saudi localization capabilities including Zakat, VAT, and Arabic language support"
+msgstr "قيّمنا قدرات التوطين السعودي بما في ذلك الزكاة وضريبة القيمة المضافة ودعم اللغة العربية"
+
+msgid "Conducted reference checks with regional implementations"
+msgstr "أجرينا فحوصات مرجعية مع تطبيقات إقليمية"
+
+msgid "Analyzed implementation approaches and timeline options"
+msgstr "حللنا نهج التنفيذ وخيارات الجدول الزمني"
+
+msgid "Vendor A: Global Leader"
+msgstr "المزود أ: الرائد العالمي"
+
+msgid "Most comprehensive functionality, highest cost, longest implementation timeline, limited local support."
+msgstr "وظائف أشمل، تكلفة أعلى، جدول تنفيذ أطول، دعم محلي محدود."
+
+msgid "Vendor B: Regional Strong"
+msgstr "المزود ب: القوي إقليمياً"
+
+msgid "Strong Saudi presence, good localization, moderate functionality, competitive pricing."
+msgstr "حضور سعودي قوي، توطين جيد، وظائف معتدلة، أسعار تنافسية."
+
+msgid "Vendor C: Cloud-Native"
+msgstr "المزود ج: السحابي الأصلي"
+
+msgid "Modern architecture, fastest deployment, but required process changes to fit standard workflows."
+msgstr "بنية حديثة، نشر أسرع، لكن يتطلب تغييرات في العمليات لتتوافق مع سير العمل المعياري."
+
+msgid "The manufacturing group selected Vendor B based on the combination of Saudi localization strength, regional support presence, and acceptable functionality coverage. Our trade-off analysis highlighted that Vendor A's additional features did not justify the cost premium for this client's requirements."
+msgstr "اختارت مجموعة التصنيع المزود ب بناءً على قوة التوطين السعودي والحضور الإقليمي للدعم والتغطية الوظيفية المقبولة. أبرز تحليل المفاضلات أن الميزات الإضافية للمزود أ لا تبرر الفرق في التكلفة لمتطلبات هذا العميل."
+
+msgid "Vendor evaluation matrix (86 criteria)"
+msgstr "مصفوفة تقييم المزودين (٨٦ معياراً)"
+
+msgid "Functional gap analysis"
+msgstr "تحليل الفجوات الوظيفية"
+
+msgid "Reference check summary"
+msgstr "ملخص الفحوصات المرجعية"
+
+msgid "Implementation approach comparison"
+msgstr "مقارنة نهج التنفيذ"
+
+msgid "Contract negotiation considerations"
+msgstr "اعتبارات التفاوض على العقود"
+
+# Confidentiality
+msgid "Confidentiality Note"
+msgstr "ملاحظة السرية"
+
+msgid "Client identities, specific financial figures, and proprietary details are not disclosed. These case studies represent the type and scope of our engagements while protecting client confidentiality."
+msgstr "لا يتم الكشف عن هويات العملاء أو الأرقام المالية المحددة أو التفاصيل الخاصة. تمثل دراسات الحالة هذه نوع ونطاق مشاريعنا مع حماية سرية العملاء."
+
+msgid "Discuss Your Decision"
+msgstr "ناقش قرارك"
+
+msgid "Every organization's situation is unique. Share your technology decision challenge and we'll discuss how a structured approach might help."
+msgstr "وضع كل مؤسسة فريد. شاركنا تحدي قرارك التقني وسنناقش كيف يمكن للنهج المنظم أن يساعد."
+
+# ============================================
+# CTA Section
+# ============================================
+msgid "Start with a 90-Minute Decision Session"
+msgstr "ابدأ بجلسة قرار (٩٠ دقيقة)"
+
+msgid "Bring a specific technology decision. We'll provide structured analysis and initial recommendations. No obligation to proceed further."
+msgstr "أحضر قرارك التقني المحدد. سنقدم تحليلاً منظماً وتوصيات أولية. لا التزام بالاستمرار."
+
+msgid "Request a Session"
+msgstr "احجز جلسة"
+
+msgid "We respond within one business day."
+msgstr "نرد عليك خلال يوم عمل (الأحد - الخميس)"
+
+# ============================================
+# Navigation & Common
+# ============================================
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "About"
+msgstr "عن المكتب"
+
+msgid "Services"
+msgstr "الخدمات"
+
+msgid "How We Work"
+msgstr "كيف نعمل"
+
+msgid "Contact"
+msgstr "تواصل"
+
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+msgid "Terms of Service"
+msgstr "شروط الخدمة"
+
+msgid "Cookie Policy"
+msgstr "سياسة ملفات تعريف الارتباط"
+
+msgid "Disclaimer"
+msgstr "إخلاء المسؤولية"
+
+msgid "Disclosure"
+msgstr "الإفصاح"
+
+# ============================================
+# Footer
+# ============================================
+msgid "All rights reserved."
+msgstr "جميع الحقوق محفوظة."
+
+msgid "Riyadh, Saudi Arabia"
+msgstr "الرياض، المملكة العربية السعودية"
+
+msgid "Sunday - Thursday"
+msgstr "الأحد - الخميس"
+
+# Header/Footer - New Business Model
+msgid "Solutions"
+msgstr "الحلول"
+
+msgid "We assess your needs, design the right solution, and deliver certified hardware and software. One partner, complete accountability."
+msgstr "نقيّم احتياجاتك، نصمم الحل الصحيح، ونسلّم الأجهزة والبرامج المعتمدة. شريك واحد، مسؤولية كاملة."
+
+# ============================================
+# Forms
+# ============================================
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+msgid "Email Address"
+msgstr "البريد الإلكتروني"
+
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+msgid "Organization"
+msgstr "المنشأة"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Send Message"
+msgstr "إرسال الرسالة"
+
+msgid "Required field"
+msgstr "حقل مطلوب"
+
+msgid "Thank you for your message. We will respond within one business day."
+msgstr "شكراً لرسالتك. سنرد خلال يوم عمل واحد."
+
+# ============================================
+# About Page
+# ============================================
+msgid "About Us"
+msgstr "عن المكتب"
+
+msgid "Our Mission"
+msgstr "مهمتنا"
+
+msgid "Our Values"
+msgstr "قيمنا"
+
+msgid "Fahad Almansour"
+msgstr "فهد المنصور"
+
+msgid "Founder & Principal Consultant"
+msgstr "المؤسس والمستشار الرئيسي"
+
+# ============================================
+# Services Page
+# ============================================
+msgid "Our Services"
+msgstr "خدماتنا"
+
+msgid "Learn more"
+msgstr "اعرف المزيد"
+
+msgid "Get started"
+msgstr "ابدأ الآن"
+
+# ============================================
+# Error Pages
+# ============================================
+msgid "Page Not Found"
+msgstr "الصفحة غير موجودة"
+
+msgid "The page you are looking for does not exist."
+msgstr "الصفحة التي تبحث عنها غير موجودة."
+
+msgid "Return to Home"
+msgstr "العودة للرئيسية"
+
+# ============================================
+# Footer Additional
+# ============================================
+msgid "Legal"
+msgstr "قانوني"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Phone / WhatsApp"
+msgstr "الهاتف / واتساب"
+
+msgid "Location"
+msgstr "الموقع"
+
+msgid "Working Hours"
+msgstr "ساعات العمل"
+
+msgid "Back to top"
+msgstr "الرجوع للأعلى"
+
+msgid "Terms of Use"
+msgstr "شروط الاستخدام"
+
+# ============================================
+# About Page Additional
+# ============================================
+msgid "About Fahad Almansour Consultant Office"
+msgstr "عن مكتب فهد المنصور للاستشارات"
+
+msgid "Independent technology advisory for organizations making important decisions. We provide clarity, structure, and objectivity."
+msgstr "استشارات تقنية مستقلة للمؤسسات التي تتخذ قرارات مهمة. نقدم الوضوح، المنهجية، والموضوعية."
+
+msgid "Why?"
+msgstr "لماذا؟"
+
+msgid "Traditional consultants often have conflicts of interest. They may recommend approaches that lead to implementation work. Vendors naturally advocate for their products. Internal teams may have organizational biases."
+msgstr "المستشارون التقليديون غالباً ما يكون لديهم تضارب مصالح. قد يوصون بحلول تؤدي إلى أعمال تنفيذ. الموردون بطبيعتهم يروجون لمنتجاتهم. الفرق الداخلية قد يكون لديها انحياز مؤسسي."
+
+msgid "We removed these conflicts."
+msgstr "أزلنا هذه التعارضات."
+
+msgid "We don't implement"
+msgstr "لا ننفذ المشاريع"
+
+msgid "We have no incentive to recommend complex solutions that require extended projects."
+msgstr "ليس لدينا دافع للتوصية بحلول معقدة تتطلب مشاريع ممتدة."
+
+msgid "We don't sell products"
+msgstr "لا نبيع منتجات"
+
+msgid "We have no inventory, no licenses, no commissions. We are purely vendor-neutral."
+msgstr "ليس لدينا مخزون، لا تراخيص، لا عمولات. نحن محايدون تماماً تجاه الموردين."
+
+msgid "We don't provide managed services"
+msgstr "لا نقدم خدمات مُدارة"
+
+msgid "We have no recurring revenue dependent on ongoing operational relationships."
+msgstr "ليس لدينا إيرادات متكررة تعتمد على علاقات تشغيلية مستمرة."
+
+msgid "Our only product is clarity"
+msgstr "منتجنا الوحيد هو الوضوح"
+
+msgid "We succeed when you make an informed decision—regardless of which option you choose."
+msgstr "ننجح عندما تتخذ قراراً مدروساً — بغض النظر عن الخيار الذي تختاره."
+
+msgid "We maintain strict separation from vendors. Recommendations based solely on your requirements."
+msgstr "نحافظ على فصل تام عن الموردين. التوصيات مبنية فقط على متطلباتك."
+
+msgid "Documented frameworks, not verbal opinions. Every recommendation traceable to evidence."
+msgstr "أطر موثقة، لا آراء شفهية. كل توصية قابلة للتتبع إلى الأدلة."
+
+msgid "We state limitations upfront. We disclose any potential conflicts or referral fees clearly."
+msgstr "نذكر حدودنا مقدماً. نفصح عن أي تعارض محتمل أو رسوم إحالة بوضوح."
+
+msgid "Integrity"
+msgstr "النزاهة"
+
+msgid "We provide the right advice, even when it's not what clients want to hear."
+msgstr "نقدم النصيحة الصحيحة، حتى لو لم تكن ما يريد العميل سماعه."
+
+msgid "Complex decisions made understandable. Trade-offs explained in business terms."
+msgstr "قرارات معقدة تُصبح مفهومة. المفاضلات تُشرح بلغة الأعمال."
+
+msgid "Company Information"
+msgstr "معلومات المكتب"
+
+msgid "Legal Identity"
+msgstr "الهوية القانونية"
+
+msgid "Jurisdiction"
+msgstr "الولاية القضائية"
+
+msgid "Established"
+msgstr "سنة التأسيس"
+
+msgid "Service Area"
+msgstr "منطقة الخدمة"
+
+msgid "We serve clients in Saudi Arabia, the Gulf Cooperation Council (GCC), and internationally. Engagements are conducted remotely with in-person sessions available for GCC-based clients."
+msgstr "نخدم العملاء في المملكة العربية السعودية ودول مجلس التعاون الخليجي وعالمياً. تُنفذ المشاريع عن بُعد مع إمكانية الجلسات الحضورية لعملاء دول الخليج."
+
+msgid "Operating Hours"
+msgstr "ساعات العمل"
+
+msgid "Sunday - Thursday, 9:00 AM - 5:00 PM (Arabia Standard Time). We accommodate client time zones for scheduled sessions."
+msgstr "الأحد - الخميس، ٩:٠٠ صباحاً - ٥:٠٠ مساءً (توقيت السعودية). نراعي التوقيت المحلي للعملاء في الجلسات المجدولة."
+
+msgid "Work With Us"
+msgstr "اعمل معنا"
+
+msgid "If you're facing a technology decision that would benefit from independent analysis, we'd welcome a conversation."
+msgstr "إذا كنت تواجه قرار تقني يستفيد من تحليل مستقل، نرحب بالتواصل معك."
+
+# About Page - New Business Model
+msgid "Your complete technology partner. We assess your needs, design the right solution, and deliver certified hardware and software."
+msgstr "شريكك التقني المتكامل. نقيّم احتياجاتك، نصمم الحل الصحيح، ونسلّم الأجهزة والبرامج المعتمدة."
+
+msgid "Businesses in Saudi Arabia face a common problem: consultants who give advice but leave you to navigate procurement alone, and vendors who sell products without understanding your real needs. The gap between consulting and procurement creates incompatibility, wasted budgets, and finger-pointing."
+msgstr "تواجه الشركات في السعودية مشكلة شائعة: مستشارون يقدمون النصيحة لكن يتركونك لتتعامل مع التوريد وحدك، وموردون يبيعون منتجات دون فهم احتياجاتك الحقيقية. الفجوة بين الاستشارات والتوريد تسبب عدم التوافق وهدر الميزانيات وتبادل الاتهامات."
+
+msgid "We bridged that gap."
+msgstr "سددنا تلك الفجوة."
+
+msgid "From initial assessment to hardware on your desk. No gaps, no handoffs to third parties."
+msgstr "من التقييم الأولي إلى الأجهزة على مكتبك. لا فجوات، لا تسليم لأطراف ثالثة."
+
+msgid "Assessment-First Approach"
+msgstr "منهج التقييم أولاً"
+
+msgid "We assess your real needs before recommending or supplying anything. No upselling, no unnecessary products."
+msgstr "نقيّم احتياجاتك الحقيقية قبل التوصية أو توفير أي شيء. لا ترويج مبالغ، لا منتجات غير ضرورية."
+
+msgid "One partner, one invoice, one point of contact. If something isn't right, you call us."
+msgstr "شريك واحد، فاتورة واحدة، نقطة اتصال واحدة. إذا حدث خطأ، تتصل بنا."
+
+msgid "Assessment through delivery. We handle the entire technology journey so you don't have to."
+msgstr "من التقييم حتى التسليم. نتولى رحلتك التقنية بالكامل حتى لا تضطر أنت لذلك."
+
+msgid "If you need the right technology solution — assessed, designed, and delivered — we'd welcome a conversation."
+msgstr "إذا كنت بحاجة للحل التقني الصحيح — مقيّم ومصمم ومُسلّم — نرحب بالحوار."
+
+# ============================================
+# Contact Page Additional
+# ============================================
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+msgid "Request a decision session or send us an inquiry. We respond within one business day."
+msgstr "احجز جلسة استشارية أو أرسل استفسارك. نرد خلال يوم عمل واحد."
+
+msgid "Your privacy is important to us. Read our"
+msgstr "خصوصيتك مهمة لنا. اقرأ"
+
+# ============================================
+# Navigation Additional
+# ============================================
+msgid "How we work"
+msgstr "كيف نعمل"
+
+msgid "Consulting Models"
+msgstr "نماذج الاستشارات"
+
+msgid "Deliverables"
+msgstr "المخرجات"
+
+msgid "Toggle menu"
+msgstr "القائمة"
+
+msgid "Request discussion"
+msgstr "اطلب نقاش"
+
+# ============================================
+# What to Expect Section
+# ============================================
+msgid "What to Expect"
+msgstr "ماذا تتوقع"
+
+msgid "Response within 1 business day"
+msgstr "رد خلال يوم عمل واحد"
+
+msgid "Brief discovery call to understand your needs"
+msgstr "مكالمة قصيرة لفهم احتياجاتك"
+
+msgid "Clear proposal with scope and timeline"
+msgstr "عرض واضح مع نطاق العمل والجدول الزمني"
+
+msgid "No obligation to proceed"
+msgstr "لا التزام بالاستمرار"
+
+# ============================================
+# Services Page Additional
+# ============================================
+msgid "Vendor Selection & Governance"
+msgstr "اختيار المزودين والحوكمة"
+
+msgid "We Help With"
+msgstr "نساعدك في"
+
+msgid "Our commitment to independent advice"
+msgstr "التزامنا بالاستشارة المستقلة"
+
+# Services Page - New Business Model
+msgid "We assess your infrastructure, evaluate cloud options, and design the right solution. Then we procure and deliver the certified hardware and software you need — ready for your environment."
+msgstr "نقيّم بنيتك التحتية، ونقيّم خيارات السحابة، ونصمم الحل الأمثل. ثم نوفر ونسلّم الأجهزة والبرامج المعتمدة التي تحتاجها — جاهزة لبيئتك."
+
+msgid "Digital Presence & E-Commerce"
+msgstr "الحضور الرقمي والتجارة الإلكترونية"
+
+msgid "Domain, hosting, e-commerce platforms, and the tools your business needs — assessed, selected, and delivered. Saudi-specific: Mada, SADAD, ZATCA compliance."
+msgstr "النطاق، الاستضافة، منصات التجارة الإلكترونية، والأدوات التي يحتاجها عملك — مقيّمة ومختارة ومُسلّمة. متوافقة مع: مدى، سداد، هيئة الزكاة والضريبة."
+
+msgid "By procuring through FSC, you eliminate the risk of incompatibility or incorrect specifications. We ensure you get the right technology, delivered ready for your environment, with a single point of accountability."
+msgstr "بالتوريد عبر FSC، تتخلص من مخاطر عدم التوافق أو المواصفات الخاطئة. نضمن حصولك على التقنية الصحيحة، مُسلّمة جاهزة لبيئتك، مع نقطة مسؤولية واحدة."
+
+msgid "Assessment First"
+msgstr "التقييم أولاً"
+
+# ============================================
+# Theme Setup & Admin
+# ============================================
+msgid "FSC Theme: Required pages have been created automatically."
+msgstr "قالب FSC: تم إنشاء الصفحات المطلوبة تلقائياً."
+
+msgid "Case Studies"
+msgstr "دراسات الحالة"
+
+msgid "Primary Menu"
+msgstr "القائمة الرئيسية"
+
+msgid "Footer Menu"
+msgstr "قائمة التذييل"
+
+# ============================================
+# Location & Business Registration
+# ============================================
+msgid "Registered Business"
+msgstr "منشأة مسجلة"
+
+msgid "Serving Saudi Arabia & GCC"
+msgstr "نخدم السعودية ودول الخليج"
+
+# ============================================
+# Decision Clarity Form Field
+# ============================================
+msgid "Decision Clarity"
+msgstr "وضوح القرار"
+
+msgid "Very clear"
+msgstr "واضح جداً"
+
+msgid "We know what we need, seeking validation"
+msgstr "نعرف ما نحتاجه، نبحث عن تأكيد"
+
+msgid "Somewhat clear"
+msgstr "واضح نوعاً ما"
+
+msgid "We have options, need help deciding"
+msgstr "لدينا خيارات، نحتاج مساعدة في الاختيار"
+
+msgid "Unclear"
+msgstr "غير واضح"
+
+msgid "We need help defining the problem"
+msgstr "نحتاج مساعدة في تحديد المشكلة"
+
+# ============================================
+# Intake Form Additional
+# ============================================
+msgid "Request a Discovery Call"
+msgstr "اطلب مكالمة اكتشاف"
+
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+msgid "Your Name"
+msgstr "اسمك"
+
+msgid "Business Email"
+msgstr "البريد الإلكتروني للعمل"
+
+msgid "Phone (WhatsApp preferred)"
+msgstr "الهاتف (واتساب مفضل)"
+
+msgid "Company Size"
+msgstr "حجم الشركة"
+
+msgid "Industry"
+msgstr "القطاع"
+
+msgid "Service Interest"
+msgstr "الخدمة المطلوبة"
+
+msgid "Timeline"
+msgstr "الجدول الزمني"
+
+msgid "Urgent"
+msgstr "عاجل"
+
+msgid "Near-term"
+msgstr "قريب"
+
+msgid "Planning"
+msgstr "في مرحلة التخطيط"
+
+msgid "Exploring"
+msgstr "مرحلة الاستكشاف"
+
+msgid "Submit request"
+msgstr "إرسال الطلب"
+
+msgid "Select your industry"
+msgstr "اختر القطاع"
+
+msgid "Technology & Software"
+msgstr "التقنية والبرمجيات"
+
+msgid "Finance & Banking"
+msgstr "المالية والبنوك"
+
+msgid "Healthcare & Life Sciences"
+msgstr "الرعاية الصحية وعلوم الحياة"
+
+msgid "Retail & E-commerce"
+msgstr "التجزئة والتجارة الإلكترونية"
+
+msgid "Manufacturing & Industrial"
+msgstr "التصنيع والصناعة"
+
+msgid "Government & Public Sector"
+msgstr "الحكومة والقطاع العام"
+
+msgid "Education & Research"
+msgstr "التعليم والبحث"
+
+msgid "Energy & Utilities"
+msgstr "الطاقة والمرافق"
+
+msgid "Real Estate & Construction"
+msgstr "العقارات والإنشاءات"
+
+msgid "Other"
+msgstr "أخرى"
+
+# ============================================
+# Consulting Packages
+# ============================================
+msgid "Consulting Packages"
+msgstr "باقات الاستشارات"
+
+msgid "Flexible engagement models tailored to your needs."
+msgstr "نماذج مشاركة مرنة مصممة حسب احتياجاتك."
+
+msgid "Strategic Consulting"
+msgstr "استشارات استراتيجية"
+
+msgid "Long-term partnership for comprehensive IT strategy, planning, and ongoing guidance for your organization."
+msgstr "شراكة طويلة الأمد لاستراتيجية تقنية المعلومات الشاملة والتخطيط والتوجيه المستمر لمؤسستك."
+
+msgid "Project-Based Consulting"
+msgstr "استشارات قائمة على المشاريع"
+
+msgid "Focused engagement for specific IT initiatives, migrations, or technology implementations."
+msgstr "مشاركة مركزة لمبادرات تقنية محددة أو عمليات ترحيل أو تطبيقات تقنية."
+
+msgid "Decision Session"
+msgstr "جلسة القرار"
+
+msgid "Simple Advisory"
+msgstr "استشارة بسيطة"
+
+msgid "Standard Advisory"
+msgstr "استشارة قياسية"
+
+msgid "Complex Advisory"
+msgstr "استشارة معقدة"
+
+msgid "90 Minutes"
+msgstr "٩٠ دقيقة"
+
+msgid "2-4 Weeks"
+msgstr "٢-٤ أسابيع"
+
+msgid "4-8 Weeks"
+msgstr "٤-٨ أسابيع"
+
+# ============================================
+# Boundaries Section
+# ============================================
+msgid "What We Don't Do"
+msgstr "ما لا نقوم به"
+
+msgid "No Products For Sale"
+msgstr "لا منتجات للبيع"
+
+msgid "We do not implement solutions, manage projects, or provide ongoing support. Our role is to provide the analysis and recommendations that enable your informed decision."
+msgstr "لا ننفذ الحلول، لا ندير المشاريع، ولا نقدم دعم مستمر. دورنا هو تقديم التحليل والتوصيات التي تمكنك من اتخاذ قرار مدروس."
+
+# ============================================
+# CTA Variations
+# ============================================
+msgid "Start With a 90-Minute Decision Session"
+msgstr "ابدأ بجلسة قرار (٩٠ دقيقة)"
+
+msgid "Discuss Your Situation"
+msgstr "ناقش وضعك"
+
+msgid "No commitment. No pressure. Just a conversation."
+msgstr "لا التزام. لا ضغط. مجرد محادثة."
+
+# ============================================
+# Contact Information
+# ============================================
+msgid "Contact Information"
+msgstr "معلومات الاتصال"
+
+# ============================================
+# Insights / Blog
+# ============================================
+msgid "Latest Insights"
+msgstr "أحدث المقالات"
+
+msgid "Thoughts on the changing landscape of enterprise IT."
+msgstr "أفكار حول المشهد المتغير لتقنية المعلومات المؤسسية."
+
+msgid "Insights & Articles"
+msgstr "مقالات ورؤى"
+
+msgid "No Articles Found"
+msgstr "لم يتم العثور على مقالات"
+
+msgid "Author"
+msgstr "الكاتب"
+
+msgid "Category"
+msgstr "التصنيف"
+
+msgid "Tag"
+msgstr "الوسم"
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "Read more"
+msgstr "اقرأ المزيد"
+
+msgid "Next"
+msgstr "التالي"
+
+msgid "Previous"
+msgstr "السابق"
+
+# ============================================
+# Error Pages
+# ============================================
+msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+msgstr "الصفحة التي تبحث عنها ربما تم حذفها أو تغيير اسمها أو أنها غير متاحة مؤقتاً."
+
+msgid "Go to Homepage"
+msgstr "انتقل إلى الصفحة الرئيسية"
+
+msgid "No Results Found"
+msgstr "لم يتم العثور على نتائج"
+
+msgid "Nothing found"
+msgstr "لم يتم العثور على شيء"
+
+msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
+msgstr "عذراً، لم يتم العثور على نتائج مطابقة. يرجى المحاولة بكلمات مفتاحية مختلفة."
+
+# ============================================
+# Legal Pages Headers
+# ============================================
+msgid "Last updated: January 2026"
+msgstr "آخر تحديث: يناير ٢٠٢٦"
+
+msgid "Information We Collect"
+msgstr "المعلومات التي نجمعها"
+
+msgid "How We Use Your Information"
+msgstr "كيف نستخدم معلوماتك"
+
+msgid "Your Rights"
+msgstr "حقوقك"
+
+msgid "Data Retention"
+msgstr "الاحتفاظ بالبيانات"
+
+msgid "Data Security"
+msgstr "أمان البيانات"
+
+msgid "What Are Cookies"
+msgstr "ما هي ملفات تعريف الارتباط"
+
+msgid "Your Choices"
+msgstr "خياراتك"
+
+msgid "Acceptance of terms"
+msgstr "قبول الشروط"
+
+msgid "Website usage"
+msgstr "استخدام الموقع"
+
+msgid "Intellectual property"
+msgstr "الملكية الفكرية"
+
+msgid "No warranties"
+msgstr "لا ضمانات"
+
+msgid "Limitation of liability"
+msgstr "تحديد المسؤولية"
+
+msgid "Governing law"
+msgstr "القانون الحاكم"
+
+msgid "Scope of Services"
+msgstr "نطاق الخدمات"
+
+msgid "No Guarantees"
+msgstr "لا ضمانات"
+
+msgid "Client Responsibility"
+msgstr "مسؤولية العميل"
+
+msgid "Not Professional Advice"
+msgstr "ليست نصيحة مهنية"
+
+msgid "Vendor Neutrality"
+msgstr "الحياد تجاه الموردين"
+
+msgid "Vendor Introductions"
+msgstr "تقديم الموردين"
+
+msgid "Referral Fees / Commissions"
+msgstr "رسوم الإحالة / العمولات"
+
+# ============================================
+# FAQ
+# ============================================
+msgid "FAQ"
+msgstr "الأسئلة الشائعة"
+
+# ============================================
+# Engagement & Process
+# ============================================
+msgid "Vendor Neutrality & Introductions"
+msgstr "الحياد تجاه الموردين والتقديمات"
+
+msgid "We provide independent, vendor-neutral consulting. We do not sell products as part of our advisory services."
+msgstr "نقدم استشارات مستقلة ومحايدة تجاه الموردين. لا نبيع منتجات كجزء من خدماتنا الاستشارية."
+
+msgid "If a client requests a vendor introduction, any referral fees or commissions are"
+msgstr "إذا طلب العميل تقديماً لمورد، فإن أي رسوم إحالة أو عمولات"
+
+msgid "disclosed and documented in advance"
+msgstr "يتم الإفصاح عنها وتوثيقها مسبقاً"
+
+msgid "The client is free to choose any vendor with no obligation."
+msgstr "العميل حر في اختيار أي مورد دون أي التزام."
+
+msgid "Read our disclosure policy"
+msgstr "اقرأ سياسة الإفصاح"
+
+msgid "Read our full Disclosure Policy"
+msgstr "اقرأ سياسة الإفصاح الكاملة"
+
+# FSC Advantage / Neutrality Card - New Business Model
+msgid "The FSC Advantage"
+msgstr "ميزة FSC"
+
+msgid "We assess, design, procure, and deliver complete technology solutions. As an authorized partner of leading manufacturers, we provide certified products at competitive prices with full warranty and support."
+msgstr "نقيّم ونصمم ونوفر ونسلّم حلول تقنية متكاملة. كشريك معتمد لكبرى الشركات المصنعة، نقدم منتجات معتمدة بأسعار تنافسية مع ضمان ودعم كامل."
+
+msgid "All procurement pricing is"
+msgstr "جميع أسعار التوريد"
+
+msgid "transparent and documented in advance"
+msgstr "شفافة وموثقة مسبقاً"
+
+msgid "You receive certified products delivered ready for your environment."
+msgstr "تحصل على منتجات معتمدة تُسلّم جاهزة لبيئتك."
+
+msgid "Read our procurement transparency policy"
+msgstr "اقرأ سياسة الشفافية في التوريد"
+
+msgid "Engagement structure"
+msgstr "هيكل المشاركة"
+
+msgid "Professional, transparent, and accountable."
+msgstr "مهني، شفاف، ومسؤول."
+
+msgid "Fixed-scope"
+msgstr "نطاق محدد"
+
+msgid "Documented"
+msgstr "موثق"
+
+msgid "Contractual"
+msgstr "تعاقدي"
+
+msgid "Our responsibility is to explain options and implications clearly. The client is responsible for the final decision and execution."
+msgstr "مسؤوليتنا هي شرح الخيارات والتبعات بوضوح. العميل مسؤول عن القرار النهائي والتنفيذ."
+
+msgid "Our Engagement Process"
+msgstr "عملية المشاركة لدينا"
+
+msgid "We believe in understanding before advising. That's why we start with a brief discovery call."
+msgstr "نؤمن بالفهم قبل تقديم المشورة. لذلك نبدأ بمكالمة اكتشاف قصيرة."
+
+# ============================================
+# Steps
+# ============================================
+msgid "Step 1"
+msgstr "الخطوة ١"
+
+msgid "Step 2"
+msgstr "الخطوة ٢"
+
+msgid "Discovery Call"
+msgstr "مكالمة الاكتشاف"
+
+msgid "Strategy Session"
+msgstr "جلسة الاستراتيجية"
+
+msgid "min"
+msgstr "دقيقة"
+
+msgid "Understand your challenges"
+msgstr "فهم تحدياتك"
+
+msgid "Determine if we're a good fit"
+msgstr "تحديد إذا كنا مناسبين"
+
+msgid "No obligation, completely free"
+msgstr "بدون التزام، مجاني تماماً"
+
+msgid "FREE"
+msgstr "مجاني"
+
+msgid "Deep-dive into requirements"
+msgstr "التعمق في المتطلبات"
+
+msgid "Present preliminary approach"
+msgstr "عرض النهج الأولي"
+
+msgid "Discuss engagement options"
+msgstr "مناقشة خيارات المشاركة"
+
+msgid "If aligned after discovery call"
+msgstr "إذا تم التوافق بعد مكالمة الاكتشاف"
+
+# How We Work Page - New Business Model
+msgid "Initial Consultation"
+msgstr "الاستشارة الأولية"
+
+msgid "Start with a Consultation"
+msgstr "ابدأ باستشارة"
+
+msgid "Tell us about your technology needs. We'll assess your requirements and recommend the right approach — from assessment-only to full solution delivery."
+msgstr "أخبرنا عن احتياجاتك التقنية. سنقيّم متطلباتك ونوصي بالنهج الأمثل — من التقييم فقط إلى تسليم الحل الكامل."
+
+# ============================================
+# Services & Architecture
+# ============================================
+msgid "Comprehensive IT consulting services to accelerate your business success."
+msgstr "خدمات استشارات تقنية شاملة لتسريع نجاح أعمالك."
+
+msgid "Reference Architecture"
+msgstr "البنية المرجعية"
+
+msgid "We help you think through the full stack."
+msgstr "نساعدك في التفكير في المكدس الكامل."
+
+msgid "High-level view only. We document responsibilities for each layer."
+msgstr "نظرة عالية المستوى فقط. نوثق المسؤوليات لكل طبقة."
+
+msgid "Tools & Standards"
+msgstr "الأدوات والمعايير"
+
+msgid "Clarifying requirements without pushing vendors."
+msgstr "توضيح المتطلبات دون الترويج للموردين."
+
+msgid "IT Strategy Consulting"
+msgstr "استشارات استراتيجية تقنية المعلومات"
+
+msgid "Cybersecurity"
+msgstr "الأمن السيبراني"
+
+# ============================================
+# Forms
+# ============================================
+msgid "Company name *"
+msgstr "اسم الشركة *"
+
+msgid "Your organization"
+msgstr "مؤسستك"
+
+msgid "Your name *"
+msgstr "اسمك *"
+
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+msgid "Business email *"
+msgstr "البريد الإلكتروني للعمل *"
+
+msgid "Phone (optional)"
+msgstr "الهاتف (اختياري)"
+
+msgid "Service Interest *"
+msgstr "الخدمة المطلوبة *"
+
+msgid "Select one"
+msgstr "اختر واحداً"
+
+msgid "What do you need help with? *"
+msgstr "ما الذي تحتاج مساعدة فيه؟ *"
+
+msgid "Brief description of your situation and what decision you're facing..."
+msgstr "وصف موجز لوضعك والقرار الذي تواجهه..."
+
+msgid "I agree to receive communications from Fahad Almansour Consultant Office and accept the Privacy Policy."
+msgstr "أوافق على تلقي الاتصالات من مكتب فهد المنصور للاستشارات وأقبل سياسة الخصوصية."
+
+msgid "We reply within 1 business day"
+msgstr "نرد خلال يوم عمل واحد"
+
+msgid "Prefer email directly?"
+msgstr "تفضل البريد الإلكتروني مباشرة؟"
+
+msgid "Tell us about your situation"
+msgstr "أخبرنا عن وضعك"
+
+msgid "Brief description of your challenges and what you're hoping to achieve..."
+msgstr "وصف موجز لتحدياتك وما تأمل تحقيقه..."
+
+msgid "Request Discovery Call"
+msgstr "طلب مكالمة اكتشاف"
+
+msgid "Do you want vendor introductions?"
+msgstr "هل تريد تقديمات للموردين؟"
+
+msgid "No,"
+msgstr "لا،"
+
+msgid "Yes, I want introductions (disclosure required)"
+msgstr "نعم، أريد تقديمات (الإفصاح مطلوب)"
+
+msgid "Not sure"
+msgstr "غير متأكد"
+
+# Intake Form - New Business Model
+msgid "Are you interested in hardware/software procurement?"
+msgstr "هل أنت مهتم بتوريد الأجهزة/البرامج؟"
+
+msgid "Assessment only — I will procure separately"
+msgstr "تقييم فقط — سأوفر بشكل مستقل"
+
+msgid "Yes — I want FSC to procure and deliver"
+msgstr "نعم — أريد من FSC التوريد والتسليم"
+
+msgid "Not sure yet"
+msgstr "لست متأكداً بعد"
+
+msgid "All procurement pricing is transparent. See our %sProcurement Transparency Policy%s."
+msgstr "جميع أسعار التوريد شفافة. انظر %sسياسة الشفافية في التوريد%s."
+
+msgid "Hardware & Software Procurement"
+msgstr "توريد الأجهزة والبرامج"
+
+# ============================================
+# Timeline
+# ============================================
+msgid "< 1 month"
+msgstr "أقل من شهر"
+
+msgid "1-3 months"
+msgstr "١-٣ أشهر"
+
+msgid "3-6 months"
+msgstr "٣-٦ أشهر"
+
+msgid "No rush"
+msgstr "لا استعجال"
+
+# ============================================
+# Trust & Contact
+# ============================================
+msgid "Trusted By Businesses Worldwide"
+msgstr "موثوق به من الشركات حول العالم"
+
+msgid "Certified Experts"
+msgstr "خبراء معتمدون"
+
+msgid "AWS, Azure, GCP certified"
+msgstr "معتمدون من AWS و Azure و GCP"
+
+msgid "NDA & compliance ready"
+msgstr "جاهزون لاتفاقيات السرية والامتثال"
+
+msgid "24/7 Support"
+msgstr "دعم على مدار الساعة"
+
+msgid "Always available"
+msgstr "متاحون دائماً"
+
+msgid "Sun - Thu: 9AM - 5PM"
+msgstr "الأحد - الخميس: ٩ص - ٥م"
+
+msgid "Response Time"
+msgstr "وقت الاستجابة"
+
+msgid "Within 1 business day"
+msgstr "خلال يوم عمل واحد"
+
+msgid "Prefer to schedule directly?"
+msgstr "تفضل الحجز مباشرة؟"
+
+msgid "Book a Time Slot"
+msgstr "احجز موعداً"
+
+# ============================================
+# FAQ Section
+# ============================================
+msgid "Frequently Asked Questions"
+msgstr "الأسئلة الشائعة"
+
+msgid "Common questions about our consulting services."
+msgstr "أسئلة شائعة حول خدماتنا الاستشارية."
+
+msgid "Have a question that's not answered here?"
+msgstr "لديك سؤال لم تتم الإجابة عليه هنا؟"
+
+# FAQ - New Business Model Questions
+msgid "What does \"complete technology partner\" mean?"
+msgstr "ماذا يعني \"شريك تقني متكامل\"؟"
+
+msgid "We handle the entire journey — from assessing your business needs, to designing the right solution, to procuring and delivering certified hardware and software. You get one partner instead of juggling multiple vendors."
+msgstr "نتولى الرحلة بأكملها — من تقييم احتياجاتك، إلى تصميم الحل الأمثل، إلى توريد وتسليم الأجهزة والبرامج المعتمدة. تحصل على شريك واحد بدلاً من التعامل مع عدة موردين."
+
+msgid "Do you work with businesses outside Riyadh?"
+msgstr "هل تعملون مع شركات خارج الرياض؟"
+
+msgid "Yes. We provide in-person services in Riyadh and remote services across Saudi Arabia and the GCC. Hardware and software delivery available nationwide."
+msgstr "نعم. نقدم خدمات حضورية في الرياض وخدمات عن بُعد في جميع أنحاء السعودية والخليج. التوريد متاح على مستوى المملكة."
+
+msgid "How does the process work?"
+msgstr "كيف تعمل العملية؟"
+
+msgid "We start with a consultation to assess your requirements. Then we design a tailored solution, present options with pricing, and upon approval, procure and deliver everything directly to you — ready for your environment."
+msgstr "نبدأ باستشارة لتقييم متطلباتك. ثم نصمم حلاً مخصصاً، نعرض الخيارات مع الأسعار، وعند الموافقة، نوفر ونسلّم كل شيء مباشرة لك — جاهزاً لبيئتك."
+
+msgid "What if I don't know what technology I need?"
+msgstr "ماذا لو لم أعرف ما التقنية التي أحتاجها؟"
+
+msgid "That's exactly where we start. Our assessment process identifies what you actually need based on your business goals, current systems, and budget — before we recommend or supply anything."
+msgstr "هذا بالضبط حيث نبدأ. عملية التقييم لدينا تحدد ما تحتاجه فعلاً بناءً على أهداف عملك وأنظمتك الحالية وميزانيتك — قبل أن نوصي أو نوفر أي شيء."
+
+msgid "Why should I procure through FSC instead of buying directly?"
+msgstr "لماذا يجب أن أوفر عبر FSC بدلاً من الشراء مباشرة؟"
+
+msgid "When you procure through FSC, you eliminate the risk of incompatibility or incorrect specifications. We ensure everything is right-fit, certified, and compatible. One invoice, one point of accountability."
+msgstr "عند التوريد عبر FSC، تتخلص من مخاطر عدم التوافق أو المواصفات الخاطئة. نضمن أن كل شيء مناسب ومعتمد ومتوافق. فاتورة واحدة، نقطة مسؤولية واحدة."
+
+msgid "We work with any organization needing technology solutions — technology, healthcare, finance, retail, manufacturing, government, and education. Our assessment process adapts to your industry context."
+msgstr "نعمل مع أي منظمة تحتاج حلول تقنية — التقنية، الرعاية الصحية، المالية، التجزئة، التصنيع، الحكومة، والتعليم. عملية التقييم لدينا تتكيف مع سياق مجالك."
+
+# Front-page CTA - New Business Model
+msgid "Ready to Get Started?"
+msgstr "مستعد للبدء؟"
+
+msgid "Request a consultation and let us assess your technology needs. The right solution is closer than you think."
+msgstr "اطلب استشارة ودعنا نقيّم احتياجاتك التقنية. الحل الصحيح أقرب مما تتصور."
+
+# ============================================
+# Other Missing
+# ============================================
+msgid "Clarity in scope ensures aligned expectations"
+msgstr "الوضوح في النطاق يضمن توافق التوقعات"
+
+msgid "Ideal for growing businesses seeking transformation."
+msgstr "مثالي للشركات النامية التي تسعى للتحول."
+
+msgid "Clear scope, timeline, and deliverables."
+msgstr "نطاق واضح، جدول زمني، ومخرجات محددة."
+
+# ============================================
+# Additional Missing Translations - Batch 2
+# ============================================
+
+# Time periods
+msgid "1 Year"
+msgstr "سنة واحدة"
+
+msgid "2 Years"
+msgstr "سنتان"
+
+msgid "24 Hours"
+msgstr "٢٤ ساعة"
+
+msgid "weeks"
+msgstr "أسابيع"
+
+msgid "Duration"
+msgstr "المدة"
+
+msgid "Session"
+msgstr "جلسة"
+
+# Disclosure Policy Headers
+msgid "1) Vendor Neutrality"
+msgstr "١) الحياد تجاه الموردين"
+
+msgid "2) Vendor Introductions"
+msgstr "٢) تقديم الموردين"
+
+msgid "3) Referral Fees / Commissions"
+msgstr "٣) رسوم الإحالة / العمولات"
+
+msgid "4) Client Freedom of Choice"
+msgstr "٤) حرية اختيار العميل"
+
+msgid "5) Separation from Advisory Recommendations"
+msgstr "٥) الفصل عن التوصيات الاستشارية"
+
+msgid "6) Conflicts of Interest"
+msgstr "٦) تضارب المصالح"
+
+msgid "7) Contact"
+msgstr "٧) التواصل"
+
+# Services & Strategy
+msgid "Advisory Services"
+msgstr "الخدمات الاستشارية"
+
+msgid "Advisory Disclaimer"
+msgstr "إخلاء المسؤولية الاستشارية"
+
+msgid "Advisory services disclaimer"
+msgstr "إخلاء مسؤولية الخدمات الاستشارية"
+
+msgid "Cloud & Infrastructure Strategy"
+msgstr "استراتيجية السحابة والبنية التحتية"
+
+msgid "Digital Transformation Advisory"
+msgstr "الاستشارات في التحول الرقمي"
+
+msgid "Our Methodology"
+msgstr "منهجيتنا"
+
+msgid "Our Capabilities"
+msgstr "قدراتنا"
+
+msgid "Disclosure Policy"
+msgstr "سياسة الإفصاح"
+
+# Methodology descriptions
+msgid "A structured, predictable approach to technology advisory. We define scope clearly, deliver documented recommendations, and respect boundaries."
+msgstr "نهج منظم ومتوقع للاستشارات التقنية. نحدد النطاق بوضوح، ونقدم توصيات موثقة، ونحترم الحدود."
+
+msgid "Analysis of technology options and trade-offs"
+msgstr "تحليل الخيارات التقنية والمفاضلات"
+
+msgid "Current state assessment and technology landscape mapping"
+msgstr "تقييم الوضع الحالي ورسم خريطة المشهد التقني"
+
+msgid "Documentation of decision frameworks"
+msgstr "توثيق أطر اتخاذ القرار"
+
+msgid "Recommendations based on requirements"
+msgstr "توصيات مبنية على المتطلبات"
+
+# Cloud Services
+msgid "Cloud readiness assessment, Provider comparison matrix, Migration trade-off analysis."
+msgstr "تقييم الجاهزية السحابية، مصفوفة مقارنة مزودي الخدمة، تحليل مفاضلات الترحيل."
+
+msgid "Cloud vs. on-premise vs. hybrid architecture decisions"
+msgstr "قرارات بين السحابة والبنية المحلية والهجينة"
+
+msgid "Multi-cloud strategy evaluation and provider comparison"
+msgstr "تقييم استراتيجية السحابة المتعددة ومقارنة المزودين"
+
+msgid "Migration approach assessment and sequencing"
+msgstr "تقييم نهج الترحيل والتسلسل"
+
+# Digital Transformation
+msgid "Modernizing technology requires evaluating platforms, integration approaches, and transformation sequencing. We help you build a technology roadmap aligned with business objectives."
+msgstr "تحديث التقنية يتطلب تقييم المنصات ونهج التكامل وتسلسل التحول. نساعدك في بناء خارطة طريق تقنية متوافقة مع أهداف العمل."
+
+msgid "Technology landscape map, Transformation options analysis, Platform evaluation framework."
+msgstr "خريطة المشهد التقني، تحليل خيارات التحول، إطار تقييم المنصات."
+
+msgid "Platform and technology stack evaluation"
+msgstr "تقييم المنصة والمكدس التقني"
+
+msgid "Process automation opportunity identification"
+msgstr "تحديد فرص أتمتة العمليات"
+
+# Security
+msgid "Security and compliance decisions require balancing risk, investment, and operational impact. We help you prioritize and select the right approach for your organization."
+msgstr "قرارات الأمن والامتثال تتطلب موازنة المخاطر والاستثمار والأثر التشغيلي. نساعدك في تحديد الأولويات واختيار النهج المناسب لمؤسستك."
+
+msgid "Security posture assessment, Compliance roadmap, Risk register with prioritizations."
+msgstr "تقييم الوضع الأمني، خارطة طريق الامتثال، سجل المخاطر مع الأولويات."
+
+msgid "Security framework selection (ISO 27001, NIST, SOC 2)"
+msgstr "اختيار إطار الأمان (ISO 27001، NIST، SOC 2)"
+
+msgid "Security vendor evaluation criteria"
+msgstr "معايير تقييم موردي الأمن"
+
+msgid "Compliance gap analysis and readiness assessment"
+msgstr "تحليل فجوات الامتثال وتقييم الجاهزية"
+
+# Vendor Selection
+msgid "Selecting the right technology vendors requires structured evaluation beyond sales presentations. We help you ask the right questions and compare objectively."
+msgstr "اختيار موردي التقنية المناسبين يتطلب تقييماً منظماً يتجاوز العروض التقديمية. نساعدك في طرح الأسئلة الصحيحة والمقارنة بموضوعية."
+
+msgid "Requirements specification, Vendor evaluation scorecard, Selection recommendation."
+msgstr "مواصفات المتطلبات، بطاقة تقييم الموردين، توصية الاختيار."
+
+msgid "Vendor shortlisting and evaluation criteria"
+msgstr "القائمة المختصرة للموردين ومعايير التقييم"
+
+msgid "Vendor evaluation guidance"
+msgstr "إرشادات تقييم الموردين"
+
+msgid "Reference check frameworks"
+msgstr "أطر التحقق من المراجع"
+
+msgid "Vendor Contracts:"
+msgstr "عقود الموردين:"
+
+msgid "Requirements definition and RFP development"
+msgstr "تحديد المتطلبات وتطوير طلب العروض"
+
+# Organizations
+msgid "Organizations face critical decisions about cloud adoption, provider selection, and infrastructure architecture. We provide independent analysis to guide these choices."
+msgstr "تواجه المؤسسات قرارات حاسمة حول تبني السحابة واختيار المزودين وهيكلة البنية التحتية. نقدم تحليلاً مستقلاً لتوجيه هذه الخيارات."
+
+# What We Don't Do
+msgid "We Do Not Provide:"
+msgstr "لا نقدم:"
+
+msgid "We Do Not Collect"
+msgstr "لا نجمع"
+
+msgid "Implementation of technology solutions"
+msgstr "تنفيذ الحلول التقنية"
+
+msgid "Ongoing IT support or managed services"
+msgstr "الدعم التقني المستمر أو الخدمات المدارة"
+
+msgid "Product sales, licensing, or reselling"
+msgstr "بيع المنتجات أو الترخيص أو إعادة البيع"
+
+msgid "Project management or execution"
+msgstr "إدارة المشاريع أو التنفيذ"
+
+msgid "Implementation:"
+msgstr "التنفيذ:"
+
+# What We Provide
+msgid "We Provide:"
+msgstr "نقدم:"
+
+msgid "Our independence is our value. We succeed when you make an informed decision."
+msgstr "استقلاليتنا هي قيمتنا. ننجح عندما تتخذ قراراً مستنيراً."
+
+msgid "We do not implement solutions, manage projects, or provide ongoing support. Our role is to provide the analysis and recommendations that enable your informed decision. Execution is the responsibility of your team or selected vendors."
+msgstr "لا ننفذ الحلول ولا ندير المشاريع ولا نقدم دعماً مستمراً. دورنا هو تقديم التحليل والتوصيات التي تمكنك من اتخاذ قرار مستنير. التنفيذ مسؤولية فريقك أو الموردين المختارين."
+
+# Client Responsibilities
+msgid "Access to decision-makers and stakeholders"
+msgstr "الوصول إلى صناع القرار وأصحاب المصلحة"
+
+msgid "Honest feedback on priorities and constraints"
+msgstr "ملاحظات صادقة حول الأولويات والقيود"
+
+msgid "Timely review of draft deliverables"
+msgstr "مراجعة المسودات في الوقت المناسب"
+
+msgid "Relevant documentation (diagrams, policies, contracts)"
+msgstr "الوثائق ذات الصلة (المخططات، السياسات، العقود)"
+
+msgid "Your Role in the Engagement"
+msgstr "دورك في المشاركة"
+
+msgid "For our advisory to be effective, we rely on a partnership approach. While we provide the analysis, your input is critical."
+msgstr "لكي تكون استشاراتنا فعالة، نعتمد على نهج الشراكة. بينما نقدم التحليل، مدخلاتك حاسمة."
+
+# Vendor Introductions
+msgid "Vendor Introductions & Referral Fees"
+msgstr "تقديم الموردين ورسوم الإحالة"
+
+msgid "Optional, Client-Requested"
+msgstr "اختياري، بناءً على طلب العميل"
+
+msgid "Clients have no obligation to select any vendor we introduce."
+msgstr "لا يلتزم العملاء باختيار أي مورد نقدمه."
+
+msgid "Clients are always free to:"
+msgstr "للعملاء الحرية دائماً في:"
+
+msgid "Choose any vendor/provider"
+msgstr "اختيار أي مورد/مزود"
+
+msgid "Request multiple options, or"
+msgstr "طلب خيارات متعددة، أو"
+
+msgid "Proceed without any introductions."
+msgstr "المضي قدماً دون أي تقديمات."
+
+msgid "If a client requests introductions to vendors or specialists, any referral fees are disclosed and documented in advance, and the client remains free to choose any provider."
+msgstr "إذا طلب العميل تقديمه لموردين أو متخصصين، يتم الإفصاح عن أي رسوم إحالة وتوثيقها مسبقاً، ويبقى العميل حراً في اختيار أي مزود."
+
+msgid "If any referral fee, commission, or benefit may apply as a result of an introduction, it will be:"
+msgstr "إذا كانت أي رسوم إحالة أو عمولة أو منفعة قد تنطبق نتيجة التقديم، فستكون:"
+
+msgid "Disclosed clearly in writing, and"
+msgstr "مفصح عنها بوضوح كتابياً، و"
+
+msgid "Agreed in advance before any referral arrangement applies."
+msgstr "متفق عليها مسبقاً قبل تطبيق أي ترتيب إحالة."
+
+msgid "No referral fees are taken "
+msgstr "لا تُؤخذ أي رسوم إحالة "
+
+# Conflicts of Interest
+msgid "We aim to avoid conflicts of interest. Where a potential conflict may exist, we disclose it and document the client\\"
+msgstr "نسعى لتجنب تضارب المصالح. حيث قد يوجد تضارب محتمل، نفصح عنه ونوثق"
+
+# Legal Pages
+msgid "Limitation of Liability"
+msgstr "تحديد المسؤولية"
+
+msgid "Our liability is limited to the fees paid for the engagement."
+msgstr "مسؤوليتنا محدودة بالرسوم المدفوعة للمشاركة."
+
+msgid "We are not liable for indirect, incidental, or consequential damages."
+msgstr "لسنا مسؤولين عن الأضرار غير المباشرة أو العرضية أو التبعية."
+
+msgid "We are not liable for lost profits, lost data, or business interruption."
+msgstr "لسنا مسؤولين عن الأرباح المفقودة أو البيانات المفقودة أو انقطاع العمل."
+
+msgid "Our recommendations represent our professional judgment based on information available at the time of engagement."
+msgstr "توصياتنا تمثل حكمنا المهني بناءً على المعلومات المتاحة وقت المشاركة."
+
+msgid "Our services do not constitute legal, tax, or financial advice. For such matters, please engage appropriate licensed professionals."
+msgstr "خدماتنا لا تشكل استشارات قانونية أو ضريبية أو مالية. لهذه الأمور، يرجى التعامل مع المتخصصين المرخصين المناسبين."
+
+msgid "Technology decisions involve inherent uncertainty. We do not guarantee specific business outcomes, return on investment, project success, or vendor performance."
+msgstr "القرارات التقنية تنطوي على عدم يقين متأصل. لا نضمن نتائج عمل محددة أو عائد استثمار أو نجاح مشروع أو أداء مورد."
+
+# Terms of Use
+msgid "By accessing and using this website (fahadalmansourconsulting.com), you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website."
+msgstr "بالدخول إلى هذا الموقع واستخدامه (fahadalmansourconsulting.com)، فإنك تقبل وتوافق على الالتزام بشروط الاستخدام هذه. إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام هذا الموقع."
+
+msgid "All content on this website, including text, graphics, logos, and images, is the property of Fahad Almansour Consultant Office or its content suppliers and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from this content without our prior written permission."
+msgstr "جميع المحتويات على هذا الموقع، بما في ذلك النصوص والرسومات والشعارات والصور، هي ملك لمكتب فهد المنصور للاستشارات أو مزودي المحتوى ومحمية بقوانين الملكية الفكرية. لا يجوز لك إعادة إنتاج أو توزيع أو إنشاء أعمال مشتقة من هذا المحتوى دون إذن كتابي مسبق منا."
+
+msgid "This website is provided "
+msgstr "يُقدم هذا الموقع "
+
+msgid "Fahad Almansour Consultant Office shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of, or inability to use, this website. Our total liability shall not exceed the amount you paid us (if any) for using our services."
+msgstr "لن يكون مكتب فهد المنصور للاستشارات مسؤولاً عن أي أضرار غير مباشرة أو عرضية أو خاصة أو تبعية أو تأديبية ناشئة عن أو متعلقة باستخدامك أو عدم قدرتك على استخدام هذا الموقع. لن تتجاوز مسؤوليتنا الإجمالية المبلغ الذي دفعته لنا (إن وجد) مقابل استخدام خدماتنا."
+
+msgid "These Terms of Use shall be governed by and construed in accordance with the laws of Riyadh, Saudi Arabia. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts of Riyadh, Saudi Arabia."
+msgstr "تخضع شروط الاستخدام هذه وتفسر وفقاً لقوانين الرياض، المملكة العربية السعودية. تخضع أي نزاعات ناشئة عن هذه الشروط للاختصاص القضائي الحصري لمحاكم الرياض، المملكة العربية السعودية."
+
+msgid "We reserve the right to modify these Terms of Use at any time. Changes will be effective immediately upon posting to this website. Your continued use of the website after any changes constitutes your acceptance of the new terms."
+msgstr "نحتفظ بالحق في تعديل شروط الاستخدام هذه في أي وقت. ستكون التغييرات سارية فور نشرها على هذا الموقع. استمرارك في استخدام الموقع بعد أي تغييرات يشكل قبولك للشروط الجديدة."
+
+msgid "Changes to terms"
+msgstr "التغييرات على الشروط"
+
+msgid "You agree to use this website only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else\\"
+msgstr "توافق على استخدام هذا الموقع فقط لأغراض قانونية وبطريقة لا تنتهك حقوق الآخرين أو تقيدهم أو تمنعهم"
+
+msgid "Attempting to gain unauthorized access to our systems"
+msgstr "محاولة الوصول غير المصرح به إلى أنظمتنا"
+
+msgid "Harassing, threatening, or intimidating others"
+msgstr "مضايقة أو تهديد أو ترهيب الآخرين"
+
+msgid "Transmitting harmful, unlawful, or objectionable material"
+msgstr "نقل مواد ضارة أو غير قانونية أو مرفوضة"
+
+msgid "For questions about these Terms of Use, please contact us at"
+msgstr "للاستفسارات حول شروط الاستخدام هذه، يرجى التواصل معنا على"
+
+# Privacy Policy
+msgid "Information You Provide"
+msgstr "المعلومات التي تقدمها"
+
+msgid "Information Collected Automatically"
+msgstr "المعلومات المجمعة تلقائياً"
+
+msgid "Contact information (name, email address, phone number)"
+msgstr "معلومات الاتصال (الاسم، البريد الإلكتروني، رقم الهاتف)"
+
+msgid "Professional information (job title, company name, industry)"
+msgstr "المعلومات المهنية (المسمى الوظيفي، اسم الشركة، القطاع)"
+
+msgid "Inquiry details (decision type, situation description, timeline)"
+msgstr "تفاصيل الاستفسار (نوع القرار، وصف الموقف، الجدول الزمني)"
+
+msgid "Communications you send to us"
+msgstr "المراسلات التي ترسلها إلينا"
+
+msgid "Device and browser information"
+msgstr "معلومات الجهاز والمتصفح"
+
+msgid "IP address and general location (country/region)"
+msgstr "عنوان IP والموقع العام (البلد/المنطقة)"
+
+msgid "Pages visited and time spent on our website"
+msgstr "الصفحات التي تمت زيارتها والوقت المستغرق على موقعنا"
+
+msgid "Referral source"
+msgstr "مصدر الإحالة"
+
+msgid "Sensitive personal data unless specifically required for an engagement"
+msgstr "البيانات الشخصية الحساسة ما لم تكن مطلوبة تحديداً للمشاركة"
+
+msgid "Financial information (we do not process payments on this website)"
+msgstr "المعلومات المالية (لا نعالج المدفوعات على هذا الموقع)"
+
+msgid "To Respond to Inquiries:"
+msgstr "للرد على الاستفسارات:"
+
+msgid "To Provide Advisory Services:"
+msgstr "لتقديم الخدمات الاستشارية:"
+
+msgid "To Improve Our Website:"
+msgstr "لتحسين موقعنا:"
+
+msgid " When you submit a contact form or request a decision session, we use your information to respond and schedule discussions."
+msgstr " عندما تقدم نموذج اتصال أو تطلب جلسة قرار، نستخدم معلوماتك للرد وجدولة المناقشات."
+
+msgid " If you engage our services, we use information necessary to deliver the agreed advisory deliverables."
+msgstr " إذا استخدمت خدماتنا، نستخدم المعلومات اللازمة لتقديم المخرجات الاستشارية المتفق عليها."
+
+msgid " We analyze aggregated, anonymized data to understand how visitors use our website and improve the experience."
+msgstr " نحلل البيانات المجمعة والمجهولة لفهم كيفية استخدام الزوار لموقعنا وتحسين التجربة."
+
+msgid "Legal Basis for Processing"
+msgstr "الأساس القانوني للمعالجة"
+
+msgid "Consent:"
+msgstr "الموافقة:"
+
+msgid "Contractual Necessity:"
+msgstr "الضرورة التعاقدية:"
+
+msgid "Legitimate Interests:"
+msgstr "المصالح المشروعة:"
+
+msgid "Legal Requirements:"
+msgstr "المتطلبات القانونية:"
+
+msgid " When you submit a form on our website, you provide consent for us to process your data for the stated purposes. You may withdraw consent at any time."
+msgstr " عندما تقدم نموذجاً على موقعنا، فإنك توافق على معالجة بياناتك للأغراض المذكورة. يمكنك سحب موافقتك في أي وقت."
+
+msgid " When you engage our advisory services, we process data necessary to fulfill our contractual obligations."
+msgstr " عندما تستخدم خدماتنا الاستشارية، نعالج البيانات اللازمة للوفاء بالتزاماتنا التعاقدية."
+
+msgid " We may process data for our legitimate business interests, provided this does not override your rights."
+msgstr " قد نعالج البيانات لمصالحنا التجارية المشروعة، بشرط ألا يتجاوز ذلك حقوقك."
+
+msgid " When required by law or regulation."
+msgstr " عندما يقتضي القانون أو اللوائح."
+
+msgid "Data Sharing"
+msgstr "مشاركة البيانات"
+
+msgid "We do not sell, rent, or trade your personal data. We may share data with:"
+msgstr "لا نبيع أو نؤجر أو نتاجر ببياناتك الشخصية. قد نشارك البيانات مع:"
+
+msgid "Service Providers:"
+msgstr "مزودو الخدمات:"
+
+msgid " Third parties who assist with website hosting, email services, or analytics (contractually bound to protect data)."
+msgstr " أطراف ثالثة تساعد في استضافة الموقع أو خدمات البريد الإلكتروني أو التحليلات (ملتزمة تعاقدياً بحماية البيانات)."
+
+msgid " Relationships with vendors are between you and those vendors directly."
+msgstr " العلاقات مع الموردين هي بينك وبين هؤلاء الموردين مباشرة."
+
+msgid "We retain your personal data only as long as necessary:"
+msgstr "نحتفظ ببياناتك الشخصية فقط للمدة اللازمة:"
+
+msgid "Inquiry data: 12 months from last contact, unless an engagement begins"
+msgstr "بيانات الاستفسار: ١٢ شهراً من آخر اتصال، ما لم تبدأ مشاركة"
+
+msgid "Engagement data: Duration of engagement plus 5 years for legal/professional purposes"
+msgstr "بيانات المشاركة: مدة المشاركة بالإضافة إلى ٥ سنوات لأغراض قانونية/مهنية"
+
+msgid "Website analytics: Aggregated, anonymized data retained indefinitely"
+msgstr "تحليلات الموقع: يتم الاحتفاظ بالبيانات المجمعة والمجهولة إلى أجل غير مسمى"
+
+msgid "Right to Access"
+msgstr "حق الوصول"
+
+msgid "Right to Correction"
+msgstr "حق التصحيح"
+
+msgid "Right to Deletion"
+msgstr "حق الحذف"
+
+msgid "Right to Withdraw Consent"
+msgstr "حق سحب الموافقة"
+
+msgid "You have the following rights regarding your personal data:"
+msgstr "لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:"
+
+msgid "To exercise any of these rights, contact us at"
+msgstr "لممارسة أي من هذه الحقوق، تواصل معنا على"
+
+msgid "International Data"
+msgstr "البيانات الدولية"
+
+msgid "Our company is based in Riyadh, Saudi Arabia. If you are located in the GCC or elsewhere, your data may be transferred to and processed in Saudi Arabia. We apply consistent privacy protections regardless of where data is processed."
+msgstr "شركتنا مقرها الرياض، المملكة العربية السعودية. إذا كنت في دول مجلس التعاون الخليجي أو في مكان آخر، قد يتم نقل بياناتك ومعالجتها في المملكة العربية السعودية. نطبق حماية خصوصية متسقة بغض النظر عن مكان معالجة البيانات."
+
+msgid "This policy is designed with awareness of the Saudi Personal Data Protection Law (PDPL) and privacy requirements across the Gulf Cooperation Council. We apply consistent privacy practices regardless of where you are located."
+msgstr "صُممت هذه السياسة مع مراعاة نظام حماية البيانات الشخصية السعودي ومتطلبات الخصوصية في دول مجلس التعاون الخليجي. نطبق ممارسات خصوصية متسقة بغض النظر عن موقعك."
+
+msgid "Privacy Inquiries:"
+msgstr "استفسارات الخصوصية:"
+
+msgid "Privacy inquiries:"
+msgstr "استفسارات الخصوصية:"
+
+# Cookie Policy
+msgid "Cookies are small text files stored on your device when you visit a website. They help websites function properly, remember your preferences, and understand how you use the site."
+msgstr "الكوكيز هي ملفات نصية صغيرة تُخزن على جهازك عند زيارة موقع ويب. تساعد المواقع على العمل بشكل صحيح، وتذكر تفضيلاتك، وفهم كيفية استخدامك للموقع."
+
+msgid "Cookies We Use"
+msgstr "الكوكيز التي نستخدمها"
+
+msgid "Essential Cookies"
+msgstr "الكوكيز الأساسية"
+
+msgid "Analytics Cookies (Optional)"
+msgstr "كوكيز التحليلات (اختيارية)"
+
+msgid "Third-Party Cookies"
+msgstr "كوكيز الطرف الثالث"
+
+msgid "These cookies are necessary for the website to function. They enable basic features like page navigation and form submission. You cannot opt out of essential cookies."
+msgstr "هذه الكوكيز ضرورية لعمل الموقع. تُمكّن الميزات الأساسية مثل التنقل بين الصفحات وإرسال النماذج. لا يمكنك إلغاء الاشتراك في الكوكيز الأساسية."
+
+msgid "These cookies help us understand how visitors use our website. They collect aggregated, anonymized data about page views and traffic sources. They are only set if you consent."
+msgstr "تساعدنا هذه الكوكيز على فهم كيفية استخدام الزوار لموقعنا. تجمع بيانات مجمعة ومجهولة حول مشاهدات الصفحات ومصادر الزيارات. يتم تعيينها فقط إذا وافقت."
+
+msgid "We use Google Analytics for website analytics. Google\\"
+msgstr "نستخدم Google Analytics لتحليلات الموقع. سياسة"
+
+msgid "We do not use advertising cookies or allow third-party advertising on our website."
+msgstr "لا نستخدم كوكيز الإعلانات ولا نسمح بإعلانات الطرف الثالث على موقعنا."
+
+msgid "Cookie"
+msgstr "الكوكي"
+
+msgid "Purpose"
+msgstr "الغرض"
+
+msgid "Maintains your session state"
+msgstr "يحافظ على حالة جلستك"
+
+msgid "Stores your cookie preferences"
+msgstr "يخزن تفضيلات الكوكيز الخاصة بك"
+
+msgid "Google Analytics unique ID"
+msgstr "معرف Google Analytics الفريد"
+
+msgid "Google Analytics session ID"
+msgstr "معرف جلسة Google Analytics"
+
+msgid "Cookie Banner:"
+msgstr "شريط الكوكيز:"
+
+msgid "Browser Settings:"
+msgstr "إعدادات المتصفح:"
+
+msgid "Withdraw Consent:"
+msgstr "سحب الموافقة:"
+
+msgid " When you first visit, you can accept or decline optional cookies."
+msgstr " عند زيارتك الأولى، يمكنك قبول أو رفض الكوكيز الاختيارية."
+
+msgid " You can block all cookies via your browser settings."
+msgstr " يمكنك حظر جميع الكوكيز عبر إعدادات متصفحك."
+
+msgid " You can clear your cookies and revisit the site to reset your preferences."
+msgstr " يمكنك مسح الكوكيز وإعادة زيارة الموقع لإعادة تعيين تفضيلاتك."
+
+msgid "Questions about cookies:"
+msgstr "أسئلة حول الكوكيز:"
+
+# Disclaimer
+msgid "Fahad Almansour Consultant Office provides IT consulting services. All information on this website is for general informational purposes and does not constitute professional advice for your specific situation. Consulting engagements are governed by separate service agreements."
+msgstr "يقدم مكتب فهد المنصور للاستشارات خدمات استشارات تقنية المعلومات. جميع المعلومات على هذا الموقع هي لأغراض إعلامية عامة ولا تشكل نصيحة مهنية لوضعك الخاص. تخضع المشاركات الاستشارية لاتفاقيات خدمة منفصلة."
+
+msgid "Fahad Almansour Consultant Office provides technology advisory services only."
+msgstr "يقدم مكتب فهد المنصور للاستشارات خدمات استشارية تقنية فقط."
+
+msgid "Fahad Almansour Consulting provides decision consulting independently. We do not resell products as part of the advisory service."
+msgstr "يقدم مكتب فهد المنصور للاستشارات استشارات القرار بشكل مستقل. لا نعيد بيع المنتجات كجزء من الخدمة الاستشارية."
+
+msgid "Our advisory work is designed to remain independent and decision-focused. We do not resell products or services as part of the advisory engagement."
+msgstr "عملنا الاستشاري مصمم ليبقى مستقلاً ومركزاً على القرار. لا نعيد بيع المنتجات أو الخدمات كجزء من المشاركة الاستشارية."
+
+msgid " All technology decisions are made by you. Our recommendations are inputs to your process."
+msgstr " جميع القرارات التقنية تتخذها أنت. توصياتنا هي مدخلات لعمليتك."
+
+msgid " Execution of any recommendations is your responsibility. We do not supervise implementation."
+msgstr " تنفيذ أي توصيات هو مسؤوليتك. نحن لا نشرف على التنفيذ."
+
+msgid "Questions about this disclaimer:"
+msgstr "أسئلة حول إخلاء المسؤولية هذا:"
+
+# Disclaimer Page - New Business Model
+msgid "Service Disclaimer"
+msgstr "إخلاء مسؤولية الخدمات"
+
+msgid "Fahad Almansour Consultant Office provides technology assessment, solution design, hardware/software procurement, and delivery services."
+msgstr "يقدم مكتب فهد المنصور للاستشارات خدمات تقييم التقنية، تصميم الحلول، توريد الأجهزة والبرامج، والتسليم."
+
+msgid "Technology requirements assessment"
+msgstr "تقييم المتطلبات التقنية"
+
+msgid "Solution design and architecture"
+msgstr "تصميم الحلول والمعمارية"
+
+msgid "Certified hardware and software procurement"
+msgstr "توريد الأجهزة والبرامج المعتمدة"
+
+msgid "Product delivery and initial configuration support"
+msgstr "تسليم المنتجات ودعم الإعداد الأولي"
+
+msgid "Software development or custom coding"
+msgstr "تطوير البرمجيات أو البرمجة المخصصة"
+
+msgid "Staffing or temporary personnel"
+msgstr "التوظيف أو الموظفين المؤقتين"
+
+msgid "Guarantees of specific business outcomes"
+msgstr "ضمانات لنتائج أعمال محددة"
+
+# Disclosure
+msgid "Fahad Almansour Consultant Office provides IT Decision Consulting on an advisory-only basis. This Disclosure Policy explains how we handle vendor introductions and any potential referral fees, to maintain transparency and trust."
+msgstr "يقدم مكتب فهد المنصور للاستشارات استشارات قرارات تقنية المعلومات على أساس استشاري فقط. توضح سياسة الإفصاح هذه كيفية تعاملنا مع تقديم الموردين وأي رسوم إحالة محتملة، للحفاظ على الشفافية والثقة."
+
+msgid "If a client requests introductions to vendors, integrators, or specialist service providers, we may facilitate introductions. Vendor introductions are always optional and only provided at the client\\"
+msgstr "إذا طلب العميل تقديمه لموردين أو مدمجين أو مزودي خدمات متخصصين، قد نسهل التقديمات. تقديم الموردين دائماً اختياري ويُقدم فقط بناءً على طلب العميل"
+
+msgid "Final Decisions:"
+msgstr "القرارات النهائية:"
+
+msgid "For questions related to this policy, contact:"
+msgstr "للاستفسارات المتعلقة بهذه السياسة، تواصل مع:"
+
+# Disclosure Page - New Business Model
+msgid "Procurement Transparency & Pricing"
+msgstr "شفافية التوريد والتسعير"
+
+msgid "Fahad Almansour Consultant Office is a complete technology partner providing assessment, design, procurement, and delivery services. This Disclosure Policy explains our pricing transparency practices for hardware and software procurement."
+msgstr "مكتب فهد المنصور للاستشارات شريك تقني متكامل يقدم خدمات التقييم والتصميم والتوريد والتسليم. توضح سياسة الإفصاح هذه ممارسات الشفافية في التسعير لتوريد الأجهزة والبرامج."
+
+msgid "1) Procurement Transparency"
+msgstr "١) شفافية التوريد"
+
+msgid "All product procurement pricing is transparent. Clients receive a detailed breakdown of products, quantities, unit costs, and FSC service margins before any purchase is made."
+msgstr "جميع أسعار توريد المنتجات شفافة. يحصل العملاء على تفصيل كامل للمنتجات والكميات وتكاليف الوحدة وهوامش خدمة FSC قبل أي عملية شراء."
+
+msgid "2) Assessment Independence"
+msgstr "٢) استقلالية التقييم"
+
+msgid "Our assessments are conducted independently of procurement decisions. We assess your actual needs first and recommend solutions based on your requirements — not on product margins or vendor incentives."
+msgstr "تُجرى تقييماتنا بشكل مستقل عن قرارات التوريد. نقيّم احتياجاتك الفعلية أولاً ونوصي بالحلول بناءً على متطلباتك — وليس على هوامش المنتجات أو حوافز الموردين."
+
+msgid "3) Pricing Structure"
+msgstr "٣) هيكل التسعير"
+
+msgid "For all hardware and software procurement, clients receive:"
+msgstr "لجميع عمليات توريد الأجهزة والبرامج، يحصل العملاء على:"
+
+msgid "Detailed product specifications and quantities"
+msgstr "مواصفات وكميات مفصلة للمنتجات"
+
+msgid "Clear pricing breakdown before any purchase is made"
+msgstr "تفصيل أسعار واضح قبل أي عملية شراء"
+
+msgid "No hidden fees, no undisclosed margins. All pricing is agreed in advance."
+msgstr "لا رسوم مخفية، لا هوامش غير معلنة. جميع الأسعار يُتفق عليها مسبقاً."
+
+msgid "Procure through FSC for a complete solution"
+msgstr "التوريد عبر FSC للحصول على حل متكامل"
+
+msgid "Use our assessment only and procure independently"
+msgstr "استخدام تقييمنا فقط والتوريد بشكل مستقل"
+
+msgid "Request alternative product options at any time"
+msgstr "طلب خيارات منتجات بديلة في أي وقت"
+
+msgid "Clients have no obligation to procure through FSC. Our assessment is valuable regardless of procurement choice."
+msgstr "العملاء غير ملزمين بالتوريد عبر FSC. تقييمنا ذو قيمة بغض النظر عن اختيار التوريد."
+
+msgid "5) Product Authenticity & Warranty"
+msgstr "٥) أصالة المنتجات والضمان"
+
+msgid "All hardware and software procured through FSC is certified, genuine, and sourced from authorized distribution channels. Products carry full manufacturer warranty. We do not supply gray market, refurbished, or counterfeit products."
+msgstr "جميع الأجهزة والبرامج الموردة عبر FSC معتمدة وأصلية ومن قنوات توزيع مرخصة. المنتجات تحمل ضمان الشركة المصنعة الكامل. لا نوفر منتجات سوق رمادية أو مجددة أو مقلدة."
+
+# Third Party Links
+msgid "Third-party links"
+msgstr "روابط الطرف الثالث"
+
+msgid "This website may contain links to third-party websites. These links are provided for your convenience only. We have no control over the content of third-party websites and accept no responsibility for them or for any loss or damage that may arise from your use of them."
+msgstr "قد يحتوي هذا الموقع على روابط لمواقع طرف ثالث. هذه الروابط مقدمة لراحتك فقط. ليس لدينا سيطرة على محتوى مواقع الطرف الثالث ولا نتحمل مسؤولية عنها أو عن أي خسارة أو ضرر قد ينشأ من استخدامك لها."
+
+# Last Updated
+msgid "Last updated: January 11, 2026"
+msgstr "آخر تحديث: ١١ يناير ٢٠٢٦"
+
+# Introduction
+msgid "Introduction"
+msgstr "مقدمة"
+
+# Blog/Archive
+msgid "Archive"
+msgstr "الأرشيف"
+
+msgid "Browse by Category"
+msgstr "تصفح حسب الفئة"
+
+msgid "Related Articles"
+msgstr "مقالات ذات صلة"
+
+msgid "There are no articles in this archive yet. Check back soon for new content."
+msgstr "لا توجد مقالات في هذا الأرشيف بعد. تحقق قريباً من المحتوى الجديد."
+
+msgid "Explore our latest thoughts on IT consulting, technology strategy, and digital transformation."
+msgstr "استكشف أحدث أفكارنا حول استشارات تقنية المعلومات واستراتيجية التقنية والتحول الرقمي."
+
+# Blog Posts
+msgid "The Cloud Exit Strategy"
+msgstr "استراتيجية الخروج من السحابة"
+
+msgid "Why having a way out is as important as getting in."
+msgstr "لماذا امتلاك طريق للخروج مهم بقدر الدخول."
+
+msgid "Vendor Management 101"
+msgstr "إدارة الموردين ١٠١"
+
+msgid "How to keep your partners honest and aligned."
+msgstr "كيف تحافظ على صدق شركائك وتوافقهم."
+
+msgid "Technical Debt vs. Investment"
+msgstr "الدين التقني مقابل الاستثمار"
+
+msgid "Knowing the difference saves millions."
+msgstr "معرفة الفرق توفر الملايين."
+
+# Share
+msgid "Share this article"
+msgstr "شارك هذه المقالة"
+
+msgid "Share on Twitter"
+msgstr "شارك على تويتر"
+
+msgid "Share on LinkedIn"
+msgstr "شارك على لينكد إن"
+
+msgid "Share via Email"
+msgstr "شارك عبر البريد الإلكتروني"
+
+msgid "Copy link"
+msgstr "نسخ الرابط"
+
+# Search/404
+msgid "It looks like nothing was found at this location."
+msgstr "يبدو أنه لم يتم العثور على شيء في هذا الموقع."
+
+msgid "Browse our pages using the navigation menu"
+msgstr "تصفح صفحاتنا باستخدام قائمة التنقل"
+
+msgid "Try using fewer or more general words"
+msgstr "حاول استخدام كلمات أقل أو أكثر عمومية"
+
+msgid "Check the spelling of your keywords"
+msgstr "تحقق من إملاء كلماتك المفتاحية"
+
+msgid "Suggestions:"
+msgstr "اقتراحات:"
+
+msgid "Helpful Links"
+msgstr "روابط مفيدة"
+
+# Contact / CTA
+msgid "90 minutes to discuss your specific technology decision. We"
+msgstr "٩٠ دقيقة لمناقشة قرارك التقني المحدد. نحن"
+
+msgid "No obligation. We respond within one business day."
+msgstr "بدون التزام. نرد خلال يوم عمل واحد."
+
+msgid "Request a Conversation"
+msgstr "اطلب محادثة"
+
+msgid "Start with a Decision Session"
+msgstr "ابدأ بجلسة قرار"
+
+msgid "Send your inquiry and we\\"
+msgstr "أرسل استفسارك و"
+
+msgid "Brief description of your challenges and what you\\"
+msgstr "وصف موجز لتحدياتك وما تريد"
+
+msgid "Brief description of your situation and what decision you\\"
+msgstr "وصف موجز لوضعك والقرار الذي"
+
+msgid "Bring a specific technology decision. We\\"
+msgstr "أحضر قراراً تقنياً محدداً. نحن"
+
+msgid "Determine if we\\"
+msgstr "نحدد إذا كنا"
+
+msgid "Every organization"
+msgstr "كل مؤسسة"
+
+msgid "Every organization\\"
+msgstr "كل مؤسسة"
+
+msgid "Examples of how we\\"
+msgstr "أمثلة على كيفية"
+
+msgid "Have a question that\\"
+msgstr "لديك سؤال لم"
+
+msgid "We believe in understanding before advising. That\\"
+msgstr "نؤمن بالفهم قبل تقديم المشورة. هذا"
+
+msgid "If you"
+msgstr "إذا كنت"
+
+msgid "We don"
+msgstr "نحن لا"
+
+msgid "We provide the right advice, even when it"
+msgstr "نقدم النصيحة الصحيحة، حتى عندما لا"
+
+msgid "What We Don\\"
+msgstr "ما لا نقدمه"
+
+msgid "Advisory recommendations are based on the client\\"
+msgstr "التوصيات الاستشارية مبنية على احتياجات العميل"
+
+msgid "The bank selected Option B (Hybrid Architecture) based on the trade-off analysis. Our recommendation aligned with this choice due to regulatory constraints and the bank\\"
+msgstr "اختار البنك الخيار ب (الهيكل الهجين) بناءً على تحليل المفاضلات. توافقت توصيتنا مع هذا الاختيار بسبب القيود التنظيمية ومتطلبات البنك"
+
+msgid "The manufacturing group selected Vendor B based on the combination of Saudi localization strength, regional support presence, and acceptable functionality coverage. Our trade-off analysis highlighted that Vendor A\\"
+msgstr "اختارت مجموعة التصنيع المورد ب بناءً على مزيج من قوة التوطين السعودي ووجود الدعم الإقليمي وتغطية الوظائف المقبولة. أبرز تحليل المفاضلات لدينا أن المورد أ"
+
+msgid "Timeline Estimates"
+msgstr "تقديرات الجدول الزمني"
+
+msgid "Outcome:"
+msgstr "النتيجة:"
+
+msgid "Fahad Almansour Consultant Office ("
+msgstr "مكتب فهد المنصور للاستشارات ("

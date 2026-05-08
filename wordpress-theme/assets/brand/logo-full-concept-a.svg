@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="48" viewBox="0 0 280 48" fill="none">
+  <!-- Full Logo: Decision Node + Company Name -->
+
+  <!-- Icon: Decision Node (scaled) -->
+  <g transform="translate(0, 0)">
+    <circle cx="8" cy="8" r="3" fill="#0F172A"/>
+    <circle cx="20" cy="8" r="3" fill="#0F172A"/>
+    <circle cx="32" cy="8" r="3" fill="#0F172A"/>
+    <path d="M8 11 L20 20" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M20 11 L20 20" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M32 11 L20 20" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="20" cy="20" r="4" fill="#0F172A"/>
+    <path d="M20 24 L20 32" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+    <rect x="15" y="32" width="10" height="5" rx="1" fill="#0F172A"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="52" y="31" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="500" fill="#0F172A">FSC | Fahad Almansour</text>
+</svg>

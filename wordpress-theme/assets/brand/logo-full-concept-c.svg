@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="48" viewBox="0 0 280 48" fill="none">
+  <!-- Full Logo: Framework Grid + Company Name -->
+
+  <!-- Icon: Framework Grid (scaled to 40px) -->
+  <g transform="translate(4, 4)">
+    <rect x="0" y="0" width="36" height="36" rx="2" stroke="#0F172A" stroke-width="1.5" fill="none"/>
+    <line x1="18" y1="0" x2="18" y2="36" stroke="#0F172A" stroke-width="1.5"/>
+    <line x1="0" y1="18" x2="36" y2="18" stroke="#0F172A" stroke-width="1.5"/>
+    <rect x="2" y="2" width="14" height="14" rx="1" fill="#0F172A"/>
+    <circle cx="27" cy="9" r="1.5" fill="#CBD5E1"/>
+    <circle cx="9" cy="27" r="1.5" fill="#CBD5E1"/>
+    <circle cx="27" cy="27" r="1.5" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="52" y="31" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="500" fill="#0F172A">FSC | Fahad Almansour</text>
+</svg>

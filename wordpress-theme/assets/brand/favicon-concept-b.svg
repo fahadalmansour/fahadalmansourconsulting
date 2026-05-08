@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <!-- Favicon: Clarity Mark N - Simplified for small size -->
+  <rect width="32" height="32" rx="6" fill="#0F172A"/>
+
+  <!-- Simplified N mark -->
+  <path d="M8 26 L8 6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M8 26 L24 6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 26 L24 6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>

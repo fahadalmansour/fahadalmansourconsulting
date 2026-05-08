@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Services Agreement - Fahad Almansour Consultant Office (FSC)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 25mm 20mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fff;
+        }
+
+        .contract {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 25mm 20mm;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30pt;
+            padding-bottom: 20pt;
+            border-bottom: 2pt solid #1a1a1a;
+        }
+
+        .header h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            letter-spacing: 1pt;
+            text-transform: uppercase;
+            margin-bottom: 5pt;
+        }
+
+        .header .subtitle {
+            font-size: 11pt;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Contract Info */
+        .contract-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30pt;
+            padding: 15pt;
+            background: #f9f9f9;
+            border: 1pt solid #ddd;
+        }
+
+        .contract-info div {
+            font-size: 10pt;
+        }
+
+        .contract-info strong {
+            display: block;
+            font-size: 9pt;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 3pt;
+        }
+
+        /* Parties */
+        .parties {
+            margin-bottom: 30pt;
+        }
+
+        .parties h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            margin-bottom: 15pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+        }
+
+        .party {
+            margin-bottom: 20pt;
+            padding: 15pt;
+            background: #fafafa;
+            border-left: 3pt solid #1a1a1a;
+        }
+
+        .party-label {
+            font-size: 9pt;
+            text-transform: uppercase;
+            color: #666;
+            letter-spacing: 0.5pt;
+            margin-bottom: 5pt;
+        }
+
+        .party-name {
+            font-size: 13pt;
+            font-weight: 700;
+            margin-bottom: 5pt;
+        }
+
+        .party-details {
+            font-size: 10pt;
+            color: #444;
+        }
+
+        /* Recitals */
+        .recitals {
+            margin-bottom: 30pt;
+            font-style: italic;
+            color: #444;
+        }
+
+        .recitals p {
+            margin-bottom: 10pt;
+        }
+
+        /* Articles */
+        .article {
+            margin-bottom: 25pt;
+            page-break-inside: avoid;
+        }
+
+        .article-title {
+            font-size: 12pt;
+            font-weight: 700;
+            margin-bottom: 12pt;
+            padding-bottom: 5pt;
+            border-bottom: 1pt solid #ddd;
+        }
+
+        .article-title .number {
+            display: inline-block;
+            width: 35pt;
+            color: #666;
+        }
+
+        .article p {
+            margin-bottom: 10pt;
+            text-align: justify;
+        }
+
+        .article ol, .article ul {
+            margin-bottom: 15pt;
+            padding-left: 25pt;
+        }
+
+        .article li {
+            margin-bottom: 8pt;
+            text-align: justify;
+        }
+
+        .article li::marker {
+            color: #666;
+        }
+
+        .sub-list {
+            margin-top: 8pt;
+            list-style-type: lower-alpha;
+        }
+
+        /* Defined Terms */
+        .defined-term {
+            font-weight: 600;
+        }
+
+        /* Schedule Reference */
+        .schedule-ref {
+            background: #f5f5f5;
+            padding: 10pt 15pt;
+            border-radius: 3pt;
+            font-size: 10pt;
+            margin: 15pt 0;
+        }
+
+        /* Signature Block */
+        .signatures {
+            margin-top: 50pt;
+            page-break-inside: avoid;
+        }
+
+        .signatures h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            margin-bottom: 30pt;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .signature-grid {
+            display: flex;
+            gap: 40pt;
+        }
+
+        .signature-block {
+            flex: 1;
+        }
+
+        .signature-party {
+            font-size: 10pt;
+            font-weight: 700;
+            margin-bottom: 5pt;
+        }
+
+        .signature-company {
+            font-size: 9pt;
+            color: #666;
+            margin-bottom: 40pt;
+        }
+
+        .signature-field {
+            border-bottom: 1pt solid #1a1a1a;
+            margin-bottom: 5pt;
+            height: 30pt;
+        }
+
+        .signature-label {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .signature-row {
+            margin-bottom: 20pt;
+        }
+
+        /* Schedule */
+        .schedule {
+            page-break-before: always;
+            margin-top: 0;
+        }
+
+        .schedule-title {
+            font-size: 16pt;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30pt;
+            padding-bottom: 15pt;
+            border-bottom: 2pt solid #1a1a1a;
+        }
+
+        .schedule-section {
+            margin-bottom: 25pt;
+        }
+
+        .schedule-section h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            margin-bottom: 10pt;
+            color: #333;
+        }
+
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15pt;
+        }
+
+        .schedule th, .schedule td {
+            padding: 10pt;
+            text-align: left;
+            border: 1pt solid #ddd;
+            font-size: 10pt;
+        }
+
+        .schedule th {
+            background: #f5f5f5;
+            font-weight: 600;
+        }
+
+        .schedule .text-right {
+            text-align: right;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50pt;
+            padding-top: 15pt;
+            border-top: 1pt solid #ddd;
+            text-align: center;
+            font-size: 9pt;
+            color: #888;
+        }
+
+        /* Print Actions */
+        .print-actions {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .print-btn {
+            padding: 10px 20px;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: -apple-system, sans-serif;
+        }
+
+        .print-btn:hover {
+            background: #333;
+        }
+
+        .print-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        @media print {
+            .print-actions {
+                display: none;
+            }
+            .contract {
+                padding: 0;
+            }
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Print Actions -->
+    <div class="print-actions">
+        <button class="print-btn" onclick="window.print()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            Print / Save as PDF
+        </button>
+    </div>
+
+    <div class="contract">
+        <!-- Header -->
+        <div class="header">
+            <h1>Consulting Services Agreement</h1>
+            <div class="subtitle">Fahad Almansour Consultant Office (FSC)</div>
+        </div>
+
+        <!-- Contract Info -->
+        <div class="contract-info">
+            <div>
+                <strong>Agreement Number</strong>
+                CSA-2026-[NUMBER]
+            </div>
+            <div>
+                <strong>Effective Date</strong>
+                [DATE]
+            </div>
+            <div>
+                <strong>Governing Law</strong>
+                Kingdom of Saudi Arabia
+            </div>
+        </div>
+
+        <!-- Parties -->
+        <div class="parties">
+            <h2>Parties to this Agreement</h2>
+
+            <div class="party">
+                <div class="party-label">The Consultant</div>
+                <div class="party-name">Fahad Almansour Consultant Office</div>
+                <div class="party-details">
+                    Saudi Arabia<br>
+                    Email: info@fahadalmansourconsulting.com
+                </div>
+            </div>
+
+            <div class="party">
+                <div class="party-label">The Client</div>
+                <div class="party-name">[CLIENT COMPANY NAME]</div>
+                <div class="party-details">
+                    [Address Line 1]<br>
+                    [City, State/Province, Postal Code]<br>
+                    [Country]<br>
+                    Email: [client@email.com]
+                </div>
+            </div>
+        </div>
+
+        <!-- Recitals -->
+        <div class="recitals">
+            <p>
+                <strong>WHEREAS</strong>, the Consultant is engaged in the business of providing
+                information technology consulting services, including but not limited to cloud strategy,
+                digital transformation, cybersecurity advisory, and IT infrastructure planning; and
+            </p>
+            <p>
+                <strong>WHEREAS</strong>, the Client desires to engage the Consultant to provide
+                certain consulting services as more particularly described herein;
+            </p>
+            <p>
+                <strong>NOW, THEREFORE</strong>, in consideration of the mutual covenants and
+                agreements hereinafter set forth and for other good and valuable consideration,
+                the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:
+            </p>
+        </div>
+
+        <!-- Article 1: Services -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">1.</span>Scope of Services</h2>
+            <p>
+                1.1 The Consultant agrees to provide the consulting services described in
+                <strong>Schedule A</strong> attached hereto (the "<span class="defined-term">Services</span>").
+            </p>
+            <p>
+                1.2 The Consultant shall perform the Services in a professional and workmanlike manner,
+                consistent with industry standards and practices.
+            </p>
+            <p>
+                1.3 Any additional services not described in Schedule A shall be agreed upon in writing
+                by both parties and may be subject to additional fees.
+            </p>
+        </div>
+
+        <!-- Article 2: Term -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">2.</span>Term and Termination</h2>
+            <p>
+                2.1 This Agreement shall commence on the Effective Date and shall continue until
+                the completion of the Services, unless earlier terminated in accordance with this Article.
+            </p>
+            <p>
+                2.2 Either party may terminate this Agreement:
+            </p>
+            <ol type="a">
+                <li>Upon thirty (30) days' prior written notice to the other party;</li>
+                <li>Immediately upon written notice if the other party materially breaches this
+                    Agreement and fails to cure such breach within fourteen (14) days of receiving
+                    written notice thereof;</li>
+                <li>Immediately upon written notice if the other party becomes insolvent or
+                    files for bankruptcy.</li>
+            </ol>
+            <p>
+                2.3 Upon termination, the Client shall pay the Consultant for all Services performed
+                and expenses incurred up to the date of termination.
+            </p>
+        </div>
+
+        <!-- Article 3: Fees and Payment -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">3.</span>Fees and Payment</h2>
+            <p>
+                3.1 The Client agrees to pay the Consultant the fees set forth in <strong>Schedule B</strong>
+                attached hereto (the "<span class="defined-term">Fees</span>").
+            </p>
+            <p>
+                3.2 Unless otherwise specified in Schedule B, payment terms are as follows:
+            </p>
+            <ol type="a">
+                <li>Fifty percent (50%) of the total Fees due upon execution of this Agreement;</li>
+                <li>Remaining fifty percent (50%) due upon delivery of final deliverables.</li>
+            </ol>
+            <p>
+                3.3 All invoices are payable within fifteen (15) days of receipt. Late payments shall
+                accrue interest at the rate of 1.5% per month.
+            </p>
+            <p>
+                3.4 All Fees are exclusive of taxes. The Client shall be responsible for any applicable
+                taxes, excluding taxes based on the Consultant's income.
+            </p>
+        </div>
+
+        <!-- Article 4: Confidentiality -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">4.</span>Confidentiality</h2>
+            <p>
+                4.1 Each party agrees to maintain in confidence all information received from the other
+                party that is designated as confidential or that reasonably should be understood to be
+                confidential ("<span class="defined-term">Confidential Information</span>").
+            </p>
+            <p>
+                4.2 Confidential Information shall not include information that:
+            </p>
+            <ol type="a">
+                <li>Is or becomes publicly available through no fault of the receiving party;</li>
+                <li>Was rightfully in the receiving party's possession prior to disclosure;</li>
+                <li>Is independently developed by the receiving party without use of Confidential Information;</li>
+                <li>Is rightfully obtained from a third party without restriction on disclosure.</li>
+            </ol>
+            <p>
+                4.3 This confidentiality obligation shall survive termination of this Agreement for
+                a period of three (3) years.
+            </p>
+        </div>
+
+        <!-- Article 5: Intellectual Property -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">5.</span>Intellectual Property</h2>
+            <p>
+                5.1 Upon full payment of all Fees, the Client shall own all deliverables specifically
+                created for the Client under this Agreement.
+            </p>
+            <p>
+                5.2 The Consultant retains ownership of all pre-existing intellectual property,
+                methodologies, tools, and templates, and grants the Client a non-exclusive license
+                to use such materials solely in connection with the deliverables.
+            </p>
+            <p>
+                5.3 The Consultant may use general knowledge, skills, and experience acquired during
+                the performance of Services, including ideas, concepts, and techniques.
+            </p>
+        </div>
+
+        <!-- Article 6: Warranties and Limitation of Liability -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">6.</span>Warranties and Limitation of Liability</h2>
+            <p>
+                6.1 The Consultant warrants that:
+            </p>
+            <ol type="a">
+                <li>It has the right and authority to enter into this Agreement;</li>
+                <li>The Services will be performed in a professional manner consistent with industry standards;</li>
+                <li>The deliverables will not infringe any third-party intellectual property rights.</li>
+            </ol>
+            <p>
+                6.2 EXCEPT AS EXPRESSLY SET FORTH HEREIN, THE CONSULTANT MAKES NO OTHER WARRANTIES,
+                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY OR
+                FITNESS FOR A PARTICULAR PURPOSE.
+            </p>
+            <p>
+                6.3 IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+                CONSEQUENTIAL, OR PUNITIVE DAMAGES, REGARDLESS OF THE CAUSE OF ACTION OR WHETHER
+                SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+            </p>
+            <p>
+                6.4 The Consultant's total liability under this Agreement shall not exceed the total
+                Fees paid or payable by the Client under this Agreement.
+            </p>
+        </div>
+
+        <!-- Article 7: Independent Contractor -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">7.</span>Independent Contractor</h2>
+            <p>
+                7.1 The Consultant is an independent contractor and nothing in this Agreement shall
+                be construed to create an employment, partnership, or joint venture relationship
+                between the parties.
+            </p>
+            <p>
+                7.2 The Consultant shall be solely responsible for all taxes, insurance, and other
+                obligations arising from the Consultant's status as an independent contractor.
+            </p>
+        </div>
+
+        <!-- Article 8: General Provisions -->
+        <div class="article">
+            <h2 class="article-title"><span class="number">8.</span>General Provisions</h2>
+            <p>
+                8.1 <strong>Governing Law.</strong> This Agreement shall be governed by and construed
+                in accordance with the laws of the Kingdom of Saudi Arabia, without regard to its conflict
+                of laws principles.
+            </p>
+            <p>
+                8.2 <strong>Dispute Resolution.</strong> Any dispute arising out of this Agreement
+                shall first be subject to good faith negotiation. If not resolved within thirty (30) days,
+                the dispute shall be submitted to binding arbitration in Riyadh, Saudi Arabia.
+            </p>
+            <p>
+                8.3 <strong>Entire Agreement.</strong> This Agreement, including all Schedules,
+                constitutes the entire agreement between the parties and supersedes all prior
+                negotiations, representations, or agreements relating to this subject matter.
+            </p>
+            <p>
+                8.4 <strong>Amendment.</strong> This Agreement may not be amended except by a written
+                instrument signed by both parties.
+            </p>
+            <p>
+                8.5 <strong>Waiver.</strong> No waiver of any provision shall be effective unless
+                in writing and signed by the waiving party.
+            </p>
+            <p>
+                8.6 <strong>Severability.</strong> If any provision is held invalid, the remaining
+                provisions shall continue in full force and effect.
+            </p>
+            <p>
+                8.7 <strong>Notices.</strong> All notices shall be in writing and sent to the addresses
+                set forth above, or to such other address as either party may designate in writing.
+            </p>
+        </div>
+
+        <!-- Signatures -->
+        <div class="signatures">
+            <h2>In Witness Whereof</h2>
+            <p style="text-align: center; margin-bottom: 30pt; font-style: italic;">
+                The parties have executed this Agreement as of the Effective Date.
+            </p>
+
+            <div class="signature-grid">
+                <div class="signature-block">
+                    <div class="signature-party">FOR THE CONSULTANT</div>
+                    <div class="signature-company">Fahad Almansour Consultant Office</div>
+
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Signature</div>
+                    </div>
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Name</div>
+                    </div>
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Title</div>
+                    </div>
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Date</div>
+                    </div>
+                </div>
+
+                <div class="signature-block">
+                    <div class="signature-party">FOR THE CLIENT</div>
+                    <div class="signature-company">[Client Company Name]</div>
+
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Signature</div>
+                    </div>
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Name</div>
+                    </div>
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Title</div>
+                    </div>
+                    <div class="signature-row">
+                        <div class="signature-field"></div>
+                        <div class="signature-label">Date</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedule A -->
+        <div class="schedule">
+            <h2 class="schedule-title">Schedule A: Scope of Services</h2>
+
+            <div class="schedule-section">
+                <h3>1. Project Description</h3>
+                <p>[Detailed description of the project and its objectives]</p>
+            </div>
+
+            <div class="schedule-section">
+                <h3>2. Services to be Provided</h3>
+                <ul>
+                    <li>[Service item 1]</li>
+                    <li>[Service item 2]</li>
+                    <li>[Service item 3]</li>
+                    <li>[Service item 4]</li>
+                </ul>
+            </div>
+
+            <div class="schedule-section">
+                <h3>3. Deliverables</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Deliverable</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Deliverable 1]</td>
+                            <td>[Description]</td>
+                            <td>[Date]</td>
+                        </tr>
+                        <tr>
+                            <td>[Deliverable 2]</td>
+                            <td>[Description]</td>
+                            <td>[Date]</td>
+                        </tr>
+                        <tr>
+                            <td>[Deliverable 3]</td>
+                            <td>[Description]</td>
+                            <td>[Date]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-section">
+                <h3>4. Timeline</h3>
+                <p>Estimated project duration: [X] weeks from the Effective Date</p>
+            </div>
+
+            <div class="schedule-section">
+                <h3>5. Client Responsibilities</h3>
+                <ul>
+                    <li>Provide timely access to relevant personnel and documentation</li>
+                    <li>Designate a project contact person</li>
+                    <li>Provide feedback within [X] business days of deliverable submission</li>
+                    <li>[Additional responsibilities]</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Schedule B -->
+        <div class="schedule">
+            <h2 class="schedule-title">Schedule B: Fees and Payment</h2>
+
+            <div class="schedule-section">
+                <h3>1. Project Fees</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-right">Amount (SAR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[Phase/Service 1]</td>
+                            <td class="text-right">[X,XXX.XX]</td>
+                        </tr>
+                        <tr>
+                            <td>[Phase/Service 2]</td>
+                            <td class="text-right">[X,XXX.XX]</td>
+                        </tr>
+                        <tr>
+                            <td>[Phase/Service 3]</td>
+                            <td class="text-right">[X,XXX.XX]</td>
+                        </tr>
+                        <tr style="font-weight: bold; background: #f5f5f5;">
+                            <td>Total Project Fees</td>
+                            <td class="text-right">[XX,XXX.XX]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-section">
+                <h3>2. Payment Schedule</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Milestone</th>
+                            <th>Percentage</th>
+                            <th class="text-right">Amount (SAR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Upon signing</td>
+                            <td>50%</td>
+                            <td class="text-right">[X,XXX.XX]</td>
+                        </tr>
+                        <tr>
+                            <td>Upon final delivery</td>
+                            <td>50%</td>
+                            <td class="text-right">[X,XXX.XX]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-section">
+                <h3>3. Payment Information</h3>
+                <p><strong>Bank Transfer Details:</strong></p>
+                <p>
+                    Bank Name: [Bank Name]<br>
+                    Account Name: Fahad Almansour Consultant Office<br>
+                    Account Number: [XXXXXXXX]<br>
+                    IBAN: [SAXXXXXXXXXXXXXXXXXXXXXXXX]
+                </p>
+            </div>
+
+            <div class="schedule-section">
+                <h3>4. Additional Fees</h3>
+                <p>The following additional fees may apply if requested by the Client:</p>
+                <ul>
+                    <li>Additional consulting hours: [XXX] SAR per hour</li>
+                    <li>Expedited delivery (less than 50% of standard timeline): 25% surcharge</li>
+                    <li>Travel expenses: At cost, with prior approval</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Agreement #: CSA-2026-[NUMBER] | Page [X] of [Y]</p>
+            <p>Fahad Almansour Consultant Office | info@fahadalmansourconsulting.com | +966 57 013 1122</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSC Brand Assets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f1f5f9;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #0F172A;
+      margin-bottom: 8px;
+      font-size: 2rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: #64748b;
+      margin-bottom: 40px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #64748b;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .card.dark {
+      background: #0F172A;
+    }
+    .card img, .card svg {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+    .card-label {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+    .card.dark .card-label {
+      color: #64748b;
+    }
+    .icon-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+    .icon-item {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .icon-item.dark {
+      background: #0F172A;
+    }
+    .banner-preview {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .banner-preview img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FSC Brand Assets</h1>
+    <p class="subtitle">Fahad Almansour Consultant Office (FSC) - Logo Suite</p>
+
+    <!-- Primary Logos -->
+    <div class="section">
+      <h2>Primary Logo</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="logo-fsc-final.svg" alt="FSC Logo Dark" style="height: 40px;">
+          <p class="card-label">Light Background</p>
+        </div>
+        <div class="card dark">
+          <img src="logo-fsc-final-light.svg" alt="FSC Logo Light" style="height: 40px;">
+          <p class="card-label">Dark Background</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favicons & App Icons -->
+    <div class="section">
+      <h2>Favicons & App Icons</h2>
+      <div class="icon-grid">
+        <div class="icon-item">
+          <img src="favicon-16.svg" alt="Favicon 16" style="width: 16px; height: 16px;">
+          <p class="card-label">16x16</p>
+        </div>
+        <div class="icon-item">
+          <img src="favicon.svg" alt="Favicon 32" style="width: 32px; height: 32px;">
+          <p class="card-label">32x32</p>
+        </div>
+        <div class="icon-item">
+          <img src="apple-touch-icon.svg" alt="Apple Touch" style="width: 60px; height: 60px;">
+          <p class="card-label">180x180</p>
+        </div>
+        <div class="icon-item">
+          <img src="icon-192.svg" alt="PWA 192" style="width: 80px; height: 80px;">
+          <p class="card-label">192x192</p>
+        </div>
+        <div class="icon-item">
+          <img src="icon-512.svg" alt="PWA 512" style="width: 100px; height: 100px;">
+          <p class="card-label">512x512</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div class="section">
+      <h2>Social Media</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="social-square.svg" alt="Social Square" style="width: 150px; height: 150px;">
+          <p class="card-label">Profile Picture (400x400)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LinkedIn Banner -->
+    <div class="section">
+      <h2>LinkedIn Banner</h2>
+      <div class="banner-preview">
+        <img src="linkedin-banner.svg" alt="LinkedIn Banner">
+        <p class="card-label" style="margin-top: 16px; text-align: center;">1584 x 396</p>
+      </div>
+    </div>
+
+    <!-- Color Palette -->
+    <div class="section">
+      <h2>Brand Colors</h2>
+      <div class="icon-grid">
+        <div class="icon-item" style="background: #0F172A; width: 100px; height: 80px;">
+          <p class="card-label" style="color: #fff; margin-top: 50px;">#0F172A</p>
+        </div>
+        <div class="icon-item" style="background: #4A90D9; width: 100px; height: 80px;">
+          <p class="card-label" style="color: #fff; margin-top: 50px;">#4A90D9</p>
+        </div>
+        <div class="icon-item" style="background: #334155; width: 100px; height: 80px;">
+          <p class="card-label" style="color: #fff; margin-top: 50px;">#334155</p>
+        </div>
+        <div class="icon-item" style="background: #9CA3AF; width: 100px; height: 80px;">
+          <p class="card-label" style="color: #fff; margin-top: 50px;">#9CA3AF</p>
+        </div>
+        <div class="icon-item" style="background: #F8FAFC; width: 100px; height: 80px; border: 1px solid #e2e8f0;">
+          <p class="card-label" style="color: #0F172A; margin-top: 50px;">#F8FAFC</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
