@@ -167,7 +167,8 @@ class FSC_AB_Testing {
      */
     private static function load_visitor_variants() {
         if (isset($_COOKIE[self::COOKIE_NAME])) {
-            $decoded = json_decode(stripslashes($_COOKIE[self::COOKIE_NAME]), true);
+            $raw     = wp_unslash($_COOKIE[self::COOKIE_NAME]);
+            $decoded = json_decode($raw, true);
             if (is_array($decoded)) {
                 self::$visitor_variants = $decoded;
             }
@@ -175,16 +176,23 @@ class FSC_AB_Testing {
     }
 
     /**
-     * Save visitor variants to cookie
+     * Save visitor variants to cookie.
+     *
+     * Lazy variant assignment may run during shortcode render, by which time
+     * headers have been sent. Skip silently in that case — the visitor will be
+     * reassigned on the next page load instead of triggering a PHP warning.
      */
     private static function save_visitor_variants() {
-        $value = json_encode(self::$visitor_variants);
+        if (headers_sent()) {
+            return;
+        }
+        $value = wp_json_encode(self::$visitor_variants);
         setcookie(self::COOKIE_NAME, $value, [
             'expires'  => time() + self::COOKIE_EXPIRY,
             'path'     => '/',
             'domain'   => '',
             'secure'   => is_ssl(),
-            'httponly'  => true,
+            'httponly' => true,
             'samesite' => 'Lax',
         ]);
     }

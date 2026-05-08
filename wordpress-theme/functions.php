@@ -14,32 +14,56 @@ if (!defined('ABSPATH')) {
    ============================================ */
 
 /**
- * Get current language from cookie or URL parameter
+ * Get current language from cookie or URL parameter (pure read).
+ *
+ * Side-effect-free so it can be called from any render path. The cookie
+ * write for ?lang= overrides happens in fsc_init_language() on init.
  */
 function fsc_get_current_language() {
-    // Check URL parameter first (for switching)
-    if (isset($_GET['lang']) && in_array($_GET['lang'], ['ar', 'en'])) {
-        $lang = sanitize_text_field($_GET['lang']);
-        // Set cookie for 30 days
+    if (isset($_GET['lang'])) {
+        $raw = wp_unslash($_GET['lang']);
+        if (in_array($raw, ['ar', 'en'], true)) {
+            return sanitize_key($raw);
+        }
+    }
+    if (isset($_COOKIE['fsc_language'])) {
+        $raw = wp_unslash($_COOKIE['fsc_language']);
+        if (in_array($raw, ['ar', 'en'], true)) {
+            return sanitize_key($raw);
+        }
+    }
+    return 'ar';
+}
+
+/**
+ * Persist a ?lang= override to the language cookie.
+ *
+ * Runs once per request on init priority 1 — before any output, so
+ * setcookie() is safe. Updates $_COOKIE in-process so the rest of the
+ * request observes the new value.
+ */
+function fsc_init_language() {
+    if (!isset($_GET['lang'])) {
+        return;
+    }
+    $raw = wp_unslash($_GET['lang']);
+    if (!in_array($raw, ['ar', 'en'], true)) {
+        return;
+    }
+    $lang = sanitize_key($raw);
+    if (!headers_sent()) {
         setcookie('fsc_language', $lang, [
-            'expires'  => time() + (30 * 24 * 60 * 60),
+            'expires'  => time() + (30 * DAY_IN_SECONDS),
             'path'     => '/',
             'domain'   => '',
             'secure'   => is_ssl(),
-            'httponly'  => true,
+            'httponly' => true,
             'samesite' => 'Lax',
         ]);
-        return $lang;
     }
-
-    // Check cookie
-    if (isset($_COOKIE['fsc_language']) && in_array($_COOKIE['fsc_language'], ['ar', 'en'])) {
-        return sanitize_text_field($_COOKIE['fsc_language']);
-    }
-
-    // Default to Arabic
-    return 'ar';
+    $_COOKIE['fsc_language'] = $lang;
 }
+add_action('init', 'fsc_init_language', 1);
 
 /**
  * Switch WordPress locale based on language preference
@@ -86,7 +110,13 @@ function fsc_is_arabic() {
  * Add language parameter to URLs for language switching
  */
 function fsc_language_switcher_url($lang) {
-    $current_url = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $host = isset($_SERVER['HTTP_HOST'])
+        ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST']))
+        : '';
+    $uri  = isset($_SERVER['REQUEST_URI'])
+        ? esc_url_raw(wp_unslash($_SERVER['REQUEST_URI']))
+        : '';
+    $current_url = (is_ssl() ? 'https://' : 'http://') . $host . $uri;
 
     // Remove existing lang parameter
     $current_url = remove_query_arg('lang', $current_url);
@@ -462,7 +492,13 @@ function fsc_seo_meta_tags() {
 
     $meta_desc = $is_rtl ? $meta_desc_ar : $meta_desc_en;
     $meta_keywords = $is_rtl ? $meta_keywords_ar : $meta_keywords_en;
-    $current_url = (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $host = isset($_SERVER['HTTP_HOST'])
+        ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST']))
+        : '';
+    $uri  = isset($_SERVER['REQUEST_URI'])
+        ? esc_url_raw(wp_unslash($_SERVER['REQUEST_URI']))
+        : '';
+    $current_url = (is_ssl() ? 'https://' : 'http://') . $host . $uri;
     $og_title = wp_get_document_title();
 
     ?>
@@ -966,8 +1002,11 @@ function fsc_fix_templates_tool() {
     if (!isset($_GET['fsc_fix_templates'])) return;
 
     // Verify nonce to prevent CSRF
-    if (!isset($_GET['_wpnonce']) || !wp_verify_nonce($_GET['_wpnonce'], 'fsc_fix_templates_action')) {
-        wp_die(__('Security check failed.', 'fsc'), 403);
+    $nonce = isset($_GET['_wpnonce'])
+        ? sanitize_text_field(wp_unslash($_GET['_wpnonce']))
+        : '';
+    if ('' === $nonce || !wp_verify_nonce($nonce, 'fsc_fix_templates_action')) {
+        wp_die(esc_html__('Security check failed.', 'fsc'), 403);
     }
 
     $pages = fsc_get_page_templates();
