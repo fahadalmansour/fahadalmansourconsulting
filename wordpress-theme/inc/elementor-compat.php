@@ -36,7 +36,9 @@ function fsc_is_elementor_page($post_id = null) {
         return false;
     }
 
-    return \Elementor\Plugin::$instance->documents->get($post_id)->is_built_with_elementor();
+    $document = \Elementor\Plugin::$instance->documents->get($post_id);
+
+    return $document && $document->is_built_with_elementor();
 }
 
 /**

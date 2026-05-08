@@ -20,7 +20,7 @@ $fsc_elementor_canvas = function_exists('fsc_is_elementor_canvas') && fsc_is_ele
 $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has_elementor_location('header');
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> dir="<?php echo $is_rtl ? 'rtl' : 'ltr'; ?>">
+<html <?php language_attributes(); ?> dir="<?php echo esc_attr($is_rtl ? 'rtl' : 'ltr'); ?>">
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,8 +76,8 @@ $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has
                             <circle cx="38" cy="44" r="2.5" fill="#4A90D9"/>
                         </svg>
                         <span class="fsc-logo-text">
-                            <span class="fsc-logo-name"><?php echo $is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'; ?></span>
-                            <span class="fsc-logo-tagline"><?php echo $is_rtl ? 'شريكك التقني المتكامل' : 'Your Technology Partner'; ?></span>
+                            <span class="fsc-logo-name"><?php echo esc_html($is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'); ?></span>
+                            <span class="fsc-logo-tagline"><?php echo esc_html($is_rtl ? 'شريكك التقني المتكامل' : 'Your Technology Partner'); ?></span>
                         </span>
                         <?php
                     }
@@ -112,7 +112,7 @@ $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has
                         <?php else: ?>
                             <!-- URL-based language switching -->
                             <a href="<?php echo esc_url(fsc_language_switcher_url('ar')); ?>"
-                               class="px-2 py-1 rounded transition-colors <?php echo $is_rtl ? 'bg-slate-900 text-white font-medium' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-100'; ?>"
+                               class="px-2 py-1 rounded transition-colors <?php echo esc_attr($is_rtl ? 'bg-slate-900 text-white font-medium' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-100'); ?>"
                                title="العربية">AR</a>
                             <span class="text-slate-300">|</span>
                             <a href="<?php echo esc_url(fsc_language_switcher_url('en')); ?>"

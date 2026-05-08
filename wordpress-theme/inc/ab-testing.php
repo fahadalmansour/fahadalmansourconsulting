@@ -66,6 +66,12 @@ class FSC_AB_Testing {
         // Register default tests
         self::register_default_tests();
 
+        /**
+         * Allow plugins / mu-plugins to register additional A/B tests.
+         * Use FSC_AB_Testing::register_test( $test_id, $config ) inside the callback.
+         */
+        do_action('fsc_register_ab_tests');
+
         // One-time migration: stop autoloading the results option (admin only).
         if (is_admin()) {
             self::maybe_disable_results_autoload();
@@ -251,6 +257,12 @@ class FSC_AB_Testing {
 
     /**
      * Track impression
+     *
+     * NOTE: get → mutate → update_option is non-atomic. Concurrent first-time
+     * variant assignments may drop a small number of impression increments.
+     * Acceptable for the current low-traffic context; if a higher-precision
+     * counter is ever needed, switch to a custom table with INSERT … ON
+     * DUPLICATE KEY UPDATE or to wp_cache_incr() with a periodic flush.
      */
     private static function track_impression($test_id, $variant) {
         $results = get_option(self::OPTION_NAME, []);

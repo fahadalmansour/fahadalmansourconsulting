@@ -51,8 +51,8 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                             <circle cx="38" cy="44" r="2.5" fill="#4A90D9"/>
                         </svg>
                         <span class="fsc-logo-text">
-                            <span class="fsc-logo-name"><?php echo $is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'; ?></span>
-                            <span class="fsc-logo-tagline"><?php echo $is_rtl ? 'شريكك التقني المتكامل' : 'Your Technology Partner'; ?></span>
+                            <span class="fsc-logo-name"><?php echo esc_html($is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'); ?></span>
+                            <span class="fsc-logo-tagline"><?php echo esc_html($is_rtl ? 'شريكك التقني المتكامل' : 'Your Technology Partner'); ?></span>
                         </span>
                     </a>
                     <p class="text-sm text-slate-500 mb-4"><?php esc_html_e('Your Complete Technology Partner', 'fsc'); ?></p>
@@ -122,7 +122,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                             <div>
                                 <p class="text-xs text-slate-500 mb-1"><?php esc_html_e('Location', 'fsc'); ?></p>
                                 <p class="text-slate-700 text-sm font-medium">
-                                    <?php echo $is_rtl ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'; ?><br>
+                                    <?php echo esc_html($is_rtl ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'); ?><br>
                                     RRMA8094
                                 </p>
                             </div>
@@ -149,7 +149,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                         </div>
                         <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="inline-flex items-center gap-2 text-sm font-medium text-slate-900 hover:text-slate-700 transition-colors">
                             <?php esc_html_e('Request a Consultation', 'fsc'); ?>
-                            <svg class="w-4 h-4 <?php echo $is_rtl ? 'rtl-flip' : ''; ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 <?php echo esc_attr($is_rtl ? 'rtl-flip' : ''); ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
                         </a>
@@ -163,7 +163,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
             <!-- Bottom Bar -->
             <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p class="text-sm text-slate-500">
-                    © <?php echo date('Y'); ?> <?php echo $is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'; ?>. <?php esc_html_e('All rights reserved.', 'fsc'); ?>
+                    © <?php echo esc_html(wp_date('Y')); ?> <?php echo esc_html($is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'); ?>. <?php esc_html_e('All rights reserved.', 'fsc'); ?>
                 </p>
                 <a href="#page" class="text-sm text-slate-600 hover:text-slate-900 transition-colors inline-flex items-center gap-1">
                     <?php esc_html_e('Back to top', 'fsc'); ?>
