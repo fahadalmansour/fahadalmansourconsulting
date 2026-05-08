@@ -159,8 +159,9 @@ $is_rtl = is_rtl();
                                     <span class="text-slate-300">|</span>
                                     <span>
                                         <?php
-                                        $content = get_the_content();
-                                        $word_count = str_word_count(strip_tags($content));
+                                        // Multibyte-safe word count: split on Unicode whitespace so
+                                        // Arabic and other non-Latin scripts are counted correctly.
+                                        $word_count = (int) preg_match_all('/\\S+/u', wp_strip_all_tags(get_the_content()));
                                         $reading_time = max(1, (int) ceil($word_count / 200));
                                         /* translators: %d: estimated minutes to read the post */
                                         printf(

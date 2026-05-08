@@ -163,7 +163,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
             <!-- Bottom Bar -->
             <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p class="text-sm text-slate-500">
-                    © <?php echo date('Y'); ?> <?php echo $is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'; ?>. <?php esc_html_e('All rights reserved.', 'fsc'); ?>
+                    © <?php echo esc_html(wp_date('Y')); ?> <?php echo esc_html($is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'); ?>. <?php esc_html_e('All rights reserved.', 'fsc'); ?>
                 </p>
                 <a href="#page" class="text-sm text-slate-600 hover:text-slate-900 transition-colors inline-flex items-center gap-1">
                     <?php esc_html_e('Back to top', 'fsc'); ?>

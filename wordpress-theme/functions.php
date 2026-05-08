@@ -167,6 +167,9 @@ add_action('after_setup_theme', 'fsc_setup');
  */
 function fsc_enqueue_scripts() {
     // Google Fonts — Inter (always) + Tajawal (RTL only).
+    // Version is intentionally null: the Google Fonts URL is already versioned
+    // by `&family=…wght@…`, and a `?ver=` cachebuster on top of that prevents
+    // Google's CDN from serving the cached stylesheet.
     wp_enqueue_style(
         'fsc-fonts-inter',
         'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
@@ -508,6 +511,10 @@ function fsc_seo_meta_tags() {
 
     $meta_desc = $is_rtl ? $meta_desc_ar : $meta_desc_en;
     $meta_keywords = $is_rtl ? $meta_keywords_ar : $meta_keywords_en;
+
+    /** Filter the rendered meta description / keywords (plugins may override per page). */
+    $meta_desc     = apply_filters('fsc_seo_meta_description', $meta_desc);
+    $meta_keywords = apply_filters('fsc_seo_meta_keywords', $meta_keywords);
     $host = isset($_SERVER['HTTP_HOST'])
         ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST']))
         : '';
@@ -810,10 +817,23 @@ function fsc_schema_markup() {
         ];
     }
 
+    /**
+     * Filter the schema arrays before rendering. Plugins can extend or replace
+     * the defaults; return null to suppress emission for that schema.
+     */
+    $organization_schema = apply_filters('fsc_seo_schema_organization', $organization_schema);
+    $website_schema      = apply_filters('fsc_seo_schema_website', $website_schema);
+    $page_schema         = apply_filters('fsc_seo_schema_page', $page_schema);
+    $faq_schema          = apply_filters('fsc_seo_schema_faq', $faq_schema);
+
     // Output JSON-LD
     echo "\n<!-- Schema.org Structured Data - AI Optimized for SEO -->\n";
-    echo '<script type="application/ld+json">' . wp_json_encode($organization_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";
-    echo '<script type="application/ld+json">' . wp_json_encode($website_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";
+    if ($organization_schema) {
+        echo '<script type="application/ld+json">' . wp_json_encode($organization_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";
+    }
+    if ($website_schema) {
+        echo '<script type="application/ld+json">' . wp_json_encode($website_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";
+    }
 
     if ($page_schema) {
         echo '<script type="application/ld+json">' . wp_json_encode($page_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";
@@ -861,7 +881,12 @@ function fsc_breadcrumb_schema() {
         'itemListElement' => $breadcrumbs
     ];
 
-    echo '<script type="application/ld+json">' . wp_json_encode($breadcrumb_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+    /** Filter the breadcrumb schema. Return null to suppress. */
+    $breadcrumb_schema = apply_filters('fsc_seo_schema_breadcrumb', $breadcrumb_schema, $breadcrumbs);
+
+    if ($breadcrumb_schema) {
+        echo '<script type="application/ld+json">' . wp_json_encode($breadcrumb_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+    }
 }
 add_action('wp_head', 'fsc_breadcrumb_schema', 4);
 
@@ -1067,7 +1092,7 @@ function fsc_admin_notice_pages_created() {
     if (get_transient('fsc_pages_created_notice')) {
         ?>
         <div class="notice notice-success is-dismissible">
-            <p><?php _e('FSC Theme: Required pages have been created automatically.', 'fsc'); ?></p>
+            <p><?php esc_html_e('FSC Theme: Required pages have been created automatically.', 'fsc'); ?></p>
         </div>
         <?php
         delete_transient('fsc_pages_created_notice');
