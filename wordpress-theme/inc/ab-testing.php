@@ -288,6 +288,12 @@ class FSC_AB_Testing {
 	 * Acceptable for the current low-traffic context; if a higher-precision
 	 * counter is ever needed, switch to a custom table with INSERT … ON
 	 * DUPLICATE KEY UPDATE or to wp_cache_incr() with a periodic flush.
+	 *
+	 * @since 2.0.0
+	 *
+	 * @param string $test_id Registered test ID (e.g. 'hero_headline').
+	 * @param string $variant Variant key assigned to this visitor (e.g. 'a').
+	 * @return void
 	 */
 	private static function track_impression( $test_id, $variant ) {
 		$results = get_option( self::OPTION_NAME, array() );

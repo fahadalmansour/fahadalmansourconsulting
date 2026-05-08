@@ -81,7 +81,7 @@ function fsc_switch_locale( $locale ) {
 
 	$lang = fsc_get_current_language();
 
-	if ( $lang === 'ar' ) {
+	if ( 'ar' === $lang ) {
 		return 'ar';
 	}
 
@@ -95,7 +95,7 @@ add_filter( 'locale', 'fsc_switch_locale', 1 );
  * the site default (Arabic). We override it after theme setup.
  */
 function fsc_fix_text_direction() {
-	if ( fsc_get_current_language() === 'en' ) {
+	if ( 'en' === fsc_get_current_language() ) {
 		global $wp_locale;
 		if ( isset( $wp_locale ) ) {
 			$wp_locale->text_direction = 'ltr';
@@ -108,11 +108,16 @@ add_action( 'after_setup_theme', 'fsc_fix_text_direction', 99 );
  * Check if site is in Arabic mode
  */
 function fsc_is_arabic() {
-	return fsc_get_current_language() === 'ar';
+	return 'ar' === fsc_get_current_language();
 }
 
 /**
  * Add language parameter to URLs for language switching
+ *
+ * @since 2.0.0
+ *
+ * @param string $lang Two-letter language code ('ar' or 'en').
+ * @return string The current request URL with the `lang` query var replaced.
  */
 function fsc_language_switcher_url( $lang ) {
 	$host        = isset( $_SERVER['HTTP_HOST'] )
@@ -1145,12 +1150,12 @@ function fsc_create_pages() {
 			}
 		} else {
 			// Page exists - don't overwrite if built with Elementor
-			if ( get_post_meta( $existing_page->ID, '_elementor_edit_mode', true ) === 'builder' ) {
+			if ( 'builder' === get_post_meta( $existing_page->ID, '_elementor_edit_mode', true ) ) {
 				continue;
 			}
 			// Ensure template is assigned for non-Elementor pages
 			$current_template = get_post_meta( $existing_page->ID, '_wp_page_template', true );
-			if ( empty( $current_template ) || $current_template === 'default' ) {
+			if ( empty( $current_template ) || 'default' === $current_template ) {
 				update_post_meta( $existing_page->ID, '_wp_page_template', $page_data['template'] );
 			}
 		}

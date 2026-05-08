@@ -51,7 +51,7 @@ function fsc_is_elementor_canvas() {
 
 	$template = get_page_template_slug();
 
-	return $template === 'elementor_canvas';
+	return 'elementor_canvas' === $template;
 }
 
 /**

@@ -12,7 +12,7 @@
 
 // Use the language switching system
 $current_lang = function_exists( 'fsc_get_current_language' ) ? fsc_get_current_language() : 'en';
-$is_rtl       = ( $current_lang === 'ar' );
+$is_rtl       = ( 'ar' === $current_lang );
 $lang         = $current_lang;
 
 // Elementor detection
