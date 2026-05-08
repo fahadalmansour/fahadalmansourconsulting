@@ -65,6 +65,29 @@ class FSC_AB_Testing {
 
         // Register default tests
         self::register_default_tests();
+
+        // One-time migration: stop autoloading the results option (admin only).
+        if (is_admin()) {
+            self::maybe_disable_results_autoload();
+        }
+    }
+
+    /**
+     * One-time migration to flip OPTION_NAME from autoload=yes to autoload=no.
+     * Runs in admin only and exits early once the flag option exists.
+     */
+    private static function maybe_disable_results_autoload() {
+        if (get_option('fsc_ab_results_autoload_migrated')) {
+            return;
+        }
+        // Touch the option with autoload=false. If it does not exist yet, no-op
+        // (next write will use autoload=false anyway).
+        $existing = get_option(self::OPTION_NAME, null);
+        if (null !== $existing) {
+            delete_option(self::OPTION_NAME);
+            add_option(self::OPTION_NAME, $existing, '', false);
+        }
+        update_option('fsc_ab_results_autoload_migrated', 1, false);
     }
 
     /**
@@ -237,19 +260,47 @@ class FSC_AB_Testing {
 
         $results[$test_id][$variant]['impressions']++;
 
-        update_option(self::OPTION_NAME, $results);
+        update_option(self::OPTION_NAME, $results, false);
     }
 
     /**
      * Track conversion via AJAX
+     *
+     * Anonymous-callable. Defends against abuse with: registered-test
+     * allowlist, per-session dedupe cookie, and per-IP transient rate limit.
      */
     public static function track_conversion() {
         check_ajax_referer('fsc_ab_nonce', 'nonce');
 
-        $test_id = isset($_POST['test_id']) ? sanitize_text_field($_POST['test_id']) : '';
+        $raw_test_id = isset($_POST['test_id']) ? wp_unslash($_POST['test_id']) : '';
+        $test_id     = sanitize_key($raw_test_id);
 
-        if (!$test_id || !isset(self::$visitor_variants[$test_id])) {
-            wp_send_json_error('Invalid test');
+        // Reject anything that is not a registered, currently-loaded test.
+        if ('' === $test_id || !isset(self::$tests[$test_id])) {
+            wp_send_json_error('invalid_test', 400);
+        }
+        if (!isset(self::$visitor_variants[$test_id])) {
+            wp_send_json_error('no_variant_assigned', 400);
+        }
+
+        // Per-session dedupe: if we have already counted a conversion for this
+        // test on this device, return success without writing.
+        $session_cookie = 'fsc_ab_conv_' . $test_id;
+        if (isset($_COOKIE[$session_cookie])) {
+            wp_send_json_success(['duplicate' => true]);
+        }
+
+        // Per-IP rate limit (5 conversions / minute / IP).
+        $ip = isset($_SERVER['REMOTE_ADDR'])
+            ? sanitize_text_field(wp_unslash($_SERVER['REMOTE_ADDR']))
+            : '';
+        if ('' !== $ip) {
+            $rate_key   = 'fsc_ab_rl_' . md5($ip);
+            $rate_count = (int) get_transient($rate_key);
+            if ($rate_count >= 5) {
+                wp_send_json_error('rate_limited', 429);
+            }
+            set_transient($rate_key, $rate_count + 1, MINUTE_IN_SECONDS);
         }
 
         $variant = self::$visitor_variants[$test_id];
@@ -257,7 +308,19 @@ class FSC_AB_Testing {
 
         if (isset($results[$test_id][$variant])) {
             $results[$test_id][$variant]['conversions']++;
-            update_option(self::OPTION_NAME, $results);
+            update_option(self::OPTION_NAME, $results, false);
+        }
+
+        // Set the dedupe cookie last so we only mark conversions we actually counted.
+        if (!headers_sent()) {
+            setcookie($session_cookie, '1', [
+                'expires'  => time() + DAY_IN_SECONDS,
+                'path'     => '/',
+                'domain'   => '',
+                'secure'   => is_ssl(),
+                'httponly' => true,
+                'samesite' => 'Lax',
+            ]);
         }
 
         wp_send_json_success();

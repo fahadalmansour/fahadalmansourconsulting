@@ -374,12 +374,23 @@ add_action('wp_enqueue_scripts', 'fsc_localize_tracking_scripts', 20);
 
 /**
  * Output Essential Scripts only
+ *
+ * Re-runs wp_kses() at output to defend against any path that bypasses the
+ * customizer sanitizer. The allowed-tags list mirrors fsc_sanitize_scripts().
  */
 function fsc_essential_scripts_head() {
     $header_scripts = get_theme_mod('fsc_header_scripts');
-    if ($header_scripts) {
-        echo $header_scripts . "\n";
+    if (empty($header_scripts)) {
+        return;
     }
+    echo wp_kses(
+        $header_scripts,
+        [
+            'script'   => ['src' => [], 'async' => [], 'defer' => [], 'type' => [], 'id' => [], 'nonce' => []],
+            'noscript' => [],
+            'style'    => ['type' => []],
+        ]
+    ) . "\n";
 }
 add_action('wp_head', 'fsc_essential_scripts_head', 1);
 
