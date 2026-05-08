@@ -19,7 +19,7 @@ $is_rtl = is_rtl();
             if (is_category()) :
                 ?>
                 <p class="text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">
-                    <?php _e('Category', 'fsc'); ?>
+                    <?php esc_html_e('Category', 'fsc'); ?>
                 </p>
                 <h1 class="text-3xl sm:text-4xl text-slate-900 font-light tracking-tight mb-4">
                     <?php echo esc_html(single_cat_title('', false)); ?>
@@ -32,7 +32,7 @@ $is_rtl = is_rtl();
 
             <?php elseif (is_tag()) : ?>
                 <p class="text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">
-                    <?php _e('Tag', 'fsc'); ?>
+                    <?php esc_html_e('Tag', 'fsc'); ?>
                 </p>
                 <h1 class="text-3xl sm:text-4xl text-slate-900 font-light tracking-tight mb-4">
                     <?php echo esc_html(single_tag_title('', false)); ?>
@@ -45,7 +45,7 @@ $is_rtl = is_rtl();
 
             <?php elseif (is_author()) : ?>
                 <p class="text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">
-                    <?php _e('Author', 'fsc'); ?>
+                    <?php esc_html_e('Author', 'fsc'); ?>
                 </p>
                 <div class="flex items-center gap-4 mb-4">
                     <?php echo get_avatar(get_the_author_meta('ID'), 64, '', '', ['class' => 'rounded-full']); ?>
@@ -55,37 +55,40 @@ $is_rtl = is_rtl();
                 </div>
                 <?php if (get_the_author_meta('description')) : ?>
                     <p class="text-lg text-slate-600 max-w-2xl">
-                        <?php echo get_the_author_meta('description'); ?>
+                        <?php echo wp_kses_post(get_the_author_meta('description')); ?>
                     </p>
                 <?php endif; ?>
 
             <?php elseif (is_date()) : ?>
                 <p class="text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">
-                    <?php _e('Archive', 'fsc'); ?>
+                    <?php esc_html_e('Archive', 'fsc'); ?>
                 </p>
                 <h1 class="text-3xl sm:text-4xl text-slate-900 font-light tracking-tight mb-4">
                     <?php
                     if (is_day()) :
-                        printf(__('Daily Archives: %s', 'fsc'), get_the_date());
+                        /* translators: %s: human-readable date */
+                        printf(esc_html__('Daily Archives: %s', 'fsc'), esc_html(get_the_date()));
                     elseif (is_month()) :
-                        printf(__('Monthly Archives: %s', 'fsc'), get_the_date('F Y'));
+                        /* translators: %s: month and year (e.g. "March 2026") */
+                        printf(esc_html__('Monthly Archives: %s', 'fsc'), esc_html(get_the_date('F Y')));
                     elseif (is_year()) :
-                        printf(__('Yearly Archives: %s', 'fsc'), get_the_date('Y'));
+                        /* translators: %s: 4-digit year */
+                        printf(esc_html__('Yearly Archives: %s', 'fsc'), esc_html(get_the_date('Y')));
                     endif;
                     ?>
                 </h1>
 
             <?php elseif (is_home() && !is_front_page()) : ?>
                 <h1 class="text-3xl sm:text-4xl text-slate-900 font-light tracking-tight mb-4">
-                    <?php _e('Insights & Articles', 'fsc'); ?>
+                    <?php esc_html_e('Insights & Articles', 'fsc'); ?>
                 </h1>
                 <p class="text-lg text-slate-600 max-w-2xl">
-                    <?php _e('Explore our latest thoughts on IT consulting, technology strategy, and digital transformation.', 'fsc'); ?>
+                    <?php esc_html_e('Explore our latest thoughts on IT consulting, technology strategy, and digital transformation.', 'fsc'); ?>
                 </p>
 
             <?php else : ?>
                 <h1 class="text-3xl sm:text-4xl text-slate-900 font-light tracking-tight mb-4">
-                    <?php _e('Archive', 'fsc'); ?>
+                    <?php esc_html_e('Archive', 'fsc'); ?>
                 </h1>
             <?php endif; ?>
 
@@ -96,9 +99,10 @@ $is_rtl = is_rtl();
             ?>
                 <p class="text-slate-500 mt-4">
                     <?php
+                    /* translators: %d: number of posts in the archive */
                     printf(
-                        _n('%d article', '%d articles', $wp_query->found_posts, 'fsc'),
-                        $wp_query->found_posts
+                        esc_html(_n('%d article', '%d articles', $wp_query->found_posts, 'fsc')),
+                        (int) $wp_query->found_posts
                     );
                     ?>
                 </p>
@@ -157,9 +161,10 @@ $is_rtl = is_rtl();
                                         <?php
                                         $content = get_the_content();
                                         $word_count = str_word_count(strip_tags($content));
-                                        $reading_time = ceil($word_count / 200);
+                                        $reading_time = max(1, (int) ceil($word_count / 200));
+                                        /* translators: %d: estimated minutes to read the post */
                                         printf(
-                                            _n('%d min read', '%d min read', $reading_time, 'fsc'),
+                                            esc_html(_n('%d min read', '%d min read', $reading_time, 'fsc')),
                                             $reading_time
                                         );
                                         ?>
@@ -179,11 +184,11 @@ $is_rtl = is_rtl();
                     'prev_text' => sprintf(
                         '<span class="flex items-center gap-2"><svg class="w-4 h-4 %s" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>%s</span>',
                         $is_rtl ? 'rotate-180' : '',
-                        __('Previous', 'fsc')
+                        esc_html__('Previous', 'fsc')
                     ),
                     'next_text' => sprintf(
                         '<span class="flex items-center gap-2">%s<svg class="w-4 h-4 %s" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>',
-                        __('Next', 'fsc'),
+                        esc_html__('Next', 'fsc'),
                         $is_rtl ? 'rotate-180' : ''
                     ),
                 ));
@@ -198,13 +203,13 @@ $is_rtl = is_rtl();
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
                 </svg>
                 <h2 class="text-2xl text-slate-900 font-light mb-4">
-                    <?php _e('No Articles Found', 'fsc'); ?>
+                    <?php esc_html_e('No Articles Found', 'fsc'); ?>
                 </h2>
                 <p class="text-slate-600 mb-8 max-w-md mx-auto">
-                    <?php _e('There are no articles in this archive yet. Check back soon for new content.', 'fsc'); ?>
+                    <?php esc_html_e('There are no articles in this archive yet. Check back soon for new content.', 'fsc'); ?>
                 </p>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn-primary">
-                    <?php _e('Go to Homepage', 'fsc'); ?>
+                    <?php esc_html_e('Go to Homepage', 'fsc'); ?>
                 </a>
             </div>
 
@@ -216,7 +221,7 @@ $is_rtl = is_rtl();
         <section class="bg-slate-50 border-t border-slate-200 py-12 px-6">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-lg font-medium text-slate-900 mb-6">
-                    <?php _e('Browse by Category', 'fsc'); ?>
+                    <?php esc_html_e('Browse by Category', 'fsc'); ?>
                 </h2>
                 <div class="flex flex-wrap gap-3">
                     <?php
@@ -230,7 +235,7 @@ $is_rtl = is_rtl();
                         <a href="<?php echo esc_url(get_category_link($cat->term_id)); ?>"
                            class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-full text-sm text-slate-700 hover:border-slate-300 hover:text-slate-900 transition-colors">
                             <?php echo esc_html($cat->name); ?>
-                            <span class="text-slate-400"><?php echo $cat->count; ?></span>
+                            <span class="text-slate-400"><?php echo (int) $cat->count; ?></span>
                         </a>
                     <?php endforeach; ?>
                 </div>

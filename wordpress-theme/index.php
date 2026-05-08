@@ -28,8 +28,8 @@ get_header();
     else :
         ?>
         <section class="py-20 px-6 text-center">
-            <h1 class="text-4xl font-light text-slate-900 mb-4"><?php _e('Nothing found', 'fsc'); ?></h1>
-            <p class="text-slate-600"><?php _e('It looks like nothing was found at this location.', 'fsc'); ?></p>
+            <h1 class="text-4xl font-light text-slate-900 mb-4"><?php esc_html_e('Nothing found', 'fsc'); ?></h1>
+            <p class="text-slate-600"><?php esc_html_e('It looks like nothing was found at this location.', 'fsc'); ?></p>
         </section>
         <?php
     endif;

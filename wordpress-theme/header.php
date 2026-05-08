@@ -26,16 +26,12 @@ $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <?php if ($is_rtl): ?>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <?php endif; ?>
 
     <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/assets/brand/favicon.svg">
-    <link rel="icon" type="image/svg+xml" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/assets/brand/favicon-16.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/brand/apple-touch-icon.svg">
-    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/manifest.json">
+    <link rel="icon" type="image/svg+xml" href="<?php echo esc_url(get_template_directory_uri() . '/assets/brand/favicon.svg'); ?>">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="<?php echo esc_url(get_template_directory_uri() . '/assets/brand/favicon-16.svg'); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri() . '/assets/brand/apple-touch-icon.svg'); ?>">
+    <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri() . '/manifest.json'); ?>">
 
     <?php wp_head(); ?>
 </head>
@@ -91,19 +87,19 @@ $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-8">
                     <a href="<?php echo esc_url(home_url('/#how-we-work')); ?>" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
-                        <?php _e('How we work', 'fsc'); ?>
+                        <?php esc_html_e('How we work', 'fsc'); ?>
                     </a>
                     <a href="<?php echo esc_url(home_url('/#advisory-services')); ?>" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
-                        <?php _e('Solutions', 'fsc'); ?>
+                        <?php esc_html_e('Solutions', 'fsc'); ?>
                     </a>
                     <a href="<?php echo esc_url(home_url('/#what-you-receive')); ?>" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
-                        <?php _e('Deliverables', 'fsc'); ?>
+                        <?php esc_html_e('Deliverables', 'fsc'); ?>
                     </a>
                     <a href="<?php echo esc_url(home_url('/about/')); ?>" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
-                        <?php _e('About', 'fsc'); ?>
+                        <?php esc_html_e('About', 'fsc'); ?>
                     </a>
                     <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
-                        <?php _e('Contact', 'fsc'); ?>
+                        <?php esc_html_e('Contact', 'fsc'); ?>
                     </a>
                 </nav>
 
@@ -127,12 +123,12 @@ $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has
 
                     <!-- CTA Button -->
                     <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn-primary text-sm">
-                        <?php _e('Request a Consultation', 'fsc'); ?>
+                        <?php esc_html_e('Request a Consultation', 'fsc'); ?>
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button type="button" class="lg:hidden p-2 text-slate-700 hover:text-slate-900" id="mobile-menu-toggle" aria-label="<?php _e('Toggle menu', 'fsc'); ?>">
+                <button type="button" class="lg:hidden p-2 text-slate-700 hover:text-slate-900" id="mobile-menu-toggle" aria-label="<?php esc_attr_e('Toggle menu', 'fsc'); ?>">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -144,23 +140,23 @@ $fsc_elementor_header = function_exists('fsc_has_elementor_location') && fsc_has
         <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
             <nav class="px-6 py-4 space-y-2">
                 <a href="<?php echo esc_url(home_url('/#how-we-work')); ?>" class="block py-2 text-slate-700 hover:text-slate-900 text-base font-medium">
-                    <?php _e('How we work', 'fsc'); ?>
+                    <?php esc_html_e('How we work', 'fsc'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/#advisory-services')); ?>" class="block py-2 text-slate-700 hover:text-slate-900 text-base font-medium">
-                    <?php _e('Consulting Models', 'fsc'); ?>
+                    <?php esc_html_e('Consulting Models', 'fsc'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/#what-you-receive')); ?>" class="block py-2 text-slate-700 hover:text-slate-900 text-base font-medium">
-                    <?php _e('Deliverables', 'fsc'); ?>
+                    <?php esc_html_e('Deliverables', 'fsc'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/about/')); ?>" class="block py-2 text-slate-700 hover:text-slate-900 text-base font-medium">
-                    <?php _e('About', 'fsc'); ?>
+                    <?php esc_html_e('About', 'fsc'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="block py-2 text-slate-700 hover:text-slate-900 text-base font-medium">
-                    <?php _e('Contact', 'fsc'); ?>
+                    <?php esc_html_e('Contact', 'fsc'); ?>
                 </a>
                 <div class="pt-4 border-t border-slate-200">
                     <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="block w-full btn btn-primary text-center">
-                        <?php $is_rtl ? _e('طلب جلسة', 'fsc') : _e('Request discussion', 'fsc'); ?>
+                        <?php if ($is_rtl) { esc_html_e('طلب جلسة', 'fsc'); } else { esc_html_e('Request discussion', 'fsc'); } ?>
                     </a>
                 </div>
             </nav>

@@ -55,37 +55,37 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                             <span class="fsc-logo-tagline"><?php echo $is_rtl ? 'شريكك التقني المتكامل' : 'Your Technology Partner'; ?></span>
                         </span>
                     </a>
-                    <p class="text-sm text-slate-500 mb-4"><?php _e('Your Complete Technology Partner', 'fsc'); ?></p>
+                    <p class="text-sm text-slate-500 mb-4"><?php esc_html_e('Your Complete Technology Partner', 'fsc'); ?></p>
                     <p class="text-slate-600 mb-4 max-w-md">
-                        <?php _e('We assess your needs, design the right solution, and deliver certified hardware and software. One partner, complete accountability.', 'fsc'); ?>
+                        <?php esc_html_e('We assess your needs, design the right solution, and deliver certified hardware and software. One partner, complete accountability.', 'fsc'); ?>
                     </p>
                 </div>
 
                 <!-- Legal Links -->
                 <div>
-                    <h4 class="font-medium text-slate-900 mb-4"><?php _e('Legal', 'fsc'); ?></h4>
+                    <h4 class="font-medium text-slate-900 mb-4"><?php esc_html_e('Legal', 'fsc'); ?></h4>
                     <nav class="space-y-2">
                         <a href="<?php echo esc_url(home_url('/privacy/')); ?>" class="block text-slate-600 hover:text-slate-900 transition-colors text-sm">
-                            <?php _e('Privacy Policy', 'fsc'); ?>
+                            <?php esc_html_e('Privacy Policy', 'fsc'); ?>
                         </a>
                         <a href="<?php echo esc_url(home_url('/cookies/')); ?>" class="block text-slate-600 hover:text-slate-900 transition-colors text-sm">
-                            <?php _e('Cookie Policy', 'fsc'); ?>
+                            <?php esc_html_e('Cookie Policy', 'fsc'); ?>
                         </a>
                         <a href="<?php echo esc_url(home_url('/terms/')); ?>" class="block text-slate-600 hover:text-slate-900 transition-colors text-sm">
-                            <?php _e('Terms of Use', 'fsc'); ?>
+                            <?php esc_html_e('Terms of Use', 'fsc'); ?>
                         </a>
                         <a href="<?php echo esc_url(home_url('/disclaimer/')); ?>" class="block text-slate-600 hover:text-slate-900 transition-colors text-sm">
-                            <?php _e('Disclaimer', 'fsc'); ?>
+                            <?php esc_html_e('Disclaimer', 'fsc'); ?>
                         </a>
                         <a href="<?php echo esc_url(home_url('/disclosure/')); ?>" class="block text-slate-600 hover:text-slate-900 transition-colors text-sm">
-                            <?php _e('Disclosure', 'fsc'); ?>
+                            <?php esc_html_e('Disclosure', 'fsc'); ?>
                         </a>
                     </nav>
                 </div>
 
                 <!-- Contact -->
                 <div>
-                    <h4 class="font-medium text-slate-900 mb-4"><?php _e('Contact', 'fsc'); ?></h4>
+                    <h4 class="font-medium text-slate-900 mb-4"><?php esc_html_e('Contact', 'fsc'); ?></h4>
                     <div class="space-y-3">
                         <!-- Email -->
                         <div class="flex items-start gap-3">
@@ -93,7 +93,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
                             <div>
-                                <p class="text-xs text-slate-500 mb-1"><?php _e('Email', 'fsc'); ?></p>
+                                <p class="text-xs text-slate-500 mb-1"><?php esc_html_e('Email', 'fsc'); ?></p>
                                 <a href="mailto:info@fahadalmansourconsulting.com" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
                                     info@fahadalmansourconsulting.com
                                 </a>
@@ -106,7 +106,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
                             <div>
-                                <p class="text-xs text-slate-500 mb-1"><?php _e('Phone / WhatsApp', 'fsc'); ?></p>
+                                <p class="text-xs text-slate-500 mb-1"><?php esc_html_e('Phone / WhatsApp', 'fsc'); ?></p>
                                 <a href="tel:+966570131122" class="text-slate-700 hover:text-slate-900 transition-colors text-sm font-medium">
                                     +966 57 013 1122
                                 </a>
@@ -120,7 +120,7 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
                             <div>
-                                <p class="text-xs text-slate-500 mb-1"><?php _e('Location', 'fsc'); ?></p>
+                                <p class="text-xs text-slate-500 mb-1"><?php esc_html_e('Location', 'fsc'); ?></p>
                                 <p class="text-slate-700 text-sm font-medium">
                                     <?php echo $is_rtl ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'; ?><br>
                                     RRMA8094
@@ -134,9 +134,9 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                             <div>
-                                <p class="text-xs text-slate-500 mb-1"><?php _e('Working Hours', 'fsc'); ?></p>
+                                <p class="text-xs text-slate-500 mb-1"><?php esc_html_e('Working Hours', 'fsc'); ?></p>
                                 <p class="text-slate-700 text-sm font-medium">
-                                    <?php _e('Sunday - Thursday', 'fsc'); ?>
+                                    <?php esc_html_e('Sunday - Thursday', 'fsc'); ?>
                                 </p>
                             </div>
                         </div>
@@ -148,13 +148,13 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
                             <?php echo do_shortcode('[fsc_social_links]'); ?>
                         </div>
                         <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="inline-flex items-center gap-2 text-sm font-medium text-slate-900 hover:text-slate-700 transition-colors">
-                            <?php _e('Request a Consultation', 'fsc'); ?>
+                            <?php esc_html_e('Request a Consultation', 'fsc'); ?>
                             <svg class="w-4 h-4 <?php echo $is_rtl ? 'rtl-flip' : ''; ?>" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
                         </a>
                         <p class="text-xs text-slate-500 mt-2">
-                            <?php _e('We respond within one business day.', 'fsc'); ?>
+                            <?php esc_html_e('We respond within one business day.', 'fsc'); ?>
                         </p>
                     </div>
                 </div>
@@ -163,10 +163,10 @@ $fsc_elementor_footer = function_exists('fsc_has_elementor_location') && fsc_has
             <!-- Bottom Bar -->
             <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p class="text-sm text-slate-500">
-                    © <?php echo date('Y'); ?> <?php echo $is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'; ?>. <?php _e('All rights reserved.', 'fsc'); ?>
+                    © <?php echo date('Y'); ?> <?php echo $is_rtl ? 'فهد المنصور للاستشارات' : 'Fahad Almansour Consulting'; ?>. <?php esc_html_e('All rights reserved.', 'fsc'); ?>
                 </p>
                 <a href="#page" class="text-sm text-slate-600 hover:text-slate-900 transition-colors inline-flex items-center gap-1">
-                    <?php _e('Back to top', 'fsc'); ?>
+                    <?php esc_html_e('Back to top', 'fsc'); ?>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
                     </svg>

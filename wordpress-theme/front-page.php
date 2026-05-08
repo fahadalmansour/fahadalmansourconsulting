@@ -43,16 +43,16 @@ get_header();
     <section class="py-16 px-6 bg-white">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-4xl font-light tracking-tight mb-4 text-slate-900">
-                <?php _e('Ready to Get Started?', 'fsc'); ?>
+                <?php esc_html_e('Ready to Get Started?', 'fsc'); ?>
             </h2>
             <p class="text-xl text-slate-600 mb-8">
-                <?php _e('Request a consultation and let us assess your technology needs. The right solution is closer than you think.', 'fsc'); ?>
+                <?php esc_html_e('Request a consultation and let us assess your technology needs. The right solution is closer than you think.', 'fsc'); ?>
             </p>
             <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn-primary inline-flex items-center gap-2 rounded-full px-8 py-4">
-                <?php _e('Request a Consultation', 'fsc'); ?>
+                <?php esc_html_e('Request a Consultation', 'fsc'); ?>
             </a>
             <p class="text-sm text-slate-500 mt-4">
-                <?php _e('We respond within one business day.', 'fsc'); ?>
+                <?php esc_html_e('We respond within one business day.', 'fsc'); ?>
             </p>
         </div>
     </section>
@@ -62,10 +62,10 @@ get_header();
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-10">
                 <h2 class="text-4xl font-light tracking-tight mb-4 text-slate-900">
-                    <?php _e('Contact Us', 'fsc'); ?>
+                    <?php esc_html_e('Contact Us', 'fsc'); ?>
                 </h2>
                 <p class="text-xl text-slate-600">
-                    <?php _e('Send your inquiry and we\'ll respond within one business day', 'fsc'); ?>
+                    <?php esc_html_e('Send your inquiry and we\'ll respond within one business day', 'fsc'); ?>
                 </p>
             </div>
             <?php echo do_shortcode('[fsc_contact_form]'); ?>

@@ -166,6 +166,22 @@ add_action('after_setup_theme', 'fsc_setup');
  * Enqueue Scripts & Styles
  */
 function fsc_enqueue_scripts() {
+    // Google Fonts — Inter (always) + Tajawal (RTL only).
+    wp_enqueue_style(
+        'fsc-fonts-inter',
+        'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+        [],
+        null
+    );
+    if (is_rtl()) {
+        wp_enqueue_style(
+            'fsc-fonts-tajawal',
+            'https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap',
+            [],
+            null
+        );
+    }
+
     // Main stylesheet
     wp_enqueue_style(
         'fsc-style',
@@ -855,7 +871,7 @@ add_action('wp_head', 'fsc_breadcrumb_schema', 4);
 function fsc_preload_resources() {
     ?>
     <!-- Preload Critical Resources -->
-    <link rel="preload" as="style" href="<?php echo get_stylesheet_uri(); ?>">
+    <link rel="preload" as="style" href="<?php echo esc_url(get_stylesheet_uri()); ?>">
     <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hjp-Ek-_0.woff2" crossorigin>
     <?php if (is_rtl()): ?>
     <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzSBC45I.woff2" crossorigin>
