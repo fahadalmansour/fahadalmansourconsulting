@@ -1836,3 +1836,58 @@ body.elementor-editor-active #masthead {
 body.fsc-elementor-page .site-content {
     padding-top: 0;
 }
+
+/* ========================================
+   Audit follow-up: a11y + defensive layout
+   M3 (social tap target + focus) · M4 (skip link) · H2 (wordmark wrap)
+   ======================================== */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: auto;
+    height: auto;
+    padding: 0.75rem 1rem;
+    background: #0F172A;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    z-index: 10000;
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+[dir="rtl"] .skip-link:focus,
+[dir="rtl"] .skip-link:focus-visible {
+    left: auto;
+    right: 0.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 0.375rem;
+}
+
+.social-links a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+.fsc-logo-name {
+    white-space: nowrap;
+}

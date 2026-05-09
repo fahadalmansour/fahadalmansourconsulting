@@ -38,6 +38,8 @@ $fsc_elementor_header = function_exists( 'fsc_has_elementor_location' ) && fsc_h
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fsc' ); ?></a>
+
 <?php if ( $fsc_elementor_canvas ) : ?>
 	<?php // Canvas mode: no page wrapper, no header, no footer — Elementor handles everything ?>
 <?php else : ?>
@@ -135,7 +137,7 @@ $fsc_elementor_header = function_exists( 'fsc_has_elementor_location' ) && fsc_h
 				</div>
 
 				<!-- Mobile Menu Button -->
-				<button type="button" class="lg:hidden p-2 text-slate-700 hover:text-slate-900" id="mobile-menu-toggle" aria-label="<?php esc_attr_e( 'Toggle menu', 'fsc' ); ?>">
+				<button type="button" class="lg:hidden p-2 text-slate-700 hover:text-slate-900" id="mobile-menu-toggle" aria-label="<?php esc_attr_e( 'Toggle menu', 'fsc' ); ?>" aria-expanded="false" aria-controls="mobile-menu">
 					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
 					</svg>
